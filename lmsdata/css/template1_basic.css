@@ -1207,32 +1207,32 @@
 }
 
 #mainContent .quick-banner ul li a.icon01 {
-    background: url(./lmsdata/img/template1/quick_banner01.png) left center no-repeat;
+    background: url(../img/template1/quick_banner01.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon02 {
-    background: url(./lmsdata/img/template1/quick_banner02.png) left center no-repeat;
+    background: url(../img/template1/quick_banner02.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon03 {
-    background: url(./lmsdata/img/template1/quick_banner03.png) left center no-repeat;
+    background: url(../img/template1/quick_banner03.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon04 {
-    background: url(./lmsdata/img/template1/quick_banner04.png) left center no-repeat;
+    background: url(../img/template1/quick_banner04.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon05 {
-    background: url(./lmsdata/img/template1/quick_banner05.png) left center no-repeat;
+    background: url(../img/template1/quick_banner05.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon06 {
-    background: url(./lmsdata/img/template1/quick_banner06.png) left center no-repeat;
+    background: url(../img/template1/quick_banner06.png) left center no-repeat;
     background-size: contain;
 }
 
@@ -1268,25 +1268,25 @@
 }
 
 #mainContent ul.conSecond li a.icon01 {
-    background: url(./lmsdata/img/template1/bottom_banner01.png) no-repeat;
+    background: url(../img/template1/bottom_banner01.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
 
 #mainContent ul.conSecond li a.icon02 {
-    background: url(./lmsdata/img/template1/bottom_banner02.png) no-repeat;
+    background: url(../img/template1/bottom_banner02.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
 
 #mainContent ul.conSecond li a.icon03 {
-    background: url(./lmsdata/img/template1/bottom_banner03.png) no-repeat;
+    background: url(../img/template1/bottom_banner03.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
 
 #mainContent ul.conSecond li a.icon04 {
-    background: url(./lmsdata/img/template1/bottom_banner04.png) no-repeat;
+    background: url(../img/template1/bottom_banner04.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
@@ -1424,7 +1424,7 @@
     height: 42px;
     margin-top: 8px;
     text-indent: -9999px;
-    background: url(./lmsdata/img/template1/logo_b.png);
+    background: url('../img/template1/logo_b.png');
     background-size: cover;
 }
 

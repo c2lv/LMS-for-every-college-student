@@ -1408,7 +1408,7 @@ Map.prototype = {
 
 /********** NAV-M 메뉴 **********/
 $(function() {
-    $(".menu-list > li").append("<img src='/lmsdata/img/ko/template1/m_gnb_down.png' class='icon' alt=''>");
+    $(".menu-list > li").append("<img src='./lmsdata/img/ko/template1/m_gnb_down.png' class='icon' alt=''>");
     $('.menu-list li').click(function() {
         if ($(this).hasClass("hover") != true) {
             $('.menu-list li').removeClass("on");
