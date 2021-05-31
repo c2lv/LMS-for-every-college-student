@@ -376,7 +376,7 @@
     height: 34px;
     padding-left: 40px;
     border: none;
-    background: url(/lmsdata/img/template1/login_id.png) no-repeat;
+    background: url(./lmsdata/img/template1/login_id.png) no-repeat;
 }
 
 #header div.topCover div.login #loginForm-member #pw {
@@ -384,7 +384,7 @@
     height: 34px;
     padding-left: 40px;
     border: none;
-    background: url(/lmsdata/img/template1/login_pw.png) no-repeat;
+    background: url(./lmsdata/img/template1/login_pw.png) no-repeat;
 }
 
 #header div.topCover div.login #loginForm-member .loginBtn {
@@ -558,7 +558,7 @@
 .popupLayer #loginForm .other-login ul li.fb a {
     width: 32px;
     height: 32px;
-    background: url(/lmsdata/img/template1/other_login.png) no-repeat;
+    background: url(./lmsdata/img/template1/other_login.png) no-repeat;
     background-size: cover;
     background-position: 0 0;
 }
@@ -566,7 +566,7 @@
 .popupLayer #loginForm .other-login ul li.tw a {
     width: 32px;
     height: 32px;
-    background: url(/lmsdata/img/template1/other_login.png) no-repeat;
+    background: url(./lmsdata/img/template1/other_login.png) no-repeat;
     background-size: cover;
     background-position: 0 -32px;
 }
@@ -574,7 +574,7 @@
 .popupLayer #loginForm .other-login ul li.gl a {
     width: 32px;
     height: 32px;
-    background: url(/lmsdata/img/template1/other_login.png) no-repeat;
+    background: url(./lmsdata/img/template1/other_login.png) no-repeat;
     background-size: cover;
     background-position: 0 -64px;
 }
@@ -582,7 +582,7 @@
 .popupLayer #loginForm .other-login ul li.na a {
     width: 32px;
     height: 32px;
-    background: url(/lmsdata/img/template1/other_login.png) no-repeat;
+    background: url(./lmsdata/img/template1/other_login.png) no-repeat;
     background-size: cover;
     background-position: 0 -96px;
 }
@@ -590,7 +590,7 @@
 .popupLayer #loginForm .other-login ul li.ka a {
     width: 32px;
     height: 32px;
-    background: url(/lmsdata/img/template1/other_login.png) no-repeat;
+    background: url(./lmsdata/img/template1/other_login.png) no-repeat;
     background-size: cover;
     background-position: 0 -128px;
 }
@@ -613,7 +613,7 @@
 }
 
 #header div.topCover div.login ul.member li.find {
-    background: url(/lmsdata/img/template1/icon_arrow_2.png) no-repeat right 14px;
+    background: url(./lmsdata/img/template1/icon_arrow_2.png) no-repeat right 14px;
 }
 
 #header div.topCover div.login ul.member li.find a {
@@ -809,7 +809,7 @@
     position: relative;
     min-height: 680px;
     margin: 0 auto;
-    background: url(/lmsdata/img/template1/main_bg.jpg) center top;
+    background: url(./lmsdata/img/template1/main_bg.jpg) center top;
     background-size: cover;
 }
 
@@ -817,7 +817,7 @@
     position: relative;
     min-height: 680px;
     margin: 0 auto;
-    background: url(/lmsdata/img/template1/main_bg_k.jpg) center center;
+    background: url(./lmsdata/img/template1/main_bg_k.jpg) center center;
     background-size: cover;
 }
 
@@ -832,22 +832,22 @@
 
 #aside .lm-tit.bg1 {
     text-align: center;
-    background: url(/lmsdata/img/template1/lnb_title_bg.gif) no-repeat;
+    background: url(./lmsdata/img/template1/lnb_title_bg.gif) no-repeat;
 }
 
 #aside .lm-tit.bg2 {
     text-align: center;
-    background: url(/lmsdata/img/template1/lnb_title_bg2.gif) no-repeat;
+    background: url(./lmsdata/img/template1/lnb_title_bg2.gif) no-repeat;
 }
 
 #aside .lm-tit.bg3 {
     text-align: center;
-    background: url(/lmsdata/img/template1/lnb_title_bg3.gif) no-repeat;
+    background: url(./lmsdata/img/template1/lnb_title_bg3.gif) no-repeat;
 }
 
 #aside .lm-tit.bg4 {
     text-align: center;
-    background: url(/lmsdata/img/template1/lnb_title_bg4.gif) no-repeat;
+    background: url(./lmsdata/img/template1/lnb_title_bg4.gif) no-repeat;
 }
 
 #aside .lm-tit h2 {
@@ -884,7 +884,7 @@
 }
 
 #aside ul.lnb li.over {
-    background: url(/lmsdata/img/template1/lnb_over_arrow.gif) left center no-repeat;
+    background: url(./lmsdata/img/template1/lnb_over_arrow.gif) left center no-repeat;
     background-size: 30px;
 }
 
@@ -950,18 +950,18 @@
     float: left;
     min-width: 200px;
     border-right: 1px solid #ccc;
-    background: url(/lmsdata/img/template1/cnavi_arr.png) 180px 50% no-repeat;
+    background: url(./lmsdata/img/template1/cnavi_arr.png) 180px 50% no-repeat;
 }
 
 #bodyContent .location ul li:first-child {
     min-width: 40px;
     height: 40px;
     border-right: none;
-    background: #695b50 url(/lmsdata/img/template1/icon_home.gif) 50% 50% no-repeat;
+    background: #695b50 url(./lmsdata/img/template1/icon_home.gif) 50% 50% no-repeat;
 }
 
 #bodyContent .location ul li:last-child {
-    background: url(/lmsdata/img/template1/cnavi_arr_last.png) 95% 50% no-repeat;
+    background: url(./lmsdata/img/template1/cnavi_arr_last.png) 95% 50% no-repeat;
 }
 
 #bodyContent .location ul li a {
@@ -1052,7 +1052,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     vertical-align: middle;
-    background: url(/lmsdata/img/template1/icon_dot_w.gif) left 50% no-repeat;
+    background: url(./lmsdata/img/template1/icon_dot_w.gif) left 50% no-repeat;
 }
 
 #mainContent .board-latest div.listContent ul li span.boardDate {
@@ -1154,7 +1154,7 @@
     left: 50%;
     top: 50%;
     margin: -60px 0 0 -70px;
-    background: url(/lmsdata/img/template1/logo_line.png) center top no-repeat;
+    background: url(./lmsdata/img/template1/logo_line.png) center top no-repeat;
 }
 
 #mainContent .my-class div.listContent p.none-page span {
@@ -1207,32 +1207,32 @@
 }
 
 #mainContent .quick-banner ul li a.icon01 {
-    background: url(/lmsdata/img/template1/quick_banner01.png) left center no-repeat;
+    background: url(./lmsdata/img/template1/quick_banner01.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon02 {
-    background: url(/lmsdata/img/template1/quick_banner02.png) left center no-repeat;
+    background: url(./lmsdata/img/template1/quick_banner02.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon03 {
-    background: url(/lmsdata/img/template1/quick_banner03.png) left center no-repeat;
+    background: url(./lmsdata/img/template1/quick_banner03.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon04 {
-    background: url(/lmsdata/img/template1/quick_banner04.png) left center no-repeat;
+    background: url(./lmsdata/img/template1/quick_banner04.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon05 {
-    background: url(/lmsdata/img/template1/quick_banner05.png) left center no-repeat;
+    background: url(./lmsdata/img/template1/quick_banner05.png) left center no-repeat;
     background-size: contain;
 }
 
 #mainContent .quick-banner ul li a.icon06 {
-    background: url(/lmsdata/img/template1/quick_banner06.png) left center no-repeat;
+    background: url(./lmsdata/img/template1/quick_banner06.png) left center no-repeat;
     background-size: contain;
 }
 
@@ -1268,25 +1268,25 @@
 }
 
 #mainContent ul.conSecond li a.icon01 {
-    background: url(/lmsdata/img/template1/bottom_banner01.png) no-repeat;
+    background: url(./lmsdata/img/template1/bottom_banner01.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
 
 #mainContent ul.conSecond li a.icon02 {
-    background: url(/lmsdata/img/template1/bottom_banner02.png) no-repeat;
+    background: url(./lmsdata/img/template1/bottom_banner02.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
 
 #mainContent ul.conSecond li a.icon03 {
-    background: url(/lmsdata/img/template1/bottom_banner03.png) no-repeat;
+    background: url(./lmsdata/img/template1/bottom_banner03.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
 
 #mainContent ul.conSecond li a.icon04 {
-    background: url(/lmsdata/img/template1/bottom_banner04.png) no-repeat;
+    background: url(./lmsdata/img/template1/bottom_banner04.png) no-repeat;
     background-size: 50px;
     background-position: 10px center;
 }
@@ -1424,7 +1424,7 @@
     height: 42px;
     margin-top: 8px;
     text-indent: -9999px;
-    background: url(/lmsdata/img/template1/logo_b.png);
+    background: url(./lmsdata/img/template1/logo_b.png);
     background-size: cover;
 }
 
