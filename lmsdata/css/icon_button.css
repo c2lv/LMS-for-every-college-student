@@ -13,7 +13,7 @@
     line-height: normal !important;
     vertical-align: middle;
     text-indent: -9999px;
-    background-image: url("./lmsdata/img/common/sprite16.png");
+    background-image: url("../img/common/sprite16.png");
     background-position: 16px 16px;
     background-repeat: no-repeat;
 }
@@ -961,7 +961,7 @@
     line-height: normal !important;
     vertical-align: middle;
     text-indent: -9999px;
-    background-image: url("./lmsdata/img/common/sprite32.png");
+    background-image: url("../img/common/sprite32.png");
     background-position: 32px 32px;
     background-repeat: no-repeat;
 }
