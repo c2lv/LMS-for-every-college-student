@@ -37,7 +37,7 @@
 			width: 100%;
 			height: 170px;
 			overflow: hidden;
-			background: url(../lmsdata/img/classroom/design_templet/visual_img_large01.jpg) repeat;
+			background: url('./lmsdata/img/classroom/design_templet/visual_img_large01.jpg') repeat;
 		}
 	</style>
 	<!-- Scripts -->
@@ -57,8 +57,7 @@
 	<script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/date.js"></script>
 	<script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/jquery-ui.js"></script>
 	<script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/jquery.selectbox-min.js"></script>
-	<script type="text/JavaScript" language="JavaScript"
-		src="./lmsdata/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/jquery.bxslider.js"></script>
 	<script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/slidebars.js"></script>
 	<script type="text/javascript">
@@ -108,9 +107,9 @@ filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTr
 
 				function courseTopnoImage() {
 					if ('learner' == 'professor') {
-						$("#login_image").attr("src", "../lmsdata/img/common/no_professor.gif");
+						$("#login_image").attr("src", "./lmsdata/img/common/no_professor.gif");
 					} else {
-						$("#login_image").attr("src", "../lmsdata/img/common/no_user.gif");
+						$("#login_image").attr("src", "./lmsdata/img/common/no_user.gif");
 					}
 				}
 				function editProfile() {
@@ -251,22 +250,9 @@ filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTr
 		<div id="container" class="clearfix">
 
 			<!-- 본문 title 부분 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<script type="text/JavaScript" language="JavaScript" src="/dwr/engine.js"></script>
-			<script type="text/JavaScript" language="JavaScript" src="/dwr/util.js"></script>
-			<script type="text/JavaScript" language="JavaScript" src="/dwr/interface/CourseWork.js"></script>
+			<script type="text/JavaScript" language="JavaScript" src="./dwr/engine.js"></script>
+			<script type="text/JavaScript" language="JavaScript" src="./dwr/util.js"></script>
+			<script type="text/JavaScript" language="JavaScript" src="./dwr/interface/CourseWork.js"></script>
 
 
 			<script type="text/javascript">
@@ -321,12 +307,12 @@ filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTr
 						$("#headerContent").slideToggle(300);
 					}
 
-					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_on.png");
+					$("#handleTopImg").attr("src", "./lmsdata/img/classroom/handle_top_on.png");
 				}
 
 				function initAadminClassRoomClose() {
 					$("#headerContent").css("display", "none");
-					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_off.png");
+					$("#handleTopImg").attr("src", "./lmsdata/img/classroom/handle_top_off.png");
 				}
 
 				function classroomCloseCallback(ProcessResultDTO) {
@@ -338,13 +324,13 @@ filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTr
 				}
 
 				function initClassRoomClose() {
-					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_off.png");
+					$("#handleTopImg").attr("src", "./lmsdata/img/classroom/handle_top_off.png");
 				}
 
 
 				function initClassRoomOpen() {
 
-					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_on.png");
+					$("#handleTopImg").attr("src", "./lmsdata/img/classroom/handle_top_on.png");
 				}
 
 				function viewCourse(courseIdNownerName) {
@@ -471,7 +457,7 @@ filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTr
 				}
 
 				function courseTitleNoImage() {
-					$("#login_image").attr("src", "../lmsdata/img/common/no_professor.gif");
+					$("#login_image").attr("src", "./lmsdata/img/common/no_professor.gif");
 				}
 
 			</script>
@@ -589,7 +575,7 @@ filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTr
 			<script type="text/javascript">
 
 				function courseTitleNoImage() {
-					$("#courseTitleImage").attr("src", "../lmsdata/img/common/no_professor.gif");
+					$("#courseTitleImage").attr("src", "./lmsdata/img/common/no_professor.gif");
 				}
 
 
@@ -917,7 +903,7 @@ filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTr
 						<li>
 							<a href="javascript:moveContentsList('S2021U0002001UEDU402801','document.courseForm','report','REPT_2104181602102d16252e','viewReportInfoPageList','Report','learner','menu_00104' ,'menu_00063' );" onfocus="dropup('.mp11')">
 								<ul class="listNum">
-									<li class="dateBar bcOrange"></li>
+									<li class="dateBar bcRed"></li>
 									<li><span class="fcBlue">과제</span></li>
 									<li style="width:54px"><span class="btn mini fontHelvetica fwb">D-2</span></li>
 									<li style="width:154px;font-size:13px">
