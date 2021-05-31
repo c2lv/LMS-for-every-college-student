@@ -1,0 +1,2253 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="ko-kr" lang="ko-kr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>동국대학교 이클래스</title>
+
+	<!-- Stylesheets -->
+	<!-- 기본 -->
+	<link rel="shortcut icon" href="/lmsdata/img/common/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/icon_button.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/board.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/paginator3000.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/spectrum.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/selectbox.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/classroom_basic.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/classroom_tablet.css" media="all and (max-width: 1217px)" />
+	<link rel="stylesheet" type="text/css" href="/lmsdata/css/jquery.mCustomScrollbar.css" />
+	<style type="text/css">
+		#headerContent h1 a {
+			color: #000000;
+		}
+	</style>
+	<style type="text/css">
+		#Cover {
+			width: 100%;
+			background-color: #FFFFFF
+		}
+	</style>
+	<style type="text/css">
+		#headerContent {
+			width: 100%;
+			height: 170px;
+			overflow: hidden;
+			background: url(../lmsdata/img/classroom/design_templet/visual_img_large01.jpg) repeat;
+		}
+	</style>
+	<!-- Scripts -->
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/universal_design.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/common_util.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery-1.11.1.min.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery-ui.min.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/common.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/paginator3000.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/spectrum.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/docs.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery.easing.1.3.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery.cycle.all.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/popupbox.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/message_box.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/daterangepicker.jQuery.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/date.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery-ui.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery.selectbox-min.js"></script>
+	<script type="text/JavaScript" language="JavaScript"
+		src="/lmsdata/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery.bxslider.js"></script>
+	<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/slidebars.js"></script>
+	<script type="text/javascript">
+		function bluring() {
+			if (event.srcElement.tagName == "A" || event.srcElement.tagName == "IMG") document.body.focus();
+		}
+		document.onfocusin = bluring;
+	</script>
+
+	<!--[if lt IE 9]>
+<style type="text/css">
+#headerContent h1 {background-color: white;
+filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(opacity=100) progid:DXImageTransform.Microsoft.dropshadow(color=#ffffff,offX=1,offY=1) progid:DXImageTransform.Microsoft.dropshadow(color=#ffffff,offX=-1,offY=1) progid:DXImageTransform.Microsoft.dropshadow(color=#ffffff,offX=1,offY=-1) progid:DXImageTransform.Microsoft.dropshadow(color=#ffffff,offX=-1,offY=-1);}
+</style>
+<![endif]-->
+
+</head>
+
+<body>
+	<script language="javascript">
+
+	</script>
+	<div id="Cover">
+
+
+		<!-- Header 영역 부분 시작-->
+		<div id="header">
+
+
+
+
+
+
+
+
+
+
+
+
+			<link rel="stylesheet" type="text/css" href="/lmsdata/css/font-awesome.min2.css" />
+			<link rel="stylesheet" type="text/css" href="/lmsdata/css/font-awesome.min.css" />
+
+
+
+
+			<script type="text/javascript">
+
+				function courseTopnoImage() {
+					if ('learner' == 'professor') {
+						$("#login_image").attr("src", "../lmsdata/img/common/no_professor.gif");
+					} else {
+						$("#login_image").attr("src", "../lmsdata/img/common/no_user.gif");
+					}
+				}
+				function editProfile() {
+					var url = "";
+
+					url = "/User.do?cmd=editUserForm&boardInfoDTO.boardInfoGubun=myprofile";
+					location.href = url;
+				}
+
+				function logOut() {
+					var url = "";
+					//운영서버 로그아웃url
+					//url="/sso/logout.jsp";
+					url = "/User.do?cmd=logoutUser";
+					location.href = url;
+				}
+
+				//포트폴리오 메인 페이지 이동
+				function viewPortInfo(portId, portType) {
+					if (portType == 'L') {
+						location.href = "/PortInfo.do?cmd=viewInfoPortfolioMain&portId=" + portId;
+					} else {
+						location.href = "/PortInfo.do?cmd=viewInfoPortfolioMain&portId=" + portId;
+					}
+				}
+
+			</script>
+
+
+
+
+
+
+
+
+
+			<div id="header">
+				<div class="topCover">
+					<div class="hb"></div>
+					<p>
+						<a href="/index.html"><i class="fa fa-home"
+								title="홈페이지 바로가기"></i><span>홈으로</span></a>
+					</p>
+
+
+					<div class="hb"></div>
+					<p>
+						<a href="#"><i
+								class="fa fa-user"></i><span>마이페이지</span></a>
+					</p>
+
+
+
+					<!-- 	<div class="hb"></div> -->
+					<!-- 	<p class="fontB f16"> -->
+					<!-- 		<a href="#">글 작성 하기</a> -->
+					<!-- 	</p> -->
+					<div class="hb"></div>
+					<script>
+						$("p.f16").click(function () {
+							$(".drawBox").toggle();
+						});
+					</script>
+
+					<!--
+	<div class="drawBox" style="display: none">
+		<div class="topLine"></div>
+		<ul class="content">
+			<li class="row fr">
+				<div class='selectBox w150 fcGray bcDarkgray' title="저장 방식을 선택하세요">
+					<span class='selected'></span> <span class='selectArrow'></span>
+					<ul class="fcGray bcDarkgray">
+						<li>임시 저장 선택</li>
+						<li>제목으로 저장</li>
+						<li>날짜로 저장</li>
+					</ul>
+				</div>
+			</li>
+			<li class="row"><input type="text" class="head"
+				value="제목을 입력하세요" title="제목을 입력하세요" /></li>
+			<li class="row"><textarea rows="10" style="width: 100%" title="내용을 입력하세요"></textarea></li>
+			<li class="row">트리구조 메뉴 삽입</li>
+		</ul>
+		<ul class="button">
+			<li><a class="btn small" ><i class="icon-data-color"></i>임시저장</a></li>
+			<li><a class="btn small" ><i class="icon-save-color"></i>발행</a></li>
+			<li><a class="btn small" ><i class="icon-cancel-color"></i>취 소</a></li>
+		</ul>
+	</div>
+
+	 -->
+					<ul class="util">
+						<li class="hb p0"></li>
+						<li>
+
+
+
+
+
+							<a href="#" title="새 쪽지가  1 건 있습니다.">
+								<i class="icon-note-white"></i>
+
+								쪽 지
+
+								<span class="num bcSkyblue"> 0</span></a>
+
+						</li>
+						<li class="hb p0"></li>
+
+
+
+
+						<!-- 		<li class="hb p0"></li> -->
+						<li class="w230">
+							<div class="photoInfo">
+
+							</div>
+							<dl>
+								<dt class="fontB">박현준</dt>
+								<dd class="mr5">
+									<a
+										href="/Main.do?cmd=moveMenu&mainDTO.parentMenuId=menu_00026&mainDTO.menuId=menu_00243">대표권한설정</a>
+								</dd>
+								<dd>
+									<a href="javascript:logOut();">로그아웃</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="hb p0"></li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+		<!-- Header 영역 부분 끝-->
+		<!-- 본문 시작 -->
+		<div id="container" class="clearfix">
+
+			<!-- 본문 title 부분 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<script type="text/JavaScript" language="JavaScript" src="/dwr/engine.js"></script>
+			<script type="text/JavaScript" language="JavaScript" src="/dwr/util.js"></script>
+			<script type="text/JavaScript" language="JavaScript" src="/dwr/interface/CourseWork.js"></script>
+
+
+			<script type="text/javascript">
+
+
+				var popupFormDialog = null;
+
+				// function addLoadEvent(func){
+				//     var oldonload = window.onload;
+				//     if(typeof window.onload != 'function'){
+				//         window.onload = func;
+				//     }else{
+				//         window.onload = function(){
+				// //             oldonload();
+				// //             func();
+
+				//             if (oldonload) {
+				//                 oldonload();
+				//             }
+				//             func();
+
+
+				//         };
+				//     }
+
+				// }
+
+				// addLoadEvent(init);
+
+				function init() {
+					getClassroom();
+				}
+
+
+				function getClassroom() {
+
+					CourseWork.getClassroomMenu(getClassroomMenuCallback);
+				}
+
+				function getClassroomMenuCallback(classroom) {
+					var status = classroom;
+					if (status == "open") {
+						initAadminClassRoomOpen();
+					} else if (status == "close") {
+						initAadminClassRoomClose();
+
+					}
+				}
+
+				function initAadminClassRoomOpen() {
+					if ($("#headerContent").is(":hidden")) {
+						$("#headerContent").slideToggle(300);
+					}
+
+					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_on.png");
+				}
+
+				function initAadminClassRoomClose() {
+					$("#headerContent").css("display", "none");
+					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_off.png");
+				}
+
+				function classroomCloseCallback(ProcessResultDTO) {
+
+					initClassRoomClose();
+				}
+				function classroomOpenCallback(ProcessResultDTO) {
+					initClassRoomOpen();
+				}
+
+				function initClassRoomClose() {
+					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_off.png");
+				}
+
+
+				function initClassRoomOpen() {
+
+					$("#handleTopImg").attr("src", "../lmsdata/img/classroom/handle_top_on.png");
+				}
+
+				function viewCourse(courseIdNownerName) {
+
+					var courseId = courseIdNownerName.split(",")[0];
+
+					// 	var courseOwnerName = courseIdNownerName.split(",")[1].trim();
+					// ie 9.0 이하에서는 trim() 함수가 적용되지 않는다.
+					// common_util.js에 프로토타입으로 정의한 함수를 사용
+					var courseOwnerName = trim(courseIdNownerName.split(",")[1]);
+					var openType = trim(courseIdNownerName.split(",")[2]);
+					if (courseId != "" && courseOwnerName != "") {
+						if (openType !== "open" && openType !== "mooc") {
+							location.href = "/Course.do?" +
+								"cmd=viewStudyHome" +
+								"&courseDTO.courseId=" + courseId +
+								"&boardInfoDTO.boardInfoGubun=study_home&boardGubun=study_course&gubun=study_course";
+						} else {
+							location.href = "/Lesson.do?" +
+								"cmd=viewLessonContentsList" +
+								"&courseDTO.courseId=" + courseId +
+								"&pageGubun=study_home" +
+								"&type=U" +
+								"&boardInfoDTO.boardInfoGubun=openkyoan&gubun=study_course&pageGubun=study_home";
+						}
+
+					} else {
+						if (courseId == "") {
+							alert("강의실을 선택하여 주세요");
+						} else {
+							alert("해당 과목의 책임교수가 지정되지 않았습니다.");
+						}
+						return;
+					}
+
+				}
+
+				function viewCoursePlan(courseId, openType) {
+
+					if (openType != "open") {
+						location.href = "/Course.do?" +
+							"cmd=viewCoursePlanChapterListNew" +
+							"&boardInfoDTO.boardInfoGubun=course_plan" +
+							"&courseDTO.courseId=" + courseId +
+							"&mainDTO.parentMenuId=menu_00047&mainDTO.menuId=menu_00052";
+
+
+
+					} else {
+						location.href = "/Course.do?" +
+							"cmd=viewCoursePlanChapterListNew" +
+							"&courseDTO.courseId=" + courseId +
+							"&pageGubun=study_home" +
+							"&boardInfoDTO.boardInfoGubun=open_course_plan&gubun=study_course";
+					}
+
+
+				}
+
+				function viewAdminLearnerList(courseId) {
+					location.href = "/Learner.do?" +
+						"cmd=viewAdminLearnerList" +
+						"&courseDTO.courseId=" + courseId +
+						"&boardInfoDTO.boardInfoGubun=student_manage&boardGubun=study_course";
+				}
+
+				function viewCourseSetup(courseId) {
+					location.href = "/Course.do?" +
+						"cmd=viewStudyHomeSetUp" +
+						"&courseDTO.courseId=" + courseId +
+						"&boardInfoDTO.boardInfoGubun=studysetup&boardGubun=study_course";
+				}
+
+				function viewAssociateList(courseId) {
+
+					var url = "/Course.do?cmd=viewAssociateList&courseDTO.courseId=" + courseId;
+					var popTitle = "공동교수정보";
+					var addContent = "<div style='-webkit-overflow-scrolling: touch;' ><iframe id='viewAttendUserForm' name='viewAttendUserForm' width='100%' height='100%' "
+						+ "frameborder='0' scrolling='yes' src='" + url + "' title='" + popTitle + "'/></div>";
+					popupFormDialog = $(addContent);
+
+					popupFormDialog.dialog({
+						title: "공동교수정보",
+						resizable: false,
+						autoOpen: true,
+						width: '400',
+						height: '300',
+						modal: true,
+						appendTo: "body",
+						open: function (event, ui) {
+							$(this).find("iframe").focus();
+						},
+						close: function () {
+							$(this).remove();
+						}
+					});
+
+				}
+				function sendMessage(userId) {
+
+					var url = "/Message.do?cmd=sendMessageForm&gubun=popup&messageSendDTO.receiverId=" + userId
+						+ "&messageSendDTO.courseId=" + "";
+
+					var popTitle = "쪽지 보내기";
+					var addContent = "<div style='-webkit-overflow-scrolling: touch;' ><iframe id='titleMessateUserForm' name='viewAttendUserForm' width='100%' height='100%' "
+						+ "frameborder='0' scrolling='yes' src='" + url + "' title='" + popTitle + "'/></div>";
+
+					popupFormDialog = $(addContent);
+					popupFormDialog.dialog({
+						title: "쪽지 보내기",
+						resizable: false,
+						autoOpen: true,
+						width: '750',
+						height: '720',
+						modal: true,
+						appendTo: "body",
+						open: function (event, ui) {
+							$(this).find("iframe").focus();
+						},
+						close: function () {
+							$(this).remove();
+						}
+					});
+				}
+
+				function courseTitleNoImage() {
+					$("#login_image").attr("src", "../lmsdata/img/common/no_professor.gif");
+				}
+
+			</script>
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- mainContent 영역 부분 -->
+			<div id="headerContent">
+				<h1 class="f40">
+					<a
+						href="/Course.do?cmd=viewStudyHome&boardInfoDTO.boardInfoGubun=study_home&courseDTO.courseId=S2021U0002001UEDU402801">
+						통합교육론
+						_01
+
+						<span class="f22 fontEB ml10"></span>
+					</a>
+				</h1>
+				<div class="classSection">
+					<!-- 과목정보소개 부분 -->
+
+					<ul class="post">
+						<li>
+							<table class="headerListClass" border="1" cellspacing="0" summary="과목 정보 입니다.">
+								<caption>이수과목과 학점</caption>
+								<thead>
+									<tr>
+										<th tabindex="0" scope="col">이수구분</th>
+										<th tabindex="0" scope="col">학 점</th>
+										<th tabindex="0" class="bgLast">공동교수정보</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td tabindex="0" class="clip" style="max-width:100px">전공</td>
+										<td tabindex="0">3.0 학점</td>
+										<td class="bgLast"><span><a href="#">조회하기</a></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+					<!-- //과목정보소개 부분 -->
+					<!-- 과목교수소개 부분 -->
+					<ul class="postCover">
+						<li class="tphoto">
+						</li>
+						<li class="tinfoList">
+							<table class="headerListPro" border="1" cellspacing="0" summary="당당교수 정보 입니다.">
+								<caption>담당교수 정보</caption>
+								<colgroup>
+
+									<col width="120px">
+									<col width="120px">
+									<col />
+
+								</colgroup>
+								<thead>
+									<tr>
+										<th abbr="대표교수" scope="col" tabindex="0">
+											<!-- <i class="icon-user-black"></i> -->대표교수
+										</th>
+
+										<th class="bgLast" abbr="이메일" scope="col" tabindex="0"><i class="icon-mail-black"></i>이메일
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td tabindex="0">이효정 </td>
+										<td tabindex="0" class="bgLast">hjlee05@dongguk.edu</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+					<!-- //과목교수소개 부분 -->
+				</div>
+			</div>
+			<!-- //mainContent 영역 부분 -->
+			<!-- 강의상단메뉴 부분 -->
+			<div id="conArea">
+				<div class="class_sbox">
+					<fieldset>
+						<legend>내강의실로 이동</legend>
+
+
+						<select name="courseDTO.courseId" class="default" onchange="javascript:viewCourse(this.value)"
+							title="내강의실 목록">
+							<option value=''> 강의실 선택</option>
+							<option value='S2021U0002001UEDU402801,이효정,' selected> 통합교육론(2021년 1학기)</option>
+						</select>
+
+
+					</fieldset>
+				</div>
+				<ul class="proFunction">
+					<li><a class="btn" href="#" onfocus="dropup('.mp1')"><i class="icon-monitor-color"></i>강의 계획서</a></li>
+				</ul>
+				<div class="handleTop cp">
+					<img id="handleTopImg" src="/lmsdata/img/classroom/handle_top_on.png" alt="사진" border="0">
+				</div>
+			</div>
+			<!-- //강의상단메뉴 부분 -->
+
+			<script type="text/javascript">
+
+				function courseTitleNoImage() {
+					$("#courseTitleImage").attr("src", "../lmsdata/img/common/no_professor.gif");
+				}
+
+
+				$(document).ready(function () {
+					init();
+				});
+
+			</script>
+
+			<!-- 본문 menu 부분 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- leftAside 영역 부분 -->
+
+
+
+			<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery.bxslider.js"></script>
+			<script type="text/javascript">
+
+				function moveContentsList(courseId, formName, boardInfoGubun, infoId, cmdName, actionName, userType, parentMenuId, menuId) {
+					var url = "";
+					var infoIdString = "";
+					if (actionName == "Etest") {
+						url = "/Etest.do?";
+						infoIdString = "&etestInfoDTO.etestInfoId=" + infoId;
+
+					} else if (actionName == "Forum") {
+						url = "/Forum.do?";
+						infoIdString = "&forumInfoDTO.forumInfoId=" + infoId;
+
+					} else if (actionName == "Report") {
+						url = "/Report.do?";
+						infoIdString = "&reportInfoDTO.reportInfoId=" + infoId;
+
+					} else if (actionName == "Lesson") {
+						url = "/Lesson.do?";
+						infoIdString = "&lessonContentsDTO.lessonContentsId=" + infoId + "&type=U";
+
+
+					} else if (actionName == "Research") {
+						url = "/Research.do?";
+						infoIdString = "&researchInfoDTO.researchInfoId=" + infoId;
+					} else if (actionName == "Teamact") {
+						url = "/Teamact.do?";
+						infoIdString = "&teamactInfoDTO.teamactId=" + infoId;
+					}
+
+					url += "cmd=" + cmdName +
+						"&courseDTO.courseId=" + courseId +
+						"&boardInfoDTO.boardInfoGubun=" + boardInfoGubun +
+						"&boardGubun=study_course" +
+						"&gubun=todayList" +
+						"&pageGubun=study_home" +
+						infoIdString +
+						"&mainDTO.parentMenuId=" + parentMenuId +
+						"&mainDTO.menuId=" + menuId;
+					location.href = url;
+
+				}
+
+				function moveProfContentsList(courseId, formName, boardInfoGubun, infoId, cmdName, actionName, userType, lessonElementId, parentMenuId) {
+
+					var url = "";
+					var infoIdString = "";
+					if (actionName == "Etest") {
+						url = "/Etest.do?";
+						infoIdString = "&etestInfoDTO.etestInfoId=" + infoId;
+
+					} else if (actionName == "Forum") {
+						url = "/Forum.do?";
+						infoIdString = "&forumInfoDTO.forumInfoId=" + infoId;
+
+					} else if (actionName == "Report") {
+						url = "/Report.do?";
+						infoIdString = "&reportInfoDTO.reportInfoId=" + infoId;
+
+					} else if (actionName == "Lesson") {
+						url = "/Lesson.do?";
+						infoIdString = "&lessonContentsDTO.lessonContentsId=" + infoId + "&type=U";
+
+
+					} else if (actionName == "Research") {
+						url = "/Research.do?";
+						infoIdString = "&researchInfoDTO.researchInfoId=" + infoId;
+					}
+
+					url += "cmd=" + cmdName +
+						"&courseDTO.courseId=" + courseId +
+						"&boardInfoDTO.boardInfoGubun=" + boardInfoGubun +
+						"&boardGubun=study_course" +
+						"&gubun=todayList" +
+						infoIdString +
+						"&mainDTO.parentMenuId=" + parentMenuId;
+					location.href = url;
+
+				}
+
+
+				function viewLessonContentsStudy(courseId, lessonContentsId, lessonElementId, courseName) {
+					var url = "/Attend.do?cmd=viewAttendProfForm&courseDTO.courseId=" + courseId + "&attendStatusDTO.lessonContentsId=" + lessonContentsId + "&attendStatusDTO.elementType=online&attendStatusDTO.lessonElementId=" + lessonElementId;
+
+					var popTitle = "수강생 별 출결 현황";
+					var addContent = "<div style='-webkit-overflow-scrolling: touch;' ><iframe id='viewLessonUserForm' name='viewAttendUserForm' width='100%' height='100%' "
+						+ "frameborder='0' scrolling='yes' src='" + url + "' title='" + popTitle + "'/></div>";
+
+
+					popupFormDialog = $(addContent);
+
+					popupFormDialog.dialog({
+						title: courseName + " - 수강생 별 출결 현황",
+						resizable: false,
+						autoOpen: true,
+						width: '800',
+						height: '600',
+						modal: true,
+						appendTo: "body",
+						open: function (event, ui) {
+							$(this).find("iframe").focus();
+						},
+						close: function () {
+							$(this).remove();
+						}
+					});
+
+				}
+
+				//할일목록 읽어오기 호출
+				function viewTodayList() {
+					var url = getUrlEncode(document.URL);
+					document.location.href = "/Main.do?cmd=movePageForToday&url=" + url;
+				}
+			</script>
+			<input type="hidden" name="cmd">
+			<div id="aside">
+				<ul id="leftMenu" class="lnb">
+					<li id=0>
+						<h3>
+							<a href="#" style=" color: #EBEBEB;" onfocus="dropup('.mp2'); dropdown('.mp1')"><i class="icon-list-white"></i>학습 목차</a>
+						</h3>
+						<ul class="menuSub mp1" style="display: none;">
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&mainDTO.menuId=menu_00092&courseDTO.courseId=S2021U0002001UEDU402801">학습
+									목차</a></li>
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&mainDTO.menuId=menu_00099&courseDTO.courseId=S2021U0002001UEDU402801">강의
+									목록</a></li>
+							<li class="last"><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&mainDTO.menuId=menu_00232&courseDTO.courseId=S2021U0002001UEDU402801">학습자료실</a>
+							</li>
+						</ul>
+						<div class="menuSubHover">
+							<ul>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&mainDTO.menuId=menu_00092&courseDTO.courseId=S2021U0002001UEDU402801">학습
+										목차</a></li>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&mainDTO.menuId=menu_00099&courseDTO.courseId=S2021U0002001UEDU402801">강의
+										목록</a></li>
+								<li class="last"><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&mainDTO.menuId=menu_00232&courseDTO.courseId=S2021U0002001UEDU402801">학습자료실</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li id=1>
+						<h3>
+							<a href="#" style=" color: #EBEBEB;" onfocus="dropup('.mp1'); dropup('.mp3'); dropdown('.mp2')"><i class="icon-nbook-white"></i>학습 정보</a>
+						</h3>
+						<ul class="menuSub mp2" style="display: none;">
+							<li><a
+									href="/Course.do?cmd=viewBoardContentsList&boardInfoDTO.boardInfoGubun=notice&boardInfoDTO.boardInfoId=S2021U0002001UEDU402801N&boardInfoDTO.boardClass=notice&boardInfoDTO.boardType=course&courseDTO.courseId=S2021U0002001UEDU402801&mainDTO.parentMenuId=menu_00048&mainDTO.menuId=menu_00056">공지사항</a>
+							</li>
+							<li class="last"><a
+									href="/Course.do?cmd=viewBoardContentsList&boardInfoDTO.boardInfoGubun=qna&boardInfoDTO.boardInfoId=S2021U0002001UEDU402801Q&boardInfoDTO.boardClass=qna&boardInfoDTO.boardType=course&courseDTO.courseId=S2021U0002001UEDU402801&mainDTO.parentMenuId=menu_00048&mainDTO.menuId=menu_00056">질의응답</a>
+							</li>
+						</ul>
+						<div class="menuSubHover">
+							<ul>
+								<li><a
+										href="/Course.do?cmd=viewBoardContentsList&boardInfoDTO.boardInfoGubun=notice&boardInfoDTO.boardInfoId=S2021U0002001UEDU402801N&boardInfoDTO.boardClass=notice&boardInfoDTO.boardType=course&courseDTO.courseId=S2021U0002001UEDU402801&mainDTO.parentMenuId=menu_00048&mainDTO.menuId=menu_00056">공지사항</a>
+								</li>
+								<li class="last"><a
+										href="/Course.do?cmd=viewBoardContentsList&boardInfoDTO.boardInfoGubun=qna&boardInfoDTO.boardInfoId=S2021U0002001UEDU402801Q&boardInfoDTO.boardClass=qna&boardInfoDTO.boardType=course&courseDTO.courseId=S2021U0002001UEDU402801&mainDTO.parentMenuId=menu_00048&mainDTO.menuId=menu_00056">질의응답</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li id=2>
+						<h3>
+							<a href="#" style=" color: #EBEBEB;" onfocus="dropup('.mp2'); dropup('.mp4'); dropdown('.mp3')"><i class="icon-listleve-white"></i>학습 활동 관리</a>
+						</h3>
+						<ul class="menuSub mp3" style="display: none;">
+							<li class="last"><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00050&mainDTO.menuId=menu_00073&courseDTO.courseId=S2021U0002001UEDU402801">수강생
+									조회</a></li>
+						</ul>
+						<div class="menuSubHover">
+							<ul>
+								<li class="last"><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00050&mainDTO.menuId=menu_00073&courseDTO.courseId=S2021U0002001UEDU402801">수강생
+										조회</a></li>
+							</ul>
+						</div>
+					</li>
+					<li id=3>
+						<h3>
+							<a href="#" style=" color: #EBEBEB;" onfocus="dropup('.mp3'); dropup('.mp8'); dropdown('.mp4')"><i class="icon-listleve-white"></i>학습 활동</a>
+						</h3>
+						<ul class="menuSub mp4" style="display: none;">
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00082&courseDTO.courseId=S2021U0002001UEDU402801">출석</a>
+							</li>
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00063&courseDTO.courseId=S2021U0002001UEDU402801">과제</a>
+							</li>
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00065&courseDTO.courseId=S2021U0002001UEDU402801">토론</a>
+							</li>
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00067&courseDTO.courseId=S2021U0002001UEDU402801">시험</a>
+							</li>
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00069&courseDTO.courseId=S2021U0002001UEDU402801">설문</a>
+							</li>
+							<li class="last"><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00071&courseDTO.courseId=S2021U0002001UEDU402801">팀활동</a>
+							</li>
+						</ul>
+						<div class="menuSubHover">
+							<ul>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00082&courseDTO.courseId=S2021U0002001UEDU402801">출석</a>
+								</li>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00063&courseDTO.courseId=S2021U0002001UEDU402801">과제</a>
+								</li>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00065&courseDTO.courseId=S2021U0002001UEDU402801">토론</a>
+								</li>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00067&courseDTO.courseId=S2021U0002001UEDU402801">시험</a>
+								</li>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00069&courseDTO.courseId=S2021U0002001UEDU402801">설문</a>
+								</li>
+								<li class="last"><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00104&mainDTO.menuId=menu_00071&courseDTO.courseId=S2021U0002001UEDU402801">팀활동</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li id=7>
+						<h3>
+							<a href="#" style=" color: #EBEBEB;" onfocus="dropup('.mp4'); dropup('.mp9'); dropdown('.mp8')"><i class="icon-book-white"></i>학습 현황</a>
+						</h3>
+						<ul class="menuSub mp8" style="display: none;">
+							<li class="last"><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00101&mainDTO.menuId=menu_00100&courseDTO.courseId=S2021U0002001UEDU402801">학습
+									현황</a></li>
+						</ul>
+						<div class="menuSubHover">
+							<ul>
+								<li class="last"><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00101&mainDTO.menuId=menu_00100&courseDTO.courseId=S2021U0002001UEDU402801">학습
+										현황</a></li>
+							</ul>
+						</div>
+					</li>
+					<li id=8>
+						<h3>
+							<a href="#" style=" color: #EBEBEB;" onfocus="dropup('.mp8'); dropup('.mp11'); dropdown('.mp9')"><i class="icon-info-white"></i>과목 정보</a>
+						</h3>
+						<ul class="menuSub mp9" style="display: none;">
+							<li><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00047&mainDTO.menuId=menu_00052&courseDTO.courseId=S2021U0002001UEDU402801">강의
+									계획서</a></li>
+							<li class="last"><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00047&mainDTO.menuId=menu_00053&courseDTO.courseId=S2021U0002001UEDU402801">과목
+									정보</a></li>
+						</ul>
+						<div class="menuSubHover">
+							<ul>
+								<li><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00047&mainDTO.menuId=menu_00052&courseDTO.courseId=S2021U0002001UEDU402801">강의
+										계획서</a></li>
+								<li class="last"><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00047&mainDTO.menuId=menu_00053&courseDTO.courseId=S2021U0002001UEDU402801">과목
+										정보</a></li>
+							</ul>
+						</div>
+					</li>
+					<li id=10>
+						<h3>
+							<a href="#" style=" color: #EBEBEB;" onfocus="dropup('.mp9'); dropdown('.mp11')"><i class="icon-list-white"></i>성적</a>
+						</h3>
+								<ul class="menuSub mp11" style="display: none;">
+							<li class="last"><a
+									href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00105&mainDTO.menuId=menu_00106&courseDTO.courseId=S2021U0002001UEDU402801">성적보기</a>
+							</li>
+						</ul>
+						<div class="menuSubHover">
+							<ul>
+								<li class="last"><a
+										href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00105&mainDTO.menuId=menu_00106&courseDTO.courseId=S2021U0002001UEDU402801">성적보기</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div id="todayList">
+					<h2 class="f16" style="color:#666;">내 할 일 보기 <span class="num bcRed">2</span> </h2>
+					<ul class="bxslider">
+						<li>
+							<a href="javascript:moveContentsList('S2021U0002001UEDU402801','document.courseForm','report','REPT_2104181602102d16252e','viewReportInfoPageList','Report','learner','menu_00104' ,'menu_00063' );" onfocus="dropup('.mp11')">
+								<ul class="listNum">
+									<li class="dateBar bcOrange"></li>
+									<li><span class="fcBlue">과제</span></li>
+									<li style="width:54px"><span class="btn mini fontHelvetica fwb">D -2</span></li>
+									<li style="width:154px;font-size:13px">
+										<h3 rel="tooltip" title=" 팀프로젝트 제출 ">
+											팀프로젝트 제출</h3>
+									</li>
+									<li style="width:154px; font-size:11px">통합교육론_01</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							var slider = $('.bxslider').bxSlider({
+								mode: 'vertical',
+								minSlides: 5,
+								pager: false,
+								infiniteLoop: false,
+								hideControlOnEnd: true
+							});
+						});
+					</script>
+				</div>
+
+			</div>
+
+			<!-- //leftAside 영역 부분 -->
+
+			<!-- 본문 content 부분 -->
+			<div id="bodyContent">
+				<script type="text/javascript">
+					var commonResultMessage = "null";
+					if (commonResultMessage == "" || commonResultMessage == "null") {
+						commonResultMessage = "null";
+					}
+					var localeKey = "ko";
+				</script>
+
+
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/popupbox.js"></script>
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/scorm_adapter.js"></script>
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/scorm_cmicore.js"></script>
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/scorm_comments.js"></script>
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/scorm_interactions.js"></script>
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/scorm_objectives.js"></script>
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/scorm_util.js"></script>
+				<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/FileDown.js"></script>
+
+				<script type="text/javascript">
+					if ("normal" == "open") {
+						document.location.href = "/Main.do?cmd=moveOpenCourseMenu&mainDTO.parentMenuId=menu_00107&courseDTO.courseId=S2021U0002001UEDU402801&courseDTO.shareCourseId=&fronGubun=A&mainDTO.menuId=menu_00108";
+					}
+					var selectedLessonItemId = null;	// 선택된 아이템ID
+					var studyWindow = null;
+					var learningControl = "date";	// sequence, date, choice (과목진행방식)
+					var befContStudyYn = "Y";	// 순차일경우..이전 컨텐츠를 봤는지 여부...
+					var curContStudyYn = "Y";	// 순차일경우..현재 컨텐츠를 봐도 되는지 여부...
+					var C4Enable = true;
+					var C5Enable = true;
+					var attendYn = "Y";
+					var curLessonElementId = "";
+					var curScoId = "";
+
+					//SCORM API 정의
+					API_1484_11 = new ScormAPIAdapter();
+
+					function viewNextPage(endNow, pageGubun) {
+						var f = document.courseForm;
+						f['lessonContentsDTO.endNow'].value = endNow;
+						f['lessonContentsDTO.pageGubun'].value = pageGubun;
+						f['editGubun'].value = "B";
+						f['cmd'].value = "viewStudyHome";
+						f.submit();
+					}
+
+					/**
+					 * 학습하기
+					 */
+					var lessonObject = new Object();
+					function viewStudyContents(lessonElementId, lessonContentsId, windowWidth, windowHeight, learningControl, lessonCnt) {
+						var f = document.courseForm;
+
+						if (learningControl == "date") {
+							if (lessonCnt == -1) {
+								alert("학습시간이 아직 시작되지않았습니다.");
+								return;
+							}
+						}
+						lessonObject.lessonElementId = lessonElementId;
+						lessonObject.lessonContentsId = lessonContentsId;
+						lessonObject.windowWidth = windowWidth;
+						lessonObject.windowHeight = windowHeight;
+
+
+						$.ajax({
+							type: "POST",
+							url: "/Otp.do?cmd=courseAuthCheck",
+							data: {
+								"otpDTO.courseId": f["courseDTO.courseId"].value
+								, "otpDTO.lessonElementId": lessonElementId
+							},
+							dataType: "json",
+							success: function (data) {
+								if (data.retVal == "Y") {
+									certificationCompleted();
+								} else {
+									userOTPcheck();
+								}
+							}
+						});
+					}
+
+
+					//2차인증 팝업실행
+					function userOTPcheck() {
+						var f = document.courseForm;
+						var url = "/Otp.do?cmd=userOtpGen";
+						var popTitle = "2차 인증";
+						var addContent = "<div style='-webkit-overflow-scrolling: touch; '><iframe id='addClubInfoFrame' name='addClubInfoFrame' width='100%' height='100%' "
+							+ "frameborder='0' scrolling='yes' src='" + url + "' title='" + popTitle + "'/></div>";
+						popupFormDialog = $(addContent);
+
+						popupFormDialog.dialog({
+							title: "2차 인증",
+							resizable: false,
+							autoOpen: true,
+							width: '400',
+							height: '540',
+							modal: true,
+							appendTo: "body",
+							open: function (event, ui) {
+								$(this).find("iframe").focus();
+							},
+							close: function () {
+								$(this).remove();
+							}
+						});
+					}
+
+
+					//학습창
+					function certificationCompleted() {
+
+						var f = document.courseForm;
+
+						var lessonElementId = lessonObject.lessonElementId;
+						var lessonContentsId = lessonObject.lessonContentsId;
+						var windowWidth = lessonObject.windowWidth;
+						var windowHeight = lessonObject.windowHeight;
+
+						var url = "/Lesson.do?cmd=viewStudyContentsForm&studyRecordDTO.lessonElementId=" + lessonElementId + "&studyRecordDTO.lessonContentsId=" + lessonContentsId + "&courseDTO.courseId=" + f["courseDTO.courseId"].value;
+						url += "&menuId=menu_00099"
+						url += "&pus=N&pcr=N&pre=N";
+
+						var winWidth = windowWidth;
+						var winHeight = windowHeight;
+						// 창크기 값이 없는 경우
+						if (winWidth == "0" || winWidth == "") {
+							winWidth = 1024;
+						}
+						if (winHeight == "0" || winHeight == "") {
+							winHeight = 768;
+						}
+
+						var winHeight_plus = eval(winHeight) + 45;
+
+						if (!studyWindow || studyWindow.closed) {
+						} else {
+							alert("이미 학습중인 학습창이 있습니다.\n학습창을 먼저 닫으세요.");
+							studyWindow.focus();
+							return;
+						}
+
+						if (studyWindow != null && studyWindow.open == true) {
+							//	alert("이미 학습중인 학습창이 있습니다.\n학습창을 먼저 닫으세요.");
+							//	return false;
+						}
+						var top = ((screen.availHeight - winHeight) / 2 + 40);
+						var left = ((screen.availWidth - winWidth) / 2);
+
+						studyWindow = window.open(url, "studyWindow", "top=" + top + ",left=" + left + ",toolbar=no,location=no,directories=no,menubar=no,resizable=yes, scrollbars=auto,status=no,width=" + winWidth + ",height=" + winHeight);
+						studyWindow.open = true;
+					}
+
+					/* function viewStudyContents(lessonElementId,lessonContentsId,windowWidth,windowHeight,learningControl,lessonCnt){
+						
+						var f = document.courseForm;
+						if(learningControl=="date"){
+							
+							if(lessonCnt == -1){
+								alert("학습시간이 아직 시작되지않았습니다.");
+								return;
+							} else if(lessonCnt == 0){
+								
+							} else if(lessonCnt == 1){
+								//alert("학습시간이 종료된 강의입니다.");
+							}
+						}
+						var url = "/Lesson.do?cmd=viewStudyContentsForm&studyRecordDTO.lessonElementId="+lessonElementId+"&studyRecordDTO.lessonContentsId="+lessonContentsId+"&courseDTO.courseId="+f["courseDTO.courseId"].value;
+						url += "&menuId=menu_00099"
+						url += "&pus=N&pcr=N&pre=N";
+						
+						var winWidth	= windowWidth; 
+						var winHeight	= windowHeight; 
+						// 창크기 값이 없는 경우
+						if (winWidth == "0" || winWidth == "") {
+							winWidth = 1024;
+						}
+						if (winHeight == "0" || winHeight == "") {
+							winHeight = 768;
+						}
+					
+						var winHeight_plus	= eval(winHeight) + 45;
+						
+						if (!studyWindow || studyWindow.closed){ 
+						}else{
+							alert("이미 학습중인 학습창이 있습니다.\n학습창을 먼저 닫으세요.");
+							studyWindow.focus(); 
+							return ;
+						}
+						
+						if (studyWindow != null && studyWindow.open == true) {
+						//	alert("이미 학습중인 학습창이 있습니다.\n학습창을 먼저 닫으세요.");
+						//	return false;
+						}
+						var top =((screen.availHeight - winHeight)/2 + 40);
+						var left = (  (screen.availWidth-winWidth)   / 2) ; 
+						
+						studyWindow = window.open(url, "studyWindow", "top="+top+",left="+left+",toolbar=no,location=no,directories=no,menubar=no,resizable=no, scrollbars=auto,status=no,width="+winWidth+",height="+winHeight);
+						studyWindow.open = true;
+					} */
+
+					//질의 응답 답변 등록
+					function replyBoardContents(boardContentsId, boardInfoId) {
+						var f = document.courseForm;
+						f['boardInfoDTO.boardInfoId'].value = boardInfoId;
+						f['boardContentsDTO.boardContentsId'].value = boardContentsId;
+						f['cmd'].value = "viewBoardContents";
+						f["gubun"].value = "MainR";
+						f.submit();
+					}
+
+					//게시판 수정
+					function updateBoardContents(boardContentsId, boardInfoId) {
+						var f = document.courseForm;
+						f['boardInfoDTO.boardInfoId'].value = boardInfoId;
+						f['boardContentsDTO.boardContentsId'].value = boardContentsId;
+						f['cmd'].value = "viewBoardContents";
+						f["gubun"].value = "MainE";
+						f.submit();
+					}
+
+					//게시판 수정
+					function deleteBoardContents(boardContentsId, boardInfoId) {
+						var f = document.courseForm;
+						if (confirm("체크된 게시판을 모두 삭제하시겠습니까?\n주의: 게시글을 삭제하면 포함된 답변, 코멘트 모두 삭제됩니다.")) {
+							f['boardInfoDTO.boardInfoId'].value = boardInfoId;
+							f['boardContentsDTO.boardContentsId'].value = boardContentsId;
+							f["cmd"].value = "deleteBoardContents";
+							f["gubun"].value = "MainD";
+							f.submit();
+						}
+						f.submit();
+					}
+
+					//게시판 상세보기
+					function ViewBoardContent(boardContentsId, boardInfoId, boardClass) {
+						var f = document.courseForm;
+						f['boardInfoDTO.boardInfoId'].value = boardInfoId;
+						f['boardContentsDTO.boardContentsId'].value = boardContentsId;
+						f['boardContentsDTO.boardClass'].value = boardClass;
+						f['boardInfoDTO.boardClass'].value = boardClass;
+						f["mainDTO.parentMenuId"].value = "menu_00048";
+						f["mainDTO.menuId"].value = "menu_00056";
+						f['cmd'].value = "viewBoardContents";
+						f["gubun"].value = "MainV";
+						f.submit();
+					}
+
+					//게시판 더보기
+					function viewBoardList(boardInfoId, value) {
+						var f = document.courseForm;
+						f['boardInfoDTO.boardInfoId'].value = boardInfoId;
+						f['boardInfoDTO.boardClass'].value = value;
+						f['cmd'].value = "viewBoardContentsList";
+						f["gubun"].value = "MainL";
+						f["type"].value = "U";
+						f.submit();
+					}
+
+					//교안더보기
+					function viewLessonList() {
+						var f = document.courseForm;
+						f.action = "/Attend.do";
+						f['boardInfoDTO.boardInfoGubun'].value = "learner_attend";
+						f['pageGubun'].value = "study_home";
+						f['cmd'].value = "viewAttendLearnerList";
+						f["mainDTO.parentMenuId"].value = "menu_00104";
+						f["mainDTO.menuId"].value = "menu_00082";
+						f.submit();
+
+
+					}
+
+					//과제상세보기
+					function ViewReportContent(reportInfoId, parentMenuId, menuId) {
+						var f = document.courseForm;
+						f.action = "/Report.do";
+						f["cmd"].value = "viewReportInfoPageList";
+						f["reportInfoDTO.reportInfoId"].value = reportInfoId;
+						f["pageGubun"].value = "study_home";
+						f["mainDTO.parentMenuId"].value = parentMenuId;
+						f["mainDTO.menuId"].value = menuId;
+						f["gubun"].value = "MainL";
+						f.submit();
+					}
+
+					//과제 목록
+					function ViewReportInfoList() {
+						var f = document.courseForm;
+						f.action = "/Report.do";
+						f["cmd"].value = "viewReportInfoPageList";
+						f["pageGubun"].value = "study_home";
+						// 	f["gubun"].value = "MainL";
+						f.submit();
+					}
+
+					//토론상세보기
+					function ViewForumContent(forumInfoId, parentMenuId, menuId) {
+						var f = document.courseForm;
+						f.action = "/Forum.do";
+						f["gubun"].value = "MainL";
+						f["cmd"].value = "viewForumInfoList";
+						f["forumInfoDTO.forumInfoId"].value = forumInfoId;
+						f["forumInfoDTO.courseId"].value = f["courseDTO.courseId"].value;
+						f["mainDTO.parentMenuId"].value = parentMenuId;
+						f["mainDTO.menuId"].value = menuId;
+						f.submit();
+					}
+
+					//토론 목록보기
+					function ViewForumList() {
+						var f = document.courseForm;
+						f.action = "/Forum.do";
+						f["cmd"].value = "viewForumInfoList";
+						f['boardInfoDTO.boardInfoGubun'].value = "forum_manage";
+						f["forumInfoDTO.courseId"].value = f["courseDTO.courseId"].value;
+						f["pageGubun"].value = "study_home";
+						f.submit();
+					}
+
+					//시험상세보기
+					function ViewEtestContent(etestInfoId, parentMenuId) {
+						var f = document.courseForm;
+						f.action = "/Etest.do";
+						f["cmd"].value = "viewEtestInfoList";
+						f['etestInfoDTO.etestInfoId'].value = etestInfoId;
+						f['boardInfoDTO.boardInfoGubun'].value = "etest";
+						f["mainDTO.parentMenuId"].value = parentMenuId;
+						f["gubun"].value = "MainL";
+						f.submit();
+					}
+
+					function viewEtestInfoForm() {
+						var f = document.courseForm;
+						f.action = "/Etest.do";
+						f["cmd"].value = "viewEtestInfoList";
+						f['boardInfoDTO.boardInfoGubun'].value = "etest";
+						f["pageGubun"].value = "study_home";
+						f.submit();
+					}
+
+					//팀활동 목록
+					function viewTeamInfoForm() {
+						var f = document.courseForm;
+						f.action = "/Teamact.do";
+						f['boardInfoDTO.boardInfoGubun'].value = "teamact";
+						f['cmd'].value = "viewTeamactList";
+						f["pageGubun"].value = "study_home";
+						// 	f['boardInfoDTO.boardInfoGubun'].value="etest";
+						f["gubun"].value = "MainL";
+						f.submit();
+					}
+
+					//팀활동상세보기
+					function ViewTeamContent(teamactId, parentMenuId, menuId) {
+						var f = document.courseForm;
+						f.action = "/Teamact.do";
+						f["cmd"].value = "viewTeamactList";
+						f['boardInfoDTO.boardInfoGubun'].value = "teamact_manage";
+						f['teamactInfoDTO.teamactId'].value = teamactId;
+						f["mainDTO.parentMenuId"].value = parentMenuId;
+						f["mainDTO.menuId"].value = menuId;
+						f["gubun"].value = "MainL";
+						f.submit();
+					}
+
+					//학습자료실 상세보기
+					function ViewPdsContent(pdsContentsId) {
+						var f = document.courseForm;
+						f.action = "/Reference.do";
+						f['cmd'].value = "addReferenceContentsForm";
+						f['pdsFileContentsDTO.pdsContentsId'].value = pdsContentsId;
+						f["mainDTO.parentMenuId"].value = "menu_00091";
+						f["mainDTO.menuId"].value = "menu_00232";
+						f["gubun"].value = "V";
+						f.submit();
+					}
+
+					//학습자료실
+					function viewPdsList() {
+						var f = document.courseForm;
+						f.action = "/Main.do";
+						f['cmd'].value = "moveCourseMenu";
+						f["mainDTO.parentMenuId"].value = "menu_00091";
+						f["mainDTO.menuId"].value = "menu_00232";
+						f["gubun"].value = "MainL";
+						f.submit();
+
+					}
+
+					function reviews(lessonElementId, lessonContentsId) {
+						var f = document.courseForm;
+						var url = "/Lesson.do?cmd=viewReviewsForm";
+						url += "&lessonElementDTO.lessonContentsId=" + lessonContentsId;
+						url += "&lessonElementDTO.lessonElementId=" + lessonElementId;
+						url += "&courseDTO.courseId=" + f["courseDTO.courseId"].value;
+						url += "&mainDTO.parentMenuId=" + f["mainDTO.parentMenuId"].value;
+
+						var addContent = "<div style='-webkit-overflow-scrolling: touch;' ><iframe id='reviewForm' name='addQuestionForm' width='100%' height='100%' "
+							+ "frameborder='0' scrolling='no' src='" + url + "'/></div>";
+						popupFormDialog = $(addContent);
+
+						popupFormDialog.dialog({
+							title: "강의후기",
+							resizable: false,
+							autoOpen: true,
+							width: '620',
+							height: '580',
+							modal: true,
+							appendTo: "body",
+							open: function (event, ui) {
+								$(this).find("iframe").focus();
+							},
+							close: function () {
+								location.reload();
+								$(this).remove();
+							}
+						});
+					}
+
+					//학습목차 이동
+					function viewStudyHome() {
+						var f = document.courseForm;
+						f.action = "/Course.do";
+						f["cmd"].value = "viewStudyHome";
+						f["boardInfoDTO.boardInfoGubun"].value = "";
+						f.submit();
+					}
+
+
+					function contentsInfoPop(obj) {
+						var lessonContentsId = obj;
+						//var url = '';
+						var url = '/Lesson.do?cmd=viewLessonContentsObjective&lessonContentsDTO.lessonContentsId=' + lessonContentsId;
+						var title = "개인정보";
+
+
+						var addContent = "<div style='-webkit-overflow-scrolling: touch; '><iframe id='addClubInfoFrame' name='addClubInfoFrame' width='100%' height='100%' "
+							+ "frameborder='0' scrolling='yes' src='" + url + "'/></div>";
+						popupFormDialog = $(addContent);
+
+						popupFormDialog.dialog({
+							title: "학습 목표",
+							resizable: false,
+							autoOpen: true,
+							width: '600',
+							height: '240',
+							modal: true,
+							appendTo: "body",
+							open: function (event, ui) {
+								$(this).find("iframe").focus();
+							},
+							close: function () {
+								$(this).remove();
+							}
+						});
+					}
+
+
+					function joinVirtual(lessonElementId) {
+						var f = document.courseForm;
+						var url = "/Lesson.do?cmd=viewVirtualForm";
+						url += "&lessonElementDTO.lessonElementId=" + lessonElementId;
+						url += "&lessonElementDTO.courseId=" + f["courseDTO.courseId"].value;
+						url += "&courseDTO.courseId=" + f["courseDTO.courseId"].value;
+						url += "&mainDTO.parentMenuId=" + f["mainDTO.parentMenuId"].value;
+
+						var popTitle = "원격강의";
+						var addContent = "<div style='-webkit-overflow-scrolling: touch;' ><iframe id='reviewForm' name='addQuestionForm' width='100%' height='100%' "
+							+ "frameborder='0' scrolling='no' src='" + url + "' title='" + popTitle + "'/></div>";
+						popupFormDialog = $(addContent);
+
+						popupFormDialog.dialog({
+							title: popTitle,
+							resizable: false,
+							autoOpen: true,
+							width: '620',
+							height: '580',
+							modal: true,
+							appendTo: "body",
+							open: function (event, ui) {
+								$(this).find("iframe").focus();
+							},
+							close: function () {
+								location.reload();
+								$(this).remove();
+							}
+						});
+					}
+
+					function viewVirtualLog(lessonId, courseId) {
+
+						//alert(" Webex 원격강의 출결 연동 기능(출결상태(출석|지각|결석) 표기 등)을 준비 중입니다. (추후에 안내)");
+
+						var url = "/Attend.do?cmd=viewVirtualAttendLearnerList&courseDTO.courseId=" + courseId + "&boardInfoDTO.gubun=virtual&lessonElementDTO.lessonElementId=" + lessonId;
+						url += "&boardInfoDTO.boardInfoGubun=attend&mainDTO.parentMenuId=menu_00050&mainDTO.menuId=menu_00062";
+
+						document.location = url;
+					}
+
+
+					function viewVirtualReplay(lessonId) {
+
+						var url = "/Attend.do?cmd=viewVirtualReplay&lessonElementDTO.lessonElementId=" + lessonId;
+						var popTitle = "원격강의 다시보기 정보";
+						var addContent = "<div style='-webkit-overflow-scrolling: touch;' ><iframe id='viewAttendUserForm' name='viewAttendUserForm' width='100%' height='100%' "
+							+ "frameborder='0' scrolling='yes' src='" + url + "'/></div>";
+
+						popupFormDialog = $(addContent);
+						popupFormDialog.dialog({
+							title: popTitle,
+							resizable: false,
+							autoOpen: true,
+							width: '500',
+							height: '380',
+							modal: true,
+							appendTo: "body",
+							open: function (event, ui) {
+								$(this).find("iframe").focus();
+							},
+							close: function () {
+								$(this).remove();
+							}
+						});
+					}
+
+				</script>
+				<style>
+					.iconExp {
+						position: relative;
+						float: right;
+						overflow: visible !important;
+						width: 120px !important;
+						padding: 0 !important;
+					}
+
+					.iconExp .tooltip-content {
+						display: none;
+						padding: 10px;
+						line-height: 1.6;
+						position: absolute;
+						top: 15px;
+						right: 0;
+						background: #fff;
+						border: 1px solid #e2e2e2;
+						z-index: 600;
+						width: 570px;
+						height: 60px;
+					}
+
+					.iconExp:hover .tooltip-content {
+						display: block;
+					}
+				</style>
+
+				<form name="courseForm" method="post" action="/Course.do">
+
+					<input type="hidden" name="selectId" />
+					<input type="hidden" name="gubun">
+					<input type="hidden" name="editGubun">
+					<input type="hidden" name="cmd">
+					<input type="hidden" name="type">
+					<input type="hidden" name="pageGubun">
+					<input type="hidden" name="lessonContentsDTO.startNow" value="0">
+					<input type="hidden" name="lessonContentsDTO.endNow" value="13">
+					<input type="hidden" name="lessonContentsDTO.pageGubun" value="first">
+					<input type="hidden" name="courseDTO.courseId" value="S2021U0002001UEDU402801">
+					<input type="hidden" name="boardInfoDTO.boardInfoId" value="">
+					<input type="hidden" name="boardContentsDTO.boardContentsId" value="">
+					<input type="hidden" name="boardInfoDTO.boardClass" value="bbs">
+					<input type="hidden" name="boardContentsDTO.boardClass" value="">
+
+					<input type="hidden" name="boardInfoDTO.boardInfoGubun" value="study_home">
+					<input type="hidden" name="courseDTO.learningStartDate" value="20210215">
+					<input type="hidden" name="courseDTO.learningEndDate" value="20210716">
+					<input type="hidden" name="boardInfoDTO.boardInfoSubGubun" value="">
+					<input type="hidden" name="reportInfoDTO.reportInfoId" value="">
+					<input type="hidden" name="forumInfoDTO.forumInfoId" value="">
+					<input type="hidden" name="forumInfoDTO.courseId" value="">
+					<input type="hidden" name="etestInfoDTO.etestInfoId" value="">
+					<input type="hidden" name="teamactInfoDTO.teamactId" value="">
+					<input type="hidden" name="mainDTO.parentMenuId" value="menu_00091">
+					<input type="hidden" name="mainDTO.menuId" value="menu_00092">
+					<input type="hidden" name="courseDTO.learningControl" value="date">
+					<input type="hidden" name="pdsFileContentsDTO.pdsContentsId" value="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div id="">
+						<div class="contentTitle">
+							<h2 class="f28">학습 목차</h2>
+							<ul class="location">
+								<li><a href="/Main.do?cmd=viewHome&userDTO.localeKey=ko"><i
+											class="icon-home-color m0">홈으로</i></a></li>
+								<li>강의실</li>
+								<li><i class="icon-arrow-small-black m0"></i></li>
+								<li><a href="javascript:viewStudyHome();">통합교육론</a></li>
+								<li><i class="icon-arrow-small-black m0"></i></li>
+								<li>학습 목차</li>
+							</ul>
+						</div>
+
+						<div class="boardTab" style="margin-bottom:20px;">
+							<ul>
+
+
+
+
+
+
+
+
+								<li class="select">
+
+									<h3>
+										<a
+											href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&courseDTO.courseId=S2021U0002001UEDU402801&courseDTO.shareCourseId=&fronGubun=A&mainDTO.menuId=menu_00092">
+											학습 목차
+										</a>
+									</h3>
+								</li>
+
+
+
+
+
+
+								<li>
+
+									<h3>
+										<a
+											href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&courseDTO.courseId=S2021U0002001UEDU402801&courseDTO.shareCourseId=&fronGubun=A&mainDTO.menuId=menu_00099">
+											강의 목록
+										</a>
+									</h3>
+								</li>
+
+
+
+
+
+
+								<li>
+
+									<h3>
+										<a
+											href="/Main.do?cmd=moveCourseMenu&mainDTO.parentMenuId=menu_00091&courseDTO.courseId=S2021U0002001UEDU402801&courseDTO.shareCourseId=&fronGubun=A&mainDTO.menuId=menu_00232" onfocus="standardup()">
+											학습자료실
+										</a>
+									</h3>
+								</li>
+
+
+
+							</ul>
+
+							<ul class="iconExp">
+								<li style="float:right;background:none;border:none;">
+									<span class="on" tabindex="0" onfocus="standarddown()">온라인 학습현황</span>
+								</li>
+
+								<div class="tooltip-content" style="color: blue;">
+										<p tabindex="0">출석 : 각 주차의 학습기간 내에 강의 콘텐츠의 출석인정 기준시간 이상 학습한 경우<br></p>
+										<p tabindex="0">지각 : 각 주차의 학습기간 이외의 기간에 기준시간 이상 학습한 경우<br></p>
+										<p tabindex="0">학습안함 : 학습해야 할 강의 콘텐츠의 출석인정 기준시간만큼 학습을 완료하지 못한 경우<br></p>
+								</div>
+
+
+							</ul>
+
+
+						</div>
+
+
+
+
+						<div id="listBox">
+							<table class="boardListBasic2" summary="주간별 학습목차 정보 입니다.">
+								<caption>학습목차 정보</caption>
+								<colgroup>
+									<col />
+									<col width="29%">
+									<col width="29%">
+									<col width="29%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>
+											<ul>
+												<li></li>
+												<li>
+												</li>
+											</ul>
+										</th>
+										<script type="text/javascript">
+											var commonResultMessage = "null";
+											if (commonResultMessage == "" || commonResultMessage == "null") {
+												commonResultMessage = "null";
+											}
+											var localeKey = "ko";
+										</script>
+										<th scope="col">
+											<p class="arrowLeft"><a href="javascript:viewNextPage('12','prev');" onfocus="standardup()"><img
+														src="/lmsdata/img/classroom/arrow_prev.png" alt="이전주차로이동"
+														border="0"></a></p>
+														<a style="color: #d8e1f0;" href="#">12주차</a>
+													<span class="btn mini fontHelvetica fwb"
+												style="margin-left:10px;" href="#" tabindex="0"
+												onclick="contentsInfoPop('LESN_210221022032zoagnahl');return false;">학습목표보기</span><br/>
+												<a style="color: #d8e1f0;" href="#">2021-05-18 ~ 2021-05-24</a>
+										</th>
+										<th scope="col">
+											<p class="now"><img src="/lmsdata/img/classroom/now_ribon.png" alt="현재주차"
+													border="0"></p>
+													<a style="color: #d8e1f0;" href="#">13주차</a>
+													<span class="btn mini fontHelvetica fwb"
+												style="margin-left:10px;" href="#" tabindex="0"
+												onclick="contentsInfoPop('LESN_210221022032bfjgexka');return false;">학습목표보기</span><br/>
+												<a style="color: #d8e1f0;" href="#">2021-05-25 ~ 2021-05-31</a>
+										</th>
+										<th scope="col">
+											<a style="color: #d8e1f0;" href="#">14주차</a>
+											<span class="btn mini fontHelvetica fwb"
+											style="margin-left:10px;" href="#" tabindex="0"
+											onclick="contentsInfoPop('LESN_210221022032hmiihhgm');return false;">학습목표보기</span><br/>
+											<a style="color: #d8e1f0;" href="#">2021-06-01 ~ 2021-06-07</a>
+											<p class="arrowRight"><a href="javascript:viewNextPage('14','next');"><img
+														src="/lmsdata/img/classroom/arrow_next.png" alt="이후주차로이동"
+														border="0"></a></p>
+										</th>
+
+
+
+
+
+									</tr>
+								</thead>
+
+								<tbody>
+
+
+
+									<tr>
+										<th class="head"><span class="text">출 석</span>
+											<a class="icon-list-black tmask" href="javascript:viewLessonList();">출석</a>
+										</th>
+										<script type="text/javascript">
+											var commonResultMessage = "null";
+											if (commonResultMessage == "" || commonResultMessage == "null") {
+												commonResultMessage = "null";
+											}
+											var localeKey = "ko";
+										</script>
+										<td>
+											<div class="video on" style="background: #d5ebbb; color: #2a410d;">
+												<ul>
+													<li tabindex="0">
+														12주차 1강
+													</li>
+												</ul>
+												<ul class="bar" tabindex="0" style="background: none !important;">
+													강의기간 :
+													2021-05-19 13:00 ~ 14:30
+												</ul>
+												<ul class="mt5">
+													<li class="btn-group mt10 fr"
+														style="width:inherit; min-height: 26px;">
+														<a class="btn btn-orange fcWhite" href="#" rel="tooltip" style="line-height:24px;" title="원격강의 시작">원격강의
+															시작
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="video on" style="background: #d5ebbb; color: #2a410d;">
+												<ul>
+													<li tabindex="0">
+														12주차 2강
+													</li>
+												</ul>
+												<ul tabindex="0" class="bar" style="background: none !important;">
+
+													강의기간 :
+													2021-05-21 13:00 ~ 14:30
+												</ul>
+												<ul class="mt5">
+													<li class="btn-group mt10 fr"
+														style="width:inherit; min-height: 26px;">
+														<a class="btn btn-orange fcWhite" href="#" rel="tooltip" style="line-height:24px;" title="원격강의 시작">원격강의
+															시작
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="video off">
+												<ul>
+													<li tabindex="0">1강</li>
+												</ul>
+												<ul class="mt5">
+													<li>
+														<ul class="bar">
+
+															<li tabindex="0" class="bar-blue" style="width:100%;"><img
+																	src="/lmsdata/img_common/icon/set1/icon_full_w.png" />출
+																석</li> <!-- 출석  -->
+
+														</ul>
+													</li>
+													<li class="btn-group mt10 fr" style="width:inherit;">
+														<a class="btn"
+															href="javascript:reviews('LESN_210221022032hfetarrb','LESN_210221022032zoagnahl');"
+															rel="tooltip" title="강의후기"><i
+																class="icon-reply-black  m4"></i><span
+																class="fcRed">(0)</span></a>
+													</li>
+												</ul>
+											</div>
+											<div class="video off">
+												<ul>
+													<li tabindex="0">2강</li>
+												</ul>
+												<ul class="mt5">
+													<li>
+														<ul class="bar">
+															<li tabindex="0" class="bar-blue" style="width:100%;"><img
+																	src="/lmsdata/img_common/icon/set1/icon_full_w.png" />출
+																석</li> <!-- 출석  -->
+														</ul>
+													</li>
+													<li class="btn-group mt10 fr" style="width:inherit;">
+														<a class="btn"
+															href="javascript:reviews('LESN_210221022040kddotele','LESN_210221022032zoagnahl');"
+															rel="tooltip" title="강의후기"><i
+																class="icon-reply-black  m4"></i><span
+																class="fcRed">(0)</span></a>
+													</li>
+												</ul>
+											</div>
+										</td>
+										<td>
+											<div class="video on" style="background: #d5ebbb; color: #2a410d;">
+												<ul>
+													<li tabindex="0">
+														13주차 1강
+
+
+
+													</li>
+												</ul>
+												<ul tabindex="0" class="bar" style="background: none !important;">
+
+													강의기간 :
+													2021-05-26 13:00 ~ 14:30
+												</ul>
+												<ul class="mt5">
+													<li class="btn-group mt10 fr"
+														style="width:inherit; min-height: 26px;">
+														<a class="btn btn-orange fcWhite" href="#" rel="tooltip" style="line-height:24px;" title="원격강의 시작">원격강의
+															시작
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="video on" style="background: #d5ebbb; color: #2a410d;">
+												<ul>
+													<li tabindex="0">
+														13주차 2강
+
+
+
+													</li>
+												</ul>
+												<ul tabindex="0" class="bar" style="background: none !important;">
+
+													강의기간 :
+													2021-05-28 13:00 ~ 14:30
+												</ul>
+												<ul class="mt5">
+													<li class="btn-group mt10 fr"
+														style="width:inherit; min-height: 26px;">
+														<a class="btn btn-orange fcWhite" href="#" rel="tooltip" style="line-height:24px;" title="원격강의 시작">원격강의
+															시작
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="video off">
+												<ul>
+													<li tabindex="0">1강</li>
+												</ul>
+												<ul class="mt5">
+													<li>
+														<ul class="bar">
+
+															<li tabindex="0" class="bar-blue" style="width:100%;"><img
+																	src="/lmsdata/img_common/icon/set1/icon_full_w.png" />출
+																석</li> <!-- 출석  -->
+
+														</ul>
+													</li>
+													<li class="btn-group mt10 fr" style="width:inherit;">
+														<a class="btn"
+															href="javascript:reviews('LESN_210221022032sihrnniv','LESN_210221022032bfjgexka');"
+															rel="tooltip" title="강의후기"><i
+																class="icon-reply-black  m4"></i><span
+																class="fcRed">(0)</span></a>
+
+
+													</li>
+												</ul>
+											</div>
+											<div class="video off">
+												<ul>
+													<li tabindex="0">2강</li>
+												</ul>
+												<ul class="mt5">
+													<li>
+														<ul class="bar">
+
+															<li tabindex="0" class="bar-blue" style="width:100%;"><img
+																	src="/lmsdata/img_common/icon/set1/icon_full_w.png" />출
+																석</li> <!-- 출석  -->
+
+														</ul>
+													</li>
+													<li class="btn-group mt10 fr" style="width:inherit;">
+														<a class="btn"
+															href="javascript:reviews('LESN_210221022040hkljsseg','LESN_210221022032bfjgexka');"
+															rel="tooltip" title="강의후기"><i
+																class="icon-reply-black  m4"></i><span
+																class="fcRed">(0)</span></a>
+													</li>
+												</ul>
+											</div>
+										</td>
+										<td>
+											<div class="video on" style="background: #d5ebbb; color: #2a410d;">
+												<ul>
+													<li tabindex="0">
+														14주차 1강
+
+
+
+													</li>
+												</ul>
+												<ul tabindex="0" class="bar" style="background: none !important;">
+
+													강의기간 :
+													2021-06-02 13:00 ~ 14:30
+												</ul>
+												<ul class="mt5">
+													<li class="btn-group mt10 fr"
+														style="width:inherit; min-height: 26px;">
+
+														<a class="btn btn-orange fcWhite"
+															href="javascript:joinVirtual('VCSN_20210523054107523cfc')"
+															rel="tooltip" style="line-height:24px;" title="원격강의 시작">원격강의
+															시작</a>
+													</li>
+												</ul>
+											</div>
+											<div class="video on" style="background: #d5ebbb; color: #2a410d;">
+												<ul>
+													<li tabindex="0">
+														14주차 2강
+													</li>
+												</ul>
+												<ul tabindex="0" class="bar" style="background: none !important;">
+
+													강의기간 :
+													2021-06-04 13:00 ~ 14:30
+												</ul>
+												<ul class="mt5">
+													<li class="btn-group mt10 fr"
+														style="width:inherit; min-height: 26px;">
+
+														<a class="btn btn-orange fcWhite"
+															href="javascript:joinVirtual('VCSN_202105250535043d7308')"
+															rel="tooltip" style="line-height:24px;" title="원격강의 시작">원격강의
+															시작</a>
+													</li>
+												</ul>
+											</div>
+											<div class="video off">
+												<ul>
+													<li tabindex="0">1강</li>
+												</ul>
+												<ul class="mt5">
+													<li>
+														<ul class="bar">
+
+															<li tabindex="0" class="bar-gray" style="width:100%;"><img
+																	src="/lmsdata/img_common/icon/set1/icon_empty_w.png" />결
+																석</li> <!-- 결석 -->
+
+														</ul>
+													</li>
+													<li class="btn-group mt10 fr" style="width:inherit;">
+														<a class="btn"
+															href="javascript:reviews('LESN_210221022032kgbnsazx','LESN_210221022032hmiihhgm');"
+															rel="tooltip" title="강의후기"><i
+																class="icon-reply-black  m4"></i><span
+																class="fcRed">(0)</span></a>
+
+
+													</li>
+												</ul>
+											</div>
+											<div class="video off">
+												<ul>
+													<li tabindex="0">2강</li>
+												</ul>
+												<ul class="mt5">
+													<li>
+														<ul class="bar">
+
+															<li tabindex="0" class="bar-gray" style="width:100%;"><img
+																	src="/lmsdata/img_common/icon/set1/icon_empty_w.png" />결
+																석</li> <!-- 결석 -->
+
+														</ul>
+													</li>
+													<li class="btn-group mt10 fr" style="width:inherit;">
+														<a class="btn"
+															href="javascript:reviews('LESN_210221022040secribzt','LESN_210221022032hmiihhgm');"
+															rel="tooltip" title="강의후기"><i
+																class="icon-reply-black  m4"></i><span
+																class="fcRed">(0)</span></a>
+													</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="head"><span class="text">공지사항</span>
+											<a class="icon-list-black tmask"
+												href="javascript:viewBoardList('S2021U0002001UEDU402801N','notice');">공지사항</a>
+										</th>
+										<script type="text/javascript">
+											var commonResultMessage = "null";
+											if (commonResultMessage == "" || commonResultMessage == "null") {
+												commonResultMessage = "null";
+											}
+											var localeKey = "ko";
+										</script>
+										<td>
+										</td>
+										<td>
+											<ul class="tableList">
+												<li>
+
+													<a
+														href="javascript:ViewBoardContent('BOAD_210526182546bded0d5f','S2021U0002001UEDU402801N' , 'notice');">
+														추후일정안내</a>
+												</li>
+											</ul>
+											<ul class="tableList">
+												<li>
+
+													<a
+														href="javascript:ViewBoardContent('BOAD_210526182435bded0d38','S2021U0002001UEDU402801N' , 'notice');">
+														그룹과제 발표 및 순서안내</a>
+												</li>
+											</ul>
+											<ul class="tableList">
+												<li>
+
+													<a
+														href="javascript:ViewBoardContent('BOAD_210526181940bded0d2c','S2021U0002001UEDU402801N' , 'notice');">
+														에듀테크기업 취업 특강 안내</a>
+												</li>
+											</ul>
+										</td>
+										<td>
+										</td>
+									</tr>
+									<tr>
+										<th class="head"><span class="text">질의응답</span>
+											<a class="icon-list-black tmask"
+												href="javascript:viewBoardList('S2021U0002001UEDU402801Q','qna');">질의응답</a>
+										</th>
+										<script type="text/javascript">
+											var commonResultMessage = "null";
+											if (commonResultMessage == "" || commonResultMessage == "null") {
+												commonResultMessage = "null";
+											}
+											var localeKey = "ko";
+										</script>
+										<td>
+										</td>
+										<td>
+										</td>
+										<td>
+										</td>
+									</tr>
+									<tr>
+										<th class="head">
+											<span class="text">학습자료실</span>
+											<a class="icon-setup-small-black tmask"
+												href="javascript:viewPdsList();">학습자료실</a>
+										</th>
+										<script type="text/javascript">
+											var commonResultMessage = "null";
+											if (commonResultMessage == "" || commonResultMessage == "null") {
+												commonResultMessage = "null";
+											}
+											var localeKey = "ko";
+										</script>
+										<td>
+										</td>
+										<td>
+										</td>
+										<td>
+										</td>
+										<script type="text/javascript">
+
+											$(document).ready(function () {
+
+												var pdsContentsId = "";
+												var ids = "";
+												var pdsContentsIda = "";
+
+												// 일정이 없는 날짜 삭제
+												$('.tableList li').each(function () {
+													var liClass = $(this).first().attr("class");
+													var id = $(this).first().attr("id");
+
+													if (liClass == "reference") {
+														if (id != undefined) {
+															ids = id.split(',');
+														}
+
+														for (i = 0; i < pdsContentsId.length; i++) {
+															pdsContentsIda = pdsContentsId.split(',');
+
+															if (ids[1] == pdsContentsIda[i]) {
+																$(this).next().remove();
+																return;
+															}
+														}
+														pdsContentsId += ids[1] + ",";
+													}
+													return;
+												});
+											});
+										</script>
+									</tr>
+									<tr>
+										<th class="head"><span class="text">과 제</span>
+											<a class="icon-list-black tmask"
+												href="javascript:ViewReportInfoList();">과제</a>
+										</th>
+										<script type="text/javascript">
+											var commonResultMessage = "null";
+											if (commonResultMessage == "" || commonResultMessage == "null") {
+												commonResultMessage = "null";
+											}
+											var localeKey = "ko";
+										</script>
+										<td>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewReportContent('REPT_2104181602102d16252e', 'menu_00104','menu_00063');">
+														팀프로젝트 제출</a>
+												</li>
+											</ul>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewReportContent('REPT_210512123654584d5d56', 'menu_00104','menu_00063');">
+														[기말고사] 교생실습생 TAKE-HOME EXAM</a>
+												</li>
+											</ul>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewReportContent('REPT_210512123150584d5d1b', 'menu_00104','menu_00063');">
+														기말고사(TAKE-HOME EXAM)</a>
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewReportContent('REPT_2104181602102d16252e', 'menu_00104','menu_00063');">
+														팀프로젝트 제출</a>
+												</li>
+											</ul>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewReportContent('REPT_210512123654584d5d56', 'menu_00104','menu_00063');">
+														[기말고사] 교생실습생 TAKE-HOME EXAM</a>
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewReportContent('REPT_2104181602102d16252e', 'menu_00104','menu_00063');">
+														팀프로젝트 제출</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th class="head"><span class="text">팀활동</span>
+											<a class="icon-list-black tmask"
+												href="javascript:viewTeamInfoForm();">팀활동</a>
+										</th>
+										<script type="text/javascript">
+											var commonResultMessage = "null";
+											if (commonResultMessage == "" || commonResultMessage == "null") {
+												commonResultMessage = "null";
+											}
+											var localeKey = "ko";
+										</script>
+										<td>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewTeamContent('TAC_210318132051d9d15aee', 'menu_00104','menu_00071');">
+														팀프로젝트 개요</a>
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewTeamContent('TAC_210318132051d9d15aee', 'menu_00104','menu_00071');">
+														팀프로젝트 개요</a>
+												</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="tableList">
+												<li><a
+														href="javascript:ViewTeamContent('TAC_210318132051d9d15aee', 'menu_00104','menu_00071');">
+														팀프로젝트 개요</a>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-- //본문 content 부분 -->
+				</form>
+
+				<iframe name="hiddenFrame" width="0" height="0" frameborder="0" title="파일다운로드프레임"></iframe>
+
+				<script type="text/javascript">
+					$(document).ready(function () {
+						// 공유된 과목에 중복하여 수강신청된 경우 경고창 한번
+						var shareCourseDup = "null";
+						if (shareCourseDup != null && shareCourseDup != "" && shareCourseDup != "null") {
+							alert(shareCourseDup);
+
+							shareCourseDup = "";
+						}
+					});
+				</script>
+
+			</div>
+		</div>
+		<!-- 본문 종료 -->
+		<!-- 하단 bottom 부분 -->
+		<!-- footer 영역 부분 -->
+		<div id="footer">
+			<ul class="footerField">
+				<li class="logo">
+					<img src="/lmsdata/img/common/logo_b.png" alt="메디오피아 LMS6.0" border="0">
+				</li>
+				<li class="copyright">
+					<address>
+						<p>서울캠퍼스 : (04620) 서울특별시 중구 필동로 1길 30 (필동3가 26) Tel.02-2260-3114 Fax.02-2277-1274</p>
+						<p>경주캠퍼스 : (38066) 경상북도 경주시 동대로 123 동국대학교 경주캠퍼스, Tel.054-770-2114, Fax.054-770-2001</p>
+						<p>COPYRIGHT © 2017 DONGGUK UNIVERSITY SINCE 1906. ALL RIGHTS RESERVED.</p>
+					</address>
+				</li>
+			</ul>
+		</div>
+		<!-- //footer 영역 부분 -->
+	</div>
+</body>
+
+</html>

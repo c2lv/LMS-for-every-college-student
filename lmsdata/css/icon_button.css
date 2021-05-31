@@ -1,0 +1,1389 @@
+@charset "utf-8";
+/********************************************************************************************************
+ * 아이콘 설정 16*16픽셀
+*********************************************************************************************************/
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    *margin-right: .3em;
+    line-height: normal !important;
+    vertical-align: middle;
+    text-indent: -9999px;
+    background-image: url("/lmsdata/img/common/sprite16.png");
+    background-position: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+[class^="icon-"]:last-child,
+[class*=" icon-"]:last-child {
+    *margin-left: 0;
+}
+
+[class^="icon-"].filter {
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    *filter: none;
+}
+
+.icon-note-black {
+    background-position: 0px 0px;
+}
+
+.icon-note-white {
+    background-position: 0px -16px;
+}
+
+.icon-schedule-black {
+    background-position: -16px 0px;
+}
+
+.icon-schedule-white {
+    background-position: -16px -16px;
+}
+
+.icon-user-black {
+    background-position: -32px 0px;
+}
+
+.icon-user-white {
+    background-position: -32px -16px;
+}
+
+.icon-mobile-black {
+    background-position: -48px 0px;
+}
+
+.icon-mobile-white {
+    background-position: -48px -16px;
+}
+
+.icon-mail-black {
+    background-position: -64px 0px;
+}
+
+.icon-mail-white {
+    background-position: -64px -16px;
+}
+
+.icon-arrow-black {
+    background-position: -80px 0px;
+}
+
+.icon-arrow-white {
+    background-position: -80px -16px;
+}
+
+.icon-write-black {
+    background-position: -96px 0px;
+}
+
+.icon-write-white {
+    background-position: -96px -16px;
+}
+
+.icon-modify-black {
+    background-position: -112px 0px;
+}
+
+.icon-modify-white {
+    background-position: -112px -16px;
+}
+
+.icon-del-black {
+    background-position: -128px 0px;
+}
+
+.icon-del-white {
+    background-position: -128px -16px;
+}
+
+.icon-nbook-black {
+    background-position: -144px 0px;
+}
+
+.icon-nbook-white {
+    background-position: -144px -16px;
+}
+
+.icon-home-black {
+    background-position: -160px 0px;
+}
+
+.icon-home-white {
+    background-position: -160px -16px;
+}
+
+.icon-stats-black {
+    background-position: -176px 0px;
+}
+
+.icon-stats-white {
+    background-position: -176px -16px;
+}
+
+.icon-personal-black {
+    background-position: -192px 0px;
+}
+
+.icon-personal-white {
+    background-position: -192px -16px;
+}
+
+.icon-useradd-black {
+    background-position: -208px 0px;
+}
+
+.icon-useradd-white {
+    background-position: -208px -16px;
+}
+
+.icon-listadd-black {
+    background-position: -224px 0px;
+}
+
+.icon-listadd-white {
+    background-position: -224px -16px;
+}
+
+.icon-subject-black {
+    background-position: -240px 0px;
+}
+
+.icon-subject-white {
+    background-position: -240px -16px;
+}
+
+.icon-boxadd-black {
+    background-position: -256px 0px;
+}
+
+.icon-boxadd-white {
+    background-position: -256px -16px;
+}
+
+.icon-listleve-black {
+    background-position: -272px 0px;
+}
+
+.icon-listleve-white {
+    background-position: -272px -16px;
+}
+
+.icon-list-black {
+    background-position: 0px -32px;
+}
+
+.icon-list-white {
+    background-position: 0px -48px;
+}
+
+.icon-info-black {
+    background-position: -16px -32px;
+}
+
+.icon-info-white {
+    background-position: -16px -48px;
+}
+
+.icon-clock-black {
+    background-position: -32px -32px;
+}
+
+.icon-clock-white {
+    background-position: -32px -48px;
+}
+
+.icon-filelist-black {
+    background-position: -48px -32px;
+}
+
+.icon-filelist-white {
+    background-position: -48px -48px;
+}
+
+.icon-book-black {
+    background-position: -64px -32px;
+}
+
+.icon-book-white {
+    background-position: -64px -48px;
+}
+
+.icon-check-black {
+    background-position: -80px -32px;
+}
+
+.icon-check-white {
+    background-position: -80px -48px;
+}
+
+.icon-setup-black {
+    background-position: -96px -32px;
+}
+
+.icon-setup-white {
+    background-position: -96px -48px;
+}
+
+.icon-new-black {
+    background-position: -112px -32px;
+}
+
+.icon-new-white {
+    background-position: -112px -48px;
+}
+
+.icon-answer-black {
+    background-position: -128px -32px;
+}
+
+.icon-answer-white {
+    background-position: -128px -48px;
+}
+
+.icon-option-black {
+    background-position: -144px -32px;
+}
+
+.icon-option-white {
+    background-position: -144px -48px;
+}
+
+.icon-excel-black {
+    background-position: -160px -32px;
+}
+
+.icon-excel-white {
+    background-position: -160px -48px;
+}
+
+.icon-print-black {
+    background-position: -176px -32px;
+}
+
+.icon-print-white {
+    background-position: -176px -48px;
+}
+
+.icon-revise-black {
+    background-position: -192px -32px;
+}
+
+.icon-revise-white {
+    background-position: -192px -48px;
+}
+
+.icon-alignment-black {
+    background-position: -208px -32px;
+}
+
+.icon-alignment-white {
+    background-position: -208px -48px;
+}
+
+.icon-view-black {
+    background-position: -224px -32px;
+}
+
+.icon-view-white {
+    background-position: -224px -48px;
+}
+
+.icon-speaker-black {
+    background-position: -240px -32px;
+}
+
+.icon-speaker-white {
+    background-position: -240px -48px;
+}
+
+.icon-tag-black {
+    background-position: -256px -32px;
+}
+
+.icon-tag-white {
+    background-position: -256px -48px;
+}
+
+.icon-comm-black {
+    background-position: -272px -32px;
+}
+
+.icon-comm-white {
+    background-position: -272px -48px;
+}
+
+.icon-setup-small-black {
+    background-position: 0px -64px;
+}
+
+.icon-add-small-black {
+    background-position: -16px -64px;
+}
+
+.icon-modify-small-black {
+    background-position: -32px -64px;
+}
+
+.icon-del-small-black {
+    background-position: -48px -64px;
+}
+
+.icon-arrow-small-black {
+    background-position: -64px -64px;
+}
+
+.icon-grid-small-black {
+    background-position: -80px -64px;
+}
+
+.icon-img-small-black {
+    background-position: -96px -64px;
+}
+
+.icon-color-small-black {
+    background-position: -112px -64px;
+}
+
+.icon-head-small-black {
+    background-position: 0px -80px;
+}
+
+.icon-bold-small-black {
+    background-position: -16px -80px;
+}
+
+.icon-italic-small-black {
+    background-position: -32px -80px;
+}
+
+.icon-layout-befault-black {
+    background-position: -80px -80px;
+}
+
+.icon-layout-small-black {
+    background-position: -96px -80px;
+}
+
+.icon-layout-large-black {
+    background-position: -112px -80px;
+}
+
+.icon-medal-black {
+    background-position: -128px -64px;
+}
+
+.icon-medal-white {
+    background-position: -128px -80px;
+}
+
+.icon-question-black {
+    background-position: -144px -64px;
+}
+
+.icon-question-white {
+    background-position: -144px -80px;
+}
+
+.icon-disk-black {
+    background-position: -160px -64px;
+}
+
+.icon-disk-white {
+    background-position: -160px -80px;
+}
+
+.icon-turn-black {
+    background-position: -176px -64px;
+}
+
+.icon-turn-white {
+    background-position: -176px -80px;
+}
+
+.icon-cancel-black {
+    background-position: -192px -64px;
+}
+
+.icon-cancel-white {
+    background-position: -192px -80px;
+}
+
+.icon-upload-black {
+    background-position: -208px -64px;
+}
+
+.icon-upload-white {
+    background-position: -208px -80px;
+}
+
+.icon-kakao-black {
+    background-position: -224px -64px;
+}
+
+.icon-kakao-white {
+    background-position: -224px -80px;
+}
+
+.icon-circle2-black {
+    background-position: -240px -64px;
+}
+
+.icon-circle3-black {
+    background-position: -256px -64px;
+}
+
+.icon-film-black {
+    background-position: -272px -64px;
+}
+
+.icon-folder-black {
+    background-position: -240px -80px;
+}
+
+.icon-reply-black {
+    background-position: -256px -80px;
+}
+
+.icon-board-black {
+    background-position: -272px -80px;
+}
+
+.icon-fold-color {
+    background-position: 0px -96px;
+}
+
+.icon-unfold-color {
+    background-position: -16px -96px;
+}
+
+.icon-home-color {
+    background-position: -32px -96px;
+}
+
+.icon-notice-color {
+    background-position: -48px -96px;
+}
+
+.icon-list-color {
+    background-position: -64px -96px;
+}
+
+.icon-question-color {
+    background-position: -80px -96px;
+}
+
+.icon-clock-color {
+    background-position: -96px -96px;
+}
+
+.icon-house-color {
+    background-position: -112px -96px;
+}
+
+.icon-hat-color {
+    background-position: -128px -96px;
+}
+
+.icon-team-color {
+    background-position: -144px -96px;
+}
+
+.icon-formadd-color {
+    background-position: -160px -96px;
+}
+
+.icon-scale-color {
+    background-position: -176px -96px;
+}
+
+.icon-calculator-color {
+    background-position: -192px -96px;
+}
+
+.icon-upload-color {
+    background-position: -208px -96px;
+}
+
+.icon-chart-color {
+    background-position: -224px -96px;
+}
+
+.icon-credit-color {
+    background-position: -240px -96px;
+}
+
+.icon-folder-color {
+    background-position: -256px -96px;
+}
+
+.icon-reportadd-color {
+    background-position: -272px -96px;
+}
+
+.icon-monitor-color {
+    background-position: 0px -112px;
+}
+
+.icon-admin-color {
+    background-position: -16px -112px;
+}
+
+.icon-tool-color {
+    background-position: -32px -112px;
+}
+
+.icon-medal-gold-color {
+    background-position: -48px -112px;
+}
+
+.icon-medal-bronze-color {
+    background-position: -64px -112px;
+}
+
+.icon-medal-silver-color {
+    background-position: -80px -112px;
+}
+
+.icon-exclam-color {
+    background-position: -96px -112px;
+}
+
+.icon-data-color {
+    background-position: -112px -112px;
+}
+
+.icon-img-color {
+    background-position: -128px -112px;
+}
+
+.icon-board-num-color {
+    background-position: -144px -112px;
+}
+
+.icon-board-add-color {
+    background-position: -160px -112px;
+}
+
+.icon-page-setup-color {
+    background-position: -176px -112px;
+}
+
+.icon-help-color {
+    background-position: -192px -112px;
+}
+
+.icon-random-color {
+    background-position: -208px -112px;
+}
+
+.icon-project-color {
+    background-position: -224px -112px;
+}
+
+.icon-category-color {
+    background-position: -240px -112px;
+}
+
+.icon-circle-color {
+    background-position: -256px -112px;
+}
+
+.icon-lock-color {
+    background-position: -272px -112px;
+}
+
+.icon-white-color {
+    background-position: 0px -128px;
+}
+
+.icon-modify-color {
+    background-position: -16px -128px;
+}
+
+.icon-cancel-color {
+    background-position: -32px -128px;
+}
+
+.icon-save-color {
+    background-position: -48px -128px;
+}
+
+.icon-persons-color {
+    background-position: -64px -128px;
+}
+
+.icon-eraser-color {
+    background-position: -80px -128px;
+}
+
+.icon-phone-color {
+    background-position: -96px -128px;
+}
+
+.icon-balloon-color {
+    background-position: -112px -128px;
+}
+
+.icon-mail-color {
+    background-position: -128px -128px;
+}
+
+.icon-preview-color {
+    background-position: -144px -128px;
+}
+
+.icon-excel-color {
+    background-position: -160px -128px;
+}
+
+.icon-print-color {
+    background-position: -176px -128px;
+}
+
+.icon-openbook-color {
+    background-position: -192px -128px;
+}
+
+.icon-calendar-color {
+    background-position: -208px -128px;
+}
+
+.icon-bank-color {
+    background-position: -224px -128px;
+}
+
+.icon-system-color {
+    background-position: -240px -128px;
+}
+
+.icon-collection-color {
+    background-position: -256px -128px;
+}
+
+.icon-download-color {
+    background-position: -272px -128px;
+}
+
+.icon-answer-small-color {
+    background-position: 0px -144px;
+}
+
+.icon-modify-small-color {
+    background-position: -16px -144px;
+}
+
+.icon-cancle-small-color {
+    background-position: -32px -144px;
+}
+
+.icon-print-small-color {
+    background-position: -48px -144px;
+}
+
+.icon-phone-small-color {
+    background-position: -64px -144px;
+}
+
+.icon-balloon-small-color {
+    background-position: -80px -144px;
+}
+
+.icon-mail-small-color {
+    background-position: -96px -144px;
+}
+
+.icon-person-small-color {
+    background-position: -112px -144px;
+}
+
+.icon-report-small-color {
+    background-position: -128px -144px;
+}
+
+.icon-add-small-color {
+    background-position: -144px -144px;
+}
+
+.icon-note-small-color {
+    background-position: -160px -144px;
+}
+
+.icon-check-small-color {
+    background-position: -176px -144px;
+}
+
+.icon-exam-small-color {
+    background-position: -192px -144px;
+}
+
+.icon-must-small-color {
+    background-position: -208px -144px;
+}
+
+.icon-pie-small-color {
+    background-position: -224px -144px;
+}
+
+.icon-folder-small-color {
+    background-position: -240px -144px;
+}
+
+.icon-document-small-color {
+    background-position: -256px -144px;
+}
+
+.icon-del-small-color {
+    background-position: -272px -144px;
+}
+
+.icon-arrow-small-color {
+    background-position: 0px -160px;
+}
+
+.icon-date-small-color {
+    background-position: -16px -160px;
+}
+
+.icon-size-small-color {
+    background-position: -32px -160px;
+}
+
+.icon-arrowup-small-color {
+    background-position: -48px -160px;
+}
+
+.icon-arrowdown-small-color {
+    background-position: -64px -160px;
+}
+
+.icon-full-small-color {
+    background-position: -80px -160px;
+}
+
+.icon-empty-small-color {
+    background-position: -96px -160px;
+}
+
+.icon-half-small-color {
+    background-position: -112px -160px;
+}
+
+.icon-person-minus-color {
+    background-position: -128px -160px;
+}
+
+.icon-recom-color {
+    background-position: -144px -160px;
+}
+
+.icon-star-color {
+    background-position: -160px -160px;
+}
+
+.icon-compare-color {
+    background-position: -176px -160px;
+}
+
+.icon-folder-move-color {
+    background-position: -192px -160px;
+}
+
+.icon-stop-color {
+    background-position: -208px -160px;
+}
+
+.icon-marker-color {
+    background-position: -224px -160px;
+}
+
+.icon-marker-pencil-color {
+    background-position: -240px -160px;
+}
+
+.icon-upload-color {
+    background-position: -256px -160px;
+}
+
+.icon-disable-small-color {
+    background-position: -272px -160px;
+}
+
+.icon-kakao-color {
+    background-position: 0px -176px;
+}
+
+.icon-arrowleft-color {
+    background-position: -16px -176px;
+}
+
+.icon-arrowright-color {
+    background-position: -32px -176px;
+}
+
+.icon-magnifier-color {
+    background-position: -48px -176px;
+}
+
+.icon-bell-color {
+    background-position: -64px -176px;
+}
+
+.icon-code-color {
+    background-position: -80px -176px;
+}
+
+.icon-post-color {
+    background-position: -96px -176px;
+}
+
+.icon-message-color {
+    background-position: -112px -176px;
+}
+
+.icon-download-black {
+    background-position: -128px -176px;
+}
+
+.icon-message-not-color {
+    background-position: -144px -176px;
+}
+
+.icon-message-read-color {
+    background-position: -160px -176px;
+}
+
+.icon-diagram-color {
+    background-position: -176px -176px;
+}
+
+.icon-film-color {
+    background-position: -192px -176px;
+}
+
+.icon-fold-plus-color {
+    background-position: -208px -176px;
+}
+
+.icon-unfold-plus-color {
+    background-position: -224px -176px;
+}
+
+.icon-mail-receive-color {
+    background-position: -240px -176px;
+}
+
+.icon-document-small-black {
+    background-position: 0px -192px;
+}
+
+.icon-box-small-black {
+    background-position: -16px -192px;
+}
+
+.icon-book-small-black {
+    background-position: -32px -192px;
+}
+
+.icon-point-small-black {
+    background-position: -48px -192px;
+}
+
+.icon-graph-small-black {
+    background-position: -64px -192px;
+}
+
+.icon-code-small-black {
+    background-position: -80px -192px;
+}
+
+.icon-people-small-black {
+    background-position: -96px -192px;
+}
+
+.icon-folder-small-black {
+    background-position: -112px -192px;
+}
+
+.icon-earth-small-black {
+    background-position: -128px -192px;
+}
+
+.icon-state-small-black {
+    background-position: -144px -192px;
+}
+
+.icon-up-small-black {
+    background-position: -160px -192px;
+}
+
+.icon-down-small-black {
+    background-position: -176px -192px;
+}
+
+.icon-arrowthick-small-black {
+    background-position: -192px -192px;
+}
+
+.icon-calendar-small-black {
+    background-position: -208px -192px;
+}
+
+.icon-home-small {
+    background-position: -224px -192px;
+}
+
+.icon-arrow-small {
+    background-position: -240px -192px;
+}
+
+.icon-bullet-square {
+    background-position: -256px -192px;
+}
+
+.icon-new-color {
+    background-position: -272px -192px;
+}
+
+/********************************************************************************************************
+ * 아이콘 설정 32*32픽셀
+*********************************************************************************************************/
+
+[class^="icon32-"],
+[class*=" icon32-"] {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: normal !important;
+    vertical-align: middle;
+    text-indent: -9999px;
+    background-image: url("/lmsdata/img/common/sprite32.png");
+    background-position: 32px 32px;
+    background-repeat: no-repeat;
+}
+
+.icon32-option {
+    background-position: 0px 0px;
+}
+
+.icon32-menu {
+    background-position: -32px 0px;
+}
+
+.icon32-film {
+    background-position: -32px 0px;
+}
+
+.icon32-file {
+    background-position: -64px 0px;
+}
+
+.icon32-main {
+    background-position: 0px -32px;
+}
+
+.icon32-mypage {
+    background-position: -32px -32px;
+}
+
+.icon32-admin {
+    background-position: -64px -32px;
+}
+
+.icon32-home {
+    background-position: 0px -128px;
+}
+
+.icon32-pancil {
+    background-position: -32px -128px;
+}
+
+.icon32-image {
+    background-position: -64px -128px;
+}
+
+.icon32-paste {
+    background-position: -96px -128px;
+}
+
+.icon32-chart {
+    background-position: -128px -128px;
+}
+
+.icon32-tools {
+    background-position: -160px -128px;
+}
+
+.icon32-people {
+    background-position: -192px -128px;
+}
+
+.icon32-note {
+    background-position: -224px -128px;
+}
+
+.icon32-homepage {
+    background-position: -256px -128px;
+}
+
+.icon32-message {
+    background-position: -288px -128px;
+}
+
+/*2016-03-14 추가*/
+
+.icon32-userbook {
+    background-position: 0px -160px;
+}
+
+.icon32-community {
+    background-position: -32px -160px;
+}
+
+/********************************************************************************************************
+ * BASIC 버튼 설정
+*********************************************************************************************************/
+
+.btn {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+    padding: 4px 10px 4px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    *line-height: 20px;
+    font-weight: 500;
+    color: #666;
+    text-indent: 0;
+    text-align: center;
+    /* 	text-shadow:0 1px 1px rgba(255, 255, 255, 0.75); */
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#e6e6e6));
+    background: -webkit-linear-gradient(#fff, #e6e6e6);
+    background: -moz-linear-gradient(#fff, #e6e6e6);
+    background: -ms-linear-gradient(#fff, #e6e6e6);
+    background: -o-linear-gradient(#fff, #e6e6e6);
+    background: linear-gradient(#fff, #e6e6e6);
+    -webkit-box-shadow: #ededed 1px 1px 3px;
+    -moz-box-shadow: #ededed 1px 1px 3px;
+    box-shadow: #ededed 1px 1px 3px;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border: 1px solid #cccccc;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.btn:hover {
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#cdcdcd));
+    background: -webkit-linear-gradient(#fff, #cdcdcd);
+    background: -moz-linear-gradient(#fff, #cdcdcd);
+    background: -ms-linear-gradient(#fff, #cdcdcd);
+    background: -o-linear-gradient(#fff, #cdcdcd);
+    background: linear-gradient(#fff, #cdcdcd);
+}
+
+.btn_dotted {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    *zoom: 1;
+    padding: 4px 10px 4px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    *line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-indent: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px dotted rgba(255, 255, 255, 0.4);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.btn_dotted:hover {
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.large {
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.small {
+    padding: 2px 6px;
+    *padding: 2px 4px;
+    line-height: 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.mini {
+    padding: 1px 4px;
+    *padding: 0 6px;
+    font-size: 11px;
+    height: 14px;
+    *height: 16px;
+    line-height: 14px;
+    *line-height: 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.disable {
+    cursor: default;
+    text-decoration: line-through !important;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e6e6e6), to(#fff));
+    background: -webkit-linear-gradient(#e6e6e6, #fff);
+    background: -moz-linear-gradient(#e6e6e6, #fff);
+    background: -ms-linear-gradient(#e6e6e6, #fff);
+    background: -o-linear-gradient(#e6e6e6, #fff);
+    background: linear-gradient(#e6e6e6, #fff);
+}
+
+.disable:hover {
+    color: #666;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e6e6e6), to(#fff));
+    background: -webkit-linear-gradient(#e6e6e6, #fff);
+    background: -moz-linear-gradient(#e6e6e6, #fff);
+    background: -ms-linear-gradient(#e6e6e6, #fff);
+    background: -o-linear-gradient(#e6e6e6, #fff);
+    background: linear-gradient(#e6e6e6, #fff);
+}
+
+/********************************************************************************************************
+ * COLOR 버튼 설정
+*********************************************************************************************************/
+
+.btn-orange {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(80, 80, 80, 0.75) !important;
+    border-color: #E6880B;
+    background: #FEBC3C;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FEBC3C), to(#E6880B));
+    background: -webkit-linear-gradient(#FEBC3C, #E6880B);
+    background: -moz-linear-gradient(#FEBC3C, #E6880B);
+    background: -ms-linear-gradient(#FEBC3C, #E6880B);
+    background: -o-linear-gradient(#FEBC3C, #E6880B);
+    background: linear-gradient(#FEBC3C, #E6880B);
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background: #FEA83C;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FEA83C), to(#E6650B));
+    background: -webkit-linear-gradient(#FEA83C, #E6650B);
+    background: -moz-linear-gradient(#FEA83C, #E6650B);
+    background: -ms-linear-gradient(#FEA83C, #E6650B);
+    background: -o-linear-gradient(#FEA83C, #E6650B);
+    background: linear-gradient(#FEA83C, #E6650B);
+}
+
+/********************************************************************************************************
+ * COLOR 버튼 설정
+*********************************************************************************************************/
+
+.btn-blue {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(80, 80, 80, 0.75) !important;
+    border-color: #2298d1;
+    background: #68BCE4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#68BCE4), to(#2298d1));
+    background: -webkit-linear-gradient(#68BCE4, #2298d1);
+    background: -moz-linear-gradient(#68BCE4, #2298d1);
+    background: -ms-linear-gradient(#68BCE4, #2298d1);
+    background: -o-linear-gradient(#68BCE4, #2298d1);
+    background: linear-gradient(#68BCE4, #2298d1);
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background: #68ADE4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#68ADE4), to(#2280D1));
+    background: -webkit-linear-gradient(#68ADE4, #2280D1);
+    background: -moz-linear-gradient(#68ADE4, #2280D1);
+    background: -ms-linear-gradient(#68ADE4, #2280D1);
+    background: -o-linear-gradient(#68ADE4, #2280D1);
+    background: linear-gradient(#68ADE4, #2280D1);
+}
+
+/********************************************************************************************************
+ * COLOR 버튼 설정
+*********************************************************************************************************/
+
+.btn-red {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(80, 80, 80, 0.75) !important;
+    border-color: #DE5A5A;
+    background: #ED9589;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ED9589), to(#DE5A5A));
+    background: -webkit-linear-gradient(#ED9589, #DE5A5A);
+    background: -moz-linear-gradient(#ED9589, #DE5A5A);
+    background: -ms-linear-gradient(#ED9589, #DE5A5A);
+    background: -o-linear-gradient(#ED9589, #DE5A5A);
+    background: linear-gradient(#ED9589, #DE5A5A);
+}
+
+.btn-red:hover {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(80, 80, 80, 0.75) !important;
+    background: #E77C70;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#E77C70), to(#D63F59));
+    background: -webkit-linear-gradient(#E77C70, #D63F59);
+    background: -moz-linear-gradient(#E77C70, #D63F59);
+    background: -ms-linear-gradient(#E77C70, #D63F59);
+    background: -o-linear-gradient(#E77C70, #D63F59);
+    background: linear-gradient(#E77C70, #D63F59);
+}
+
+/********************************************************************************************************
+ * COLOR 버튼 설정
+*********************************************************************************************************/
+
+.btn-green {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(80, 80, 80, 0.75) !important;
+    border-color: #23A41A;
+    background: #47C83E;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#47C83E), to(#23A41A));
+    background: -webkit-linear-gradient(#47C83E, #23A41A);
+    background: -moz-linear-gradient(#47C83E, #23A41A);
+    background: -ms-linear-gradient(#47C83E, #23A41A);
+    background: -o-linear-gradient(#47C83E, #23A41A);
+    background: linear-gradient(#47C83E, #23A41A);
+}
+
+.btn-green:hover {
+    color: #fff;
+    background: #35B62C;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#35B62C), to(#23A41A));
+    background: -webkit-linear-gradient(#35B62C, #23A41A);
+    background: -moz-linear-gradient(#35B62C, #23A41A);
+    background: -ms-linear-gradient(#35B62C, #23A41A);
+    background: -o-linear-gradient(#35B62C, #23A41A);
+    background: linear-gradient(#35B62C, #23A41A);
+}
+
+/********************************************************************************************************
+ * 붙어있는 버튼 설정
+*********************************************************************************************************/
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+    margin: 0 auto;
+    *zoom: 1;
+}
+
+.btn-group:before,
+.btn-group:after {
+    display: table;
+    content: "";
+}
+
+.btn-group:after {
+    clear: both;
+}
+
+.btn-group:first-child {
+    *margin-left: 0;
+}
+
+.btn-group+.btn-group {
+    margin-left: 5px;
+}
+
+.btn-group>.btn {
+    float: left;
+    margin-top: 0;
+    margin-left: -1px;
+    margin-right: 0;
+    *line-height: 16px;
+    padding: 0 6px !important;
+    *padding: 0px !important;
+    font-weight: 500;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    *zoom: 1;
+}
+
+.btn-group>.btn:first-child {
+    margin-left: 0;
+    -webkit-border-top-left-radius: 4px !important;
+    -moz-border-radius-topleft: 4px !important;
+    border-top-left-radius: 4px !important;
+    -webkit-border-bottom-left-radius: 4px !important;
+    -moz-border-radius-bottomleft: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+.btn-group>.btn:last-child {
+    -webkit-border-top-right-radius: 4px !important;
+    -moz-border-radius-topright: 4px !important;
+    border-top-right-radius: 4px !important;
+    -webkit-border-bottom-right-radius: 4px !important;
+    -moz-border-radius-bottomright: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+/********************************************************************************************************
+ * HOVER-COLOR 버튼 설정
+*********************************************************************************************************/
+
+.hover-green:hover {
+    color: #3c510b;
+    border-color: #77b61d;
+    background: #c2e467;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#b2d456), to(#7eab14));
+    background: -webkit-linear-gradient(#b2d456, #7eab14);
+    background: -moz-linear-gradient(#b2d456, #7eab14);
+    background: -ms-linear-gradient(#b2d456, #7eab14);
+    background: -o-linear-gradient(#b2d456, #7eab14);
+    background: linear-gradient(#b2d456, #7eab14);
+}
+
+.btn-active,
+.btn-active:hover {
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(80, 80, 80, 0.75) !important;
+    border-color: #2298d1;
+    background: #68BCE4;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#68BCE4), to(#2298d1));
+    background: -webkit-linear-gradient(#68BCE4, #2298d1);
+    background: -moz-linear-gradient(#68BCE4, #2298d1);
+    background: -ms-linear-gradient(#68BCE4, #2298d1);
+    background: -o-linear-gradient(#68BCE4, #2298d1);
+    background: linear-gradient(#68BCE4, #2298d1);
+}

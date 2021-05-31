@@ -1,0 +1,1487 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*#Cover {width:100%; overflow:hidden;}*/
+
+/* 내 강의실 상단 CSS */
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 57px;
+    background: #3b3c40 url(../img/common/bg_pattern.png) repeat-x;
+    z-index: 1000;
+}
+
+#header div.topCover {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header div.topCover h1 {}
+
+#header div.topCover p {
+    float: left;
+    padding: 0 12px;
+    text-align: center;
+}
+
+#header div.topCover p a {
+    display: block;
+    padding: 8px 0;
+    font-size: 24px;
+}
+
+#header div.topCover p a span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: -1px;
+    vertical-align: middle;
+}
+
+#header div.topCover ul.util {
+    float: right;
+    height: 55px;
+    line-height: 55px;
+    overflow: hidden;
+}
+
+#header div.topCover ul.util li {
+    float: left;
+    margin-right: 1px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#header div.topCover ul.util li a {
+    display: block;
+}
+
+#header div.topCover ul.util li span {}
+
+#header div.topCover ul.util .photoInfo {
+    float: left;
+    margin-top: 6px;
+    width: 44px;
+    height: 44px;
+}
+
+#header div.topCover ul.util .photoInfo img {
+    width: 100%;
+    height: 100%;
+}
+
+#header div.topCover ul.util dl {
+    float: left;
+    line-height: 22px;
+    margin: 5px 0 5px 10px;
+    overflow: hidden;
+}
+
+#header div.topCover ul.util dl dt {
+    text-align: left;
+    color: #d7d7d7;
+}
+
+#header div.topCover ul.util dl dd {
+    float: left;
+    padding: 0 10px;
+    font-size: 11px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #2d2f33;
+    background: #4d525b;
+}
+
+#header div.topCover ul.util dl dd a {
+    color: #d7d7d7;
+}
+
+#header div.topCover ul.util dl dd a:hover {
+    color: #fff;
+}
+
+/* 상단 글 작성하기 박스 CSS */
+
+#header div.topCover div.drawBox {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    width: 400px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: #666 2px 2px 8px;
+    background: #3b3c40 url(../img/common/bg_pattern.png) repeat;
+    z-index: 100;
+}
+
+#header div.topCover div.drawBox .topLine {
+    height: 2px;
+    padding-top: 10px;
+    background: url(../img/common/tb.gif) repeat-x;
+}
+
+#header div.topCover div.drawBox ul.content {
+    overflow: hidden;
+}
+
+#header div.topCover div.drawBox ul.content li.row {
+    padding: 0 10px 10px 10px;
+}
+
+#header div.topCover div.drawBox ul.content li.row .head {
+    width: 100%;
+    height: 24px;
+    text-indent: 5px;
+    color: #acacac;
+    border-radius: 4px;
+    border: 1px solid #2d2f33;
+    background: #3e4146;
+}
+
+#header div.topCover div.drawBox ul.button {
+    float: right;
+    display: inline;
+    padding: 0 10px 10px 10px;
+    overflow: hidden;
+}
+
+#header div.topCover div.drawBox ul.button li {
+    display: inline;
+    margin-left: 5px;
+}
+
+#header div.topCover div.drawBox ul.button li a {
+    color: #333;
+}
+
+#header div.topCover div.drawBox ul.button li a:hover {
+    color: #333;
+}
+
+#header div.topCover div.drawBox ul.button li .btn {
+    box-shadow: #000 1px 1px 3px;
+}
+
+/* 내 강의실 상단 이미지 컨텐츠 CSS */
+
+#container {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 57px;
+    background: #fff url(../img/classroom/aside_bg.gif) repeat-y;
+}
+
+#container:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/*#headerContent {width:100%; height:170px; overflow:hidden; background:url(../img/classroom/design_templet/visual_img_large01.jpg) repeat;}*/
+
+#headerContent h1 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 800;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    text-shadow: white 2px 2px 0px, /* right down */
+    white -2px 2px 0px, /* left  down */
+    white -2px -2px 0px, /* right up   */
+    white 2px -2px 0px, /* left  up   */
+    /** next 4 shadows improve rendering */
+    white 2px 0px 0px, /* right */
+    white -2px 0px 0px, /* left  */
+    white 0px 2px 0px, /* down  */
+    white 0px -2px 0px, /* up    */
+    /** lets add some blurred shadow to make it
+			look a little nicer */
+    black 3px 3px 7px;
+    letter-spacing: 2px;
+}
+
+/*#headerContent h1 a {color:#333;}*/
+
+#headerContent div.classSection {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #666;
+    background: url(../img/common/opacity_bg_white.png) repeat;
+}
+
+#headerContent div.classSection ul.post {
+    width: 30%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #000;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+#headerContent div.classSection ul.post .headerListClass {
+    width: 100%;
+    color: #fff;
+}
+
+#headerContent div.classSection ul.post span {
+    color: #fff;
+    overflow: hidden;
+}
+
+#headerContent div.classSection ul.post span.exp {
+    padding: 5px;
+    display: inline-block;
+    height: 44px;
+}
+
+/* 투명도 상속을 막기 위한 독립적 DIV */
+
+#headerContent div.classSection ul.postCover {
+    position: absolute;
+    width: 600px;
+    top: 4px;
+    right: 4px;
+    *top: 6px;
+    *right: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#headerContent div.classSection ul.postCover li.tphoto {
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin-right: 5px;
+    border: 1px solid #b7b7b7;
+}
+
+#headerContent div.classSection ul.postCover li.tinfoList {
+    float: right;
+    width: 535px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #ececec;
+    border: 1px solid #b7b7b7;
+}
+
+#headerContent div.classSection ul.postCover li.tinfoList .headerListPro {
+    width: 100%;
+    color: #666;
+}
+
+.headerListClass th,
+.headerListClass td,
+.headerListPro th,
+.headerListPro td {
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background: url(../img/common/border_grid.gif) right 50% no-repeat;
+}
+
+.headerListClass th,
+.headerListPro th {
+    border-bottom: 1px solid #bebebe;
+}
+
+.headerListClass span {
+    padding: 2px 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #555;
+    background: #333;
+}
+
+.headerListClass span a {
+    color: #fff;
+}
+
+/* .headerListClass td.clip {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;} */
+
+#conArea {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background: url(../img/classroom/conarea_bg.gif) repeat-x;
+    z-index: 101;
+}
+
+#conArea div.class_sbox {
+    float: left;
+    width: 204px;
+    height: 48px;
+    padding: 13px 8px;
+    line-height: 48px;
+    *line-height: normal !important;
+    border-right: 1px solid #CCC;
+    box-sizing: border-box;
+}
+
+#conArea div.class_sbox select {
+    width: 187px;
+}
+
+#conArea ul.proFunction {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    z-index: 100;
+}
+
+#conArea ul.proFunction li {
+    float: left;
+    margin-right: 5px;
+    line-height: normal !important;
+}
+
+#conArea div.handleTop {
+    clear: both;
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    margin-left: -60px;
+    width: 121px;
+    height: 16px;
+    z-index: 100;
+}
+
+#aside {
+    float: left;
+    width: 204px;
+    height: 100%;
+    border-left: 1px solid #c4c6ce;
+    border-right: 1px solid #c4c6ce;
+    box-sizing: border-box;
+    background: #e3e4e9;
+    z-index: 100;
+}
+
+#aside ul.lnb {
+    width: 100%;
+}
+
+#aside ul.lnb li {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#aside ul.lnb h3 {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
+    font-size: 14px;
+    color: #ebebeb;
+    background: #67686c url(../img/common/lnb_h3_bg.png) no-repeat;
+}
+
+/*#aside ul.lnb h3 a {font-size:14px; color:#ebebeb;}*/
+
+#aside ul.lnb h3.open {
+    background-position: 0px -40px;
+}
+
+#aside ul.lnb li ul.menuSub {
+    overflow: hidden;
+    display: none;
+}
+
+#aside ul.lnb li ul.menuSub li {
+    width: 204px;
+    height: 34px;
+    line-height: 34px;
+    font-weight: 500;
+    font-size: 13px;
+    border-top: 1px solid #858b95;
+    border-bottom: 1px solid #b0b3bd;
+}
+
+#aside ul.lnb li ul.menuSub li a {
+    display: block;
+    padding-left: 20px;
+    color: #3e3e3f;
+    background: #9fa4b1 url(../img/common/lnb_sub_bg.png) no-repeat;
+}
+
+#aside ul.lnb li ul.menuSub li a:hover {
+    color: #000;
+    background-position: 0px -34px;
+}
+
+#aside ul.lnb span {
+    position: absolute;
+    top: 9px;
+    right: 60px;
+    display: inline-block;
+    text-indent: 0 !important;
+}
+
+#aside ul.lnb li:hover div.menuSubHover {
+    display: block;
+}
+
+#aside ul.lnb li div.menuSubHover {
+    display: none;
+}
+
+#aside ul.lnb li div.menuSubHover ul {
+    position: absolute;
+    top: 0;
+    left: 202px;
+    width: 200px;
+    height: auto;
+    min-height: 41px;
+    overflow: hidden;
+    background: #67686c url(../img/common/lnb_over_bg.png) no-repeat;
+    -webkit-border-radius: :0 7px 7px 0;
+    -moz-border-radius: 0 7px 7px 0;
+    border-radius: 0 7px 7px 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    z-index: 11;
+}
+
+#aside ul.lnb li div.menuSubHover ul li {
+    float: right;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 10px;
+    background: url(../img/common/lnb_over_line.png) 0 bottom repeat-x;
+    cursor: pointer;
+}
+
+#aside ul.lnb li div.menuSubHover ul li.last {
+    background: none;
+}
+
+#aside ul.lnb li div.menuSubHover ul li a {
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    color: #b7b7b7;
+}
+
+#aside ul.lnb li div.menuSubHover ul li a:hover {
+    color: #fff;
+}
+
+#aside ul.lnb li.on div.menuSubHover {
+    display: none !important;
+}
+
+#aside #todayList {
+    position: relative;
+    clear: both;
+    width: 100%;
+    padding-top: 30px;
+}
+
+/* #aside #todayList h2 {margin-left:10px; padding-bottom:10px;} */
+
+#aside #todayList h2 {
+    width: calc(100% - 40px);
+    margin-left: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#aside #todayList a.bx-prev {
+    position: absolute;
+    top: 32px;
+    left: 154px;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    background: url(../img/common/btn_up.png) no-repeat;
+    z-index: 1;
+}
+
+#aside #todayList a.bx-next {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    background: url(../img/common/btn_down.png) no-repeat;
+    z-index: 1;
+}
+
+#aside #todayList ul.bxslider {
+    margin-bottom: 40px;
+    background: #fff;
+    overflow: hidden;
+}
+
+#aside #todayList ul.bxslider ul.listNum {
+    width: 184px;
+    height: 60px;
+    margin: 0 10px;
+    padding: 5px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#aside #todayList ul.bxslider ul.listNum li {
+    float: left;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#aside #todayList ul.bxslider ul.listNum li.dateBar {
+    width: 5px;
+    height: 60px;
+    margin-right: 5px;
+}
+
+#aside #todayList ul.bxslider ul.listNum li h3,
+h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#aside #todayList ul.bxslider ul.listNum li span {
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+/* 내 강의실 내용 컨텐츠 CSS */
+
+#bodyContent {
+    position: relative;
+    width: auto;
+    min-height: 680px;
+    padding: 36px 18px;
+    overflow-x: hidden;
+}
+
+#bodyContent div.contentTitle {
+    padding-bottom: 36px;
+    overflow: hidden;
+}
+
+#bodyContent div.contentTitle h2 {
+    float: left;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+#bodyContent div.contentTitle ul.location {
+    float: right;
+    border: 1px solid #cccccc;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#bodyContent div.contentTitle ul.location li {
+    float: left;
+    padding: 8px 5px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-left: 1px solid #e1e1e1;
+}
+
+#bodyContent div.contentTitle ul.location li:first-child {
+    border-left: none;
+}
+
+/* 내 강의실 하단 내용 컨텐츠 CSS */
+
+#footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+    border-top: 5px solid #cdcdcd;
+    background: #f3f3f3 url(../img/common/bg_pattern.png) repeat;
+    z-index: 9;
+}
+
+#footer ul.footerField {
+    width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+#footer ul.footerField li.logo {
+    float: left;
+    width: 204px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+#footer ul.footerField li.copyright {
+    margin-left: 204px;
+}
+
+#footer ul.footerField li.copyright address {
+    height: 18px;
+    line-height: 18px;
+    font-size: 11px;
+    font-style: normal;
+    color: #a1a1a1;
+}
+
+#footer ul.footerField li.copyright address span {
+    font-weight: 500;
+    color: #898989;
+}
+
+/* Classroom 학습목차 CSS */
+
+#bodyContent ul.iconExp {
+    padding: 10px;
+    overflow: hidden;
+}
+
+#bodyContent ul.iconExp li {
+    float: left;
+    margin-right: 10px;
+}
+
+#bodyContent ul.iconExp li span {
+    padding: 1px 3px;
+    line-height: 16px;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+#bodyContent ul.iconExp li span.on {
+    color: #2868a2;
+    border: 1px solid #bbd6ee;
+    background: #dae2e7;
+}
+
+#bodyContent ul.iconExp li span.off {
+    color: #bd442b;
+    border: 1px solid #f1cbc2;
+    background: #e6dcdb;
+}
+
+#bodyContent p.arrowLeft {
+    position: absolute;
+    top: 22px;
+    left: 14%;
+    z-index: 10;
+}
+
+#bodyContent p.arrowRight {
+    position: absolute;
+    top: 22px;
+    right: 1%;
+    z-index: 10;
+}
+
+#bodyContent p.now {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -60px;
+    width: 37px;
+    height: 61px;
+    z-index: 10;
+}
+
+#bodyContent p.firstNow {
+    position: absolute;
+    top: -5px;
+    left: 43%;
+    margin-left: -60px;
+    width: 37px;
+    height: 61px;
+    z-index: 10;
+}
+
+#bodyContent p.endtNow {
+    position: absolute;
+    top: -5px;
+    left: 79%;
+    margin-left: -60px;
+    width: 37px;
+    height: 61px;
+    z-index: 10;
+}
+
+/* 디자인설정 컨텐츠 영역 */
+
+#listBox div.listContent ul.designLayout,
+#listBox div.listContent ul.designImg {
+    padding: 10px;
+    text-align: center;
+}
+
+#listBox div.listContent ul.designImg:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#listBox div.listContent ul.designLayout li {
+    display: inline-block;
+    width: 22%;
+    margin: 0 2%;
+}
+
+#listBox div.listContent ul.designLayout li dl dt {
+    overflow: hidden;
+    text-align: center;
+}
+
+#listBox div.listContent ul.designLayout li dl dt img {
+    width: 100%;
+    height: 100%;
+    max-width: 206px;
+    max-height: 206px;
+}
+
+#listBox div.listContent ul.designLayout li dl dd {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#listBox div.listContent ul.designLayout li dl dd input[type="radio"] {
+    height: 22px;
+    margin-right: 5px
+}
+
+#listBox div.listContent ul.designImg li {
+    float: left;
+    width: 8%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+#listBox div.listContent ul.designImg li img {
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+    max-height: 80px;
+    cursor: pointer;
+}
+
+#listBox div.listContent ul.designImg input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#listBox div.listContent ul.designImg label {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+#listBox div.listContent ul.designImg label.on {
+    border: 1px solid #000;
+    background: url(../img/classroom/btn_thumb_on.png) no-repeat;
+    background-size: cover;
+}
+
+#listBox div.listContent ul.designImg label.on img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+#listBox div.listContent ul.designImga {
+    padding: 10px;
+}
+
+#listBox div.listContent ul.designImga:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#listBox div.listContent ul.designImga li {
+    float: left;
+    width: 8%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+#listBox div.listContent ul.designImga li img {
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+    max-height: 80px;
+    cursor: pointer;
+}
+
+#listBox div.listContent ul.designImga input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#listBox div.listContent ul.designImga label {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+#listBox div.listContent ul.designImga label.on {
+    border: 1px solid #000;
+    background: url(../img/classroom/btn_thumb_on.png) no-repeat;
+    background-size: cover;
+}
+
+#listBox div.listContent ul.designImga label.on img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+#listBox div.listContent dl.file {
+    margin: 0 0 10px 10px;
+    height: 22px;
+    line-height: 22px;
+}
+
+#listBox div.listContent dl.file dt {
+    float: left;
+    margin-right: 10px;
+}
+
+#listBox div.listContent dl.file dd {
+    float: left;
+    margin-right: 10px;
+}
+
+#listBox div.listContent ul.designColor {
+    padding: 10px;
+    overflow: hidden;
+}
+
+#listBox div.listContent ul.designColor li {
+    float: left;
+    margin-right: 20px;
+}
+
+ul.palette li {
+    float: left;
+    margin-right: 2px;
+}
+
+ul.palette li.color {
+    width: 50px;
+    height: 16px;
+    padding: 2px;
+    *line-height: 0 !important;
+    border: 1px solid #ccc;
+}
+
+ul.palette li.color span {
+    display: inline-block;
+    width: 50px;
+    height: 16px;
+    vertical-align: top;
+    background: #00b0a2;
+}
+
+/* 문제지 관리 상단 배점 부분 */
+
+#listBox div.listContent dl.element dt ul.mark {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -140px;
+}
+
+#listBox div.listContent dl.element dt ul.mark li {
+    float: left;
+    padding: 0 10px;
+    line-height: 35px;
+    margin-right: 5px;
+    text-align: center;
+    color: #516991;
+    border-left: 1px solid #c6d2e5;
+    border-right: 1px solid #c6d2e5;
+    background: #d8e1f0;
+}
+
+#listBox div.listContent dl.element dt ul.mark2 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+#listBox div.listContent dl.element dt ul.mark2 li {
+    float: left;
+    padding: 0 10px;
+    line-height: 35px;
+    text-align: center;
+    color: #516991;
+    border-left: 1px solid #c6d2e5;
+    border-right: 1px solid #c6d2e5;
+    background: #d8e1f0;
+}
+
+#listBox div.listContent dl.element dd div.cont h6 {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+#listBox div.listContent dl.element dd div.cont ul.explan {
+    padding-bottom: 20px
+}
+
+#listBox div.listContent dl.element dd div.cont ul.explan li {
+    line-height: 20px;
+}
+
+#listBox div.listContent dl.element p.new {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    z-index: 1;
+}
+
+/* 게시판 팀활동 학습목표 하단 요소 */
+
+#listBox div.listContent dl.studyTarget {
+    padding: 0 20px;
+    border-top: 1px dotted #cdcdcd;
+    overflow: hidden;
+}
+
+#listBox div.listContent dl.studyTarget dt {
+    padding: 10px 0;
+    background: #fff;
+    border-bottom: none;
+}
+
+#listBox div.listContent dl.studyTarget dt h5,
+dl.studyTarget dt h6 {
+    font-size: 14px;
+    color: #333;
+}
+
+#listBox div.listContent dl.studyTarget dd {}
+
+#listBox div.listContent dl.teamList {
+    padding: 0 20px;
+}
+
+#listBox div.listContent dl.teamList:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#listBox div.listContent dl.teamList dt ul.tab {
+    position: relative;
+    height: 25px;
+    margin-top: 20px;
+    padding-left: 15px;
+    background: url(../img/classroom/tab_menu.gif) repeat-x 0 100%;
+}
+
+#listBox div.listContent dl.teamList dt ul.tab,
+ul.tab li {
+    margin: 0;
+    padding: 0
+}
+
+#listBox div.listContent dl.teamList dt ul.tab li {
+    list-style: none
+}
+
+#listBox div.listContent dl.teamList dt ul.tab li,
+ul.tab li a {
+    background: url(../img/classroom/bg_tab_off.gif) no-repeat
+}
+
+#listBox div.listContent dl.teamList dt ul.tab li {
+    float: left;
+    margin-right: -1px;
+    line-height: 22px
+}
+
+#listBox div.listContent dl.teamList dt ul.tab li a {
+    display: inline-block;
+    padding: 2px 16px 1px;
+    background-position: 100% 0;
+    font-family: 'dotum';
+    font-weight: 500;
+    color: #999;
+    text-decoration: none !important;
+}
+
+#listBox div.listContent dl.teamList dt ul.tab li.on,
+ul.tab ul li.on a {
+    background-image: url(../img/classroom/bg_tab_on.gif)
+}
+
+#listBox div.listContent dl.teamList dt ul.tab li.on a {
+    color: #333;
+}
+
+#listBox div.listContent dl.teamList dd ul.subject {
+    margin: 10px 0;
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+    background: #f6f6f6;
+}
+
+#listBox div.listContent dl.teamList dd ul.subject li {
+    *float: left;
+    display: inline;
+    height: 34px;
+    line-height: 34px;
+}
+
+#listBox div.listContent dl.teamList dd ul.subject li.head {
+    display: inline-block;
+    width: 140px;
+    color: #333;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #fff;
+    text-align: center;
+    border-right: 1px solid #cdcdcd;
+    background: #d8e1f0;
+}
+
+/* 성적관리 예문 */
+
+#listBox .testExp {
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 7px;
+    background: #f1f1f1;
+}
+
+#listBox .testExp table {
+    width: 100%;
+}
+
+#listBox .testExp table th {
+    padding: 6px 1%;
+}
+
+#listBox .testExp table td {
+    padding: 6px 1%;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+#listBox .testExp table td.bg1 {
+    color: #2868a2;
+    background: #dae2e7;
+}
+
+#listBox .testExp table td.bg2 {
+    color: #367120;
+    background: #d9dfd5;
+}
+
+#listBox .testExp table td.bg3 {
+    color: #bd442b;
+    background: #e6dcdb;
+}
+
+#listBox .testExp table td.bg4 {
+    color: #bd442b;
+    background: #ebebeb;
+}
+
+#listBox .testExp table td.bg5 {
+    color: #bd442b;
+    background: #f1f1f1;
+}
+
+#listBox .testExp table td.bg6 {
+    color: #2868a2;
+    background: #dae2e7;
+}
+
+#listBox .testExp table td.bg7 {
+    color: #367120;
+    background: #d9dfd5;
+}
+
+#listBox .testExp table td.bg8 {
+    color: #bd442b;
+    background: #e6dcdb;
+}
+
+#listBox .testExp table td.bg9 {
+    color: #bd442b;
+    background: #ebebeb;
+}
+
+#listBox .testExp table td.bg1.cutline1 {
+    color: #fff;
+    background: #95aab7;
+}
+
+#listBox .testExp table td.bg2.cutline2 {
+    color: #fff;
+    background: #aab4a1;
+}
+
+#listBox .testExp table td.bg3.cutline3 {
+    color: #fff;
+    background: #c4afad;
+}
+
+#listBox table tr.bg1 {
+    background: #dae2e7;
+}
+
+#listBox table tr.bg2 {
+    background: #d9dfd5;
+}
+
+#listBox table tr.bg3 {
+    background: #e6dcdb;
+}
+
+#listBox table tr.bg4 {
+    background: #ebebeb;
+}
+
+#listBox table tr.bg5 {
+    background: #f1f1f1;
+}
+
+#listBox table tr.bg6 {
+    background: #dae2e7;
+}
+
+#listBox table tr.bg7 {
+    background: #d9dfd5;
+}
+
+#listBox table tr.bg8 {
+    background: #e6dcdb;
+}
+
+#listBox table tr.bg9 {
+    background: #ebebeb;
+}
+
+#listBox table tr.bg1 td {
+    font-weight: 800;
+    color: #2868a2;
+    border: 1px solid #95aab7;
+}
+
+#listBox table tr.bg2 td {
+    font-weight: 800;
+    color: #367120;
+    border: 1px solid #aab4a1;
+}
+
+#listBox table tr.bg3 td {
+    font-weight: 800;
+    color: #bd442b;
+    border: 1px solid #c4afad;
+}
+
+#listBox table tr.bg4 td {
+    font-weight: 800;
+    color: #367120;
+    border: 1px solid #aab4a1;
+}
+
+#listBox table tr.bg5 td {
+    font-weight: 800;
+    color: #bd442b;
+    border: 1px solid #c4afad;
+}
+
+#listBox table tr.bg6 td {
+    font-weight: 800;
+    color: #2868a2;
+    border: 1px solid #95aab7;
+}
+
+#listBox table tr.bg7 td {
+    font-weight: 800;
+    color: #367120;
+    border: 1px solid #aab4a1;
+}
+
+#listBox table tr.bg8 td {
+    font-weight: 800;
+    color: #bd442b;
+    border: 1px solid #c4afad;
+}
+
+#listBox table tr.bg9 td {
+    font-weight: 800;
+    color: #367120;
+    border: 1px solid #aab4a1;
+}
+
+#listBox table tr.bg1.cutline1 {
+    color: #fff;
+    background: #95aab7;
+}
+
+#listBox table tr.bg2.cutline2 {
+    color: #fff;
+    background: #aab4a1;
+}
+
+#listBox table tr.bg3.cutline3 {
+    color: #fff;
+    background: #c4afad;
+}
+
+#listBox table tr.bg1.cutline1 td,
+#listBox table tr.bg2.cutline2 td,
+#listBox table tr.bg3.cutline3 td {
+    color: #fff;
+}
+
+/* 공개강의추가 151203 */
+
+#listBox .class_list {
+    margin-top: 30px;
+    float: left;
+    width: 80%;
+}
+
+#listBox .class_list ol p span.week {
+    width: 30px;
+    height: 50px;
+    margin-left: 4%;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: url(../img/classroom/open_step_line.gif) repeat-y;
+    background-size: cover;
+}
+
+#listBox .class_list ol p span.finish {
+    background: url(../img/classroom/open_step_line_f.gif) repeat-y;
+    background-size: cover;
+}
+
+#listBox .class_list ol p span.start {
+    background: url(../img/classroom/open_step_line_s.gif) repeat-y;
+    background-size: cover;
+}
+
+#listBox .class_list ol p span.start.finish {
+    background: url(../img/classroom/open_step_line_s_f.gif) repeat-y;
+    background-size: cover;
+}
+
+/*#listBox .class_list ol p span.week {width:30px; height:50px; margin-left:4%; display:inline-block; font-size:18px; font-weight:500; color:#fff; line-height:50px; text-align:center; background:url(../img/ko/classroom/open_step_line.gif) repeat-y; background-size:cover;}
+#listBox .class_list ol p span.start {background:url(../img/ko/classroom/open_step_line_start.gif) repeat-y; background-size:cover;}*/
+
+#listBox .class_list ol p span.class_head {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+#listBox .class_list .open_inner {
+    padding: 10px;
+    background: url(../img/ko/classroom/line_bg.gif) repeat;
+}
+
+#listBox .class_list .open_inner ul {
+    border-bottom: 1px dashed #ccc;
+    background: #fff;
+    overflow: hidden;
+}
+
+#listBox .class_list .open_inner ul li {
+    float: left;
+    width: 15%;
+    line-height: 34px;
+}
+
+#listBox .class_list .open_inner ul li:last-child {
+    float: right;
+}
+
+#listBox .class_list .open_inner ul li.h_title {
+    width: 70%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+#listBox .class_list .open_inner ul li.h_title span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    background: url(../img/ko/classroom/open_icon.png) no-repeat;
+}
+
+#listBox .class_list .open_inner ul li.h_title span.player {
+    background-position: 0 0;
+}
+
+#listBox .class_list .open_inner ul li.h_title span.document {
+    background-position: -24px 0;
+}
+
+#listBox .class_list .open_inner ul li a {
+    display: block;
+    font-weight: 500;
+    color: #333;
+}
+
+#listBox .class_list .open_inner ul li a.data {
+    color: #fff;
+    text-align: center;
+    background: #a874bf;
+}
+
+#listBox .class_list .open_inner ul li a:hover.data {
+    background: #9452af;
+}
+
+#listBox .class_list .open_inner ul li a.review {
+    color: #fff;
+    text-align: center;
+    background: #7ea5a4;
+}
+
+#listBox .class_list .open_inner ul li a:hover.review {
+    background: #689594;
+}
+
+/* 20160105 추가 start*/
+
+#listBox .class_list .open_inner ul.cp {
+    background: url(../img/ko/classroom/line_bg.gif) repeat;
+}
+
+#listBox .class_list .open_inner ul.cp li:first-child {
+    width: 66%;
+    padding-left: 4%;
+    background: url(../img/classroom/cp_text_img.png) left 50% no-repeat;
+}
+
+/* 20160105 추가 end*/
+
+#listBox .class_aside {
+    float: right;
+    width: 16%;
+    padding: 1%;
+    margin-top: 80px;
+    border: 1px solid #cdcdcd;
+    background: #f1f1f1;
+    box-sizing: border-box;
+}
+
+#listBox .class_aside>p {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid #888;
+    border-radius: 2px;
+    background: #999;
+}
+
+#listBox .class_aside ul {}
+
+#listBox .class_aside ul:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#listBox .class_aside ul li {
+    line-height: 34px;
+    font-size: 13px;
+    color: #333;
+}
+
+#listBox .class_aside ul li span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    background: url(../img/ko/classroom/open_icon.png) no-repeat;
+}
+
+#listBox .class_aside ul li span.player {
+    background-position: 0 0;
+}
+
+#listBox .class_aside ul li span.document {
+    background-position: -24px 0;
+}
+
+#listBox .class_aside .rating p {
+    margin: 20px 0 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+#listBox .class_aside .rating p span {
+    margin-left: 10px;
+    color: #157ac8;
+}
+
+#listBox:after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: ''
+}

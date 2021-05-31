@@ -1,0 +1,1046 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************************************************************************************************
+ * 일반 게시판
+*********************************************************************************************************/
+
+.boardListBasic {
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    border-top: 1px solid #565860;
+}
+
+.boardListBasic th {
+    padding: 6px 0;
+    line-height: 20px;
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    background: #d8e1f0;
+    border: 1px solid #aabad4;
+    background: #d8e1f0;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d8e1f0), to(#c1ccde));
+    background: -webkit-linear-gradient(#d8e1f0, #c1ccde);
+    background: -moz-linear-gradient(#d8e1f0, #c1ccde);
+    background: -ms-linear-gradient(#d8e1f0, #c1ccde);
+    background: -o-linear-gradient(#d8e1f0, #c1ccde);
+    background: linear-gradient(#d8e1f0, #c1ccde);
+}
+
+.boardListBasic td {
+    padding: 8px 5px;
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.boardListBasic td.scheduleTime {
+    padding: 1px 5px;
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.boardListBasic td.schedule {
+    padding: 1px 5px;
+    font-size: 7px;
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.boardListBasic td .clip {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.boardListBasic td.attend {
+    padding: 0;
+    vertical-align: top;
+}
+
+.boardListBasic td.attend [class^="icon-"] {
+    display: block;
+    margin: 7px auto;
+}
+
+.boardListBasic th.head {
+    padding-left: 10px;
+    color: #907862;
+    background: #efebd9 !important;
+    border: 1px solid #d5cfb4;
+    text-align: left;
+}
+
+.boardListBasic th.head .inputText {
+    *margin-left: 10px;
+}
+
+.boardListBasic th.head.fix {
+    color: #826850;
+    border: 1px solid #c7c0a2;
+    background: #e0dac0 !important;
+}
+
+.boardListBasic th.week {
+    padding: 2px;
+    text-shadow: none;
+    background: #6595c5;
+}
+
+.boardListBasic th.week a {
+    color: #fff;
+}
+
+.boardListBasic th.title {
+    padding: 4px;
+    color: #fff;
+    text-shadow: none;
+    border: 1px solid #d5cfb4;
+    background: #c7ac89;
+}
+
+.boardListBasic td.textLeft {
+    text-align: left !important;
+}
+
+/* 보드 p 수정 151203 */
+
+.boardListBasic td p {
+    padding: 2px 0;
+}
+
+.boardListBasic tr.odd-row {
+    background: #f6f6f6;
+}
+
+.boardListBasic tr.hidden {
+    display: none;
+}
+
+.boardListBasic tfoot {
+    border-top: 2px solid #666;
+}
+
+.boardListBasic tfoot td {
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #c0c0c0;
+    background: #e1e1e1 !important;
+}
+
+.boardListBasic td ul.task li {
+    line-height: 20px;
+}
+
+.boardListBasic td ul.option li {
+    display: inline-block;
+    *display: inline;
+    margin-right: 5px;
+}
+
+/*** 평가 항목 설정 추가 ***/
+
+.boardListBasic td ul.evalist {}
+
+.boardListBasic td ul.evalist li {
+    line-height: 38px;
+    border-top: 1px dotted #cdcdcd;
+}
+
+.boardListBasic td ul.evalist li:first-child {
+    border: none;
+}
+
+/*** 포트폴리오 메뉴설정 추가 ***/
+
+ul.treeSelect>li {
+    border-top: 1px solid #cdcdcd;
+}
+
+ul.treeSelect>li:first-child {
+    border: none;
+}
+
+ul.treeSelect table {
+    width: 100%;
+}
+
+ul.treeSelect table td {
+    border: none;
+}
+
+ul.treeSelect table td:nth-child(1) {
+    width: 60%;
+}
+
+ul.treeSelect table td:nth-child(2),
+ul.treeSelect table td:nth-child(3),
+ul.treeSelect table td:nth-child(4),
+ul.treeSelect table td:nth-child(5) {
+    width: 10%;
+}
+
+/********************************************************************************************************
+ * 학습목차 게시판
+*********************************************************************************************************/
+
+.boardListBasic2 {
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    border-top: 2px solid #516991;
+}
+
+.boardListBasic2 th {
+    padding: 10px;
+    line-height: 18px;
+    color: #d8e1f0;
+    background: #13487c url(../img/common/bg_pattern.png) repeat;
+    border-right: 1px solid #cdcdcd;
+}
+
+.boardListBasic2 td {
+    line-height: 18px;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    vertical-align: middle;
+    background: #f8f8f8;
+}
+
+.boardListBasic2 th.head {
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    border-top: 1px solid #cdcdcd;
+    background: #b6bbcc url(../img/common/bg_pattern.png) repeat !important;
+}
+
+.boardListBasic2 tr.odd-row td {
+    background: url(../img/classroom/row_bg.gif) repeat;
+}
+
+.boardListBasic2 th ul li ul.totalBar {
+    width: 100%;
+    height: 16px !important;
+    line-height: 16px !important;
+    border-radius: 7px;
+    background: #7c95be;
+    overflow: hidden;
+}
+
+.boardListBasic2 th ul li ul.totalBar li {
+    float: left;
+    font-family: 'Dotum';
+    line-height: 16px;
+    font-size: 11px;
+    color: #d8e1f0;
+    background: #516991;
+    text-indent: 5px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.boardListBasic2 ul.tableList {
+    overflow: hidden;
+    padding: 4px 10px;
+}
+
+.boardListBasic2 ul.tableList li {
+    float: left;
+    padding: 2px 0;
+}
+
+.boardListBasic2 ul.tableList li:first-child {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.boardListBasic2 div.video {
+    padding: 10px;
+    border-bottom: 1px dotted #666;
+}
+
+.boardListBasic2 div.video ul {
+    overflow: hidden;
+}
+
+.boardListBasic2 div.video ul li {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.boardListBasic2 div.video.on {
+    color: #2868a2;
+    background: #dae2e7;
+}
+
+.boardListBasic2 div.video.off {
+    color: #bd442b;
+    background: #e6dcdb;
+}
+
+/* 프로그래스 바 추가 작업 */
+
+.bar {
+    height: 16px !important;
+    line-height: 16px !important;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #ccc;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ccc), to(#f1f1f1));
+    background: -webkit-linear-gradient(#ccc, #f1f1f1);
+    background: -moz-linear-gradient(#ccc, #f1f1f1);
+    background: -ms-linear-gradient(#ccc, #f1f1f1);
+    background: -o-linear-gradient(#ccc, #f1f1f1);
+    background: linear-gradient(#ccc, #f1f1f1);
+}
+
+.bar li {
+    float: left;
+    font-family: 'Dotum';
+    line-height: 16px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/**/
+
+.bar {
+    height: 16px !important;
+    line-height: 16px !important;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.bar li {
+    float: left;
+    font-family: 'Dotum';
+    line-height: 16px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.boardListBasic2 div.video ul.listRight {
+    float: right;
+}
+
+.boardListBasic2 div.video ul.listRight li {}
+
+.boardListBasic2 div.video.last {
+    border: none;
+}
+
+.boardListBasic2 span.text {
+    display: inline-block;
+    width: 70px;
+}
+
+.bar-gray {
+    background: #C2C2C2;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#C2C2C2), to(#646464));
+    background: -webkit-linear-gradient(#C2C2C2, #646464);
+    background: -moz-linear-gradient(#C2C2C2, #646464);
+    background: -ms-linear-gradient(#C2C2C2, #646464);
+    background: -o-linear-gradient(#C2C2C2, #646464);
+    background: linear-gradient(#C2C2C2, #646464);
+}
+
+.bar-black {
+    background: #333;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#666), to(#333));
+    background: -webkit-linear-gradient(#666, #333);
+    background: -moz-linear-gradient(#666, #333);
+    background: -ms-linear-gradient(#666, #333);
+    background: -o-linear-gradient(#666, #333);
+    background: linear-gradient(#666, #333);
+}
+
+.bar-blue {
+    background: #48AEF0;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#48AEF0), to(#11347A));
+    background: -webkit-linear-gradient(#48AEF0, #11347A);
+    background: -moz-linear-gradient(#48AEF0, #11347A);
+    background: -ms-linear-gradient(#48AEF0, #11347A);
+    background: -o-linear-gradient(#48AEF0, #11347A);
+    background: linear-gradient(#48AEF0, #11347A);
+}
+
+.bar-orange {
+    background: #EFB85F;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EFB85F), to(#CB3D22));
+    background: -webkit-linear-gradient(#EFB85F, #CB3D22);
+    background: -moz-linear-gradient(#EFB85F, #CB3D22);
+    background: -ms-linear-gradient(#EFB85F, #CB3D22);
+    background: -o-linear-gradient(#EFB85F, #CB3D22);
+    background: linear-gradient(#EFB85F, #CB3D22);
+}
+
+/********************************************************************************************************
+ * 상세 정보 게시판 //팀관리 펼침형
+*********************************************************************************************************/
+
+.boardListInfo {
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.boardListInfo th {
+    padding: 8px 5px;
+    text-align: center;
+    border: 1px solid #6880a6;
+    color: #fff;
+    text-shadow: 1px 1px 1px #506890;
+    background: #8eaad9;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8eaad9), to(#7c95be));
+    background: -webkit-linear-gradient(#8eaad9, #7c95be);
+    background: -moz-linear-gradient(#8eaad9, #7c95be);
+    background: -ms-linear-gradient(#8eaad9, #7c95be);
+    background: -o-linear-gradient(#8eaad9, #7c95be);
+    background: linear-gradient(#8eaad9, #7c95be);
+}
+
+.boardListInfo td {
+    padding: 8px 5px;
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+}
+
+.boardListInfo th a,
+.boardListInfo td a {
+    height: 20px !important;
+    line-height: 20px !important;
+}
+
+.boardListInfo td a:hover {
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important;
+}
+
+.boardListInfo td.head {
+    background: #efebd9 !important;
+    border: 1px solid #d5cfb4;
+    text-align: left;
+}
+
+.boardListInfo td.subject {
+    text-align: left !important;
+}
+
+.boardListInfo tr.odd-row td {
+    background: #f6f6f6;
+}
+
+.boardListInfo td.last,
+.boardListInfo th.last {
+    border-right: none;
+}
+
+.boardListInfo tfoot td {
+    background: #e6dcdb !important;
+    color: #9b736f;
+}
+
+/********************************************************************************************************
+ * 등록 게시판
+*********************************************************************************************************/
+
+.boardListWrite {
+    width: 100%;
+    border-top: 2px solid #43617b;
+    border-bottom: 1px solid #7c95be;
+}
+
+.boardListWrite th {
+    padding: 8px 5px;
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    background: #d8e1f0;
+    border-right: 1px solid #cdcdcd;
+}
+
+.boardListWrite td {
+    padding: 8px 5px;
+    border-top: 1px solid #cdcdcd;
+}
+
+.boardListWrite th.head {
+    padding-left: 10px;
+    text-align: left;
+    color: #43617b;
+    border-top: 1px solid #c0cbde;
+    background: #d8e1f0 !important;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ccd6e6), to(#d8e1f0)) !important;
+    background: -webkit-linear-gradient(#ccd6e6, #d8e1f0) !important;
+    background: -moz-linear-gradient(#ccd6e6, #d8e1f0) !important;
+    background: -ms-linear-gradient(#ccd6e6, #d8e1f0) !important;
+    background: -o-linear-gradient(#ccd6e6, #d8e1f0) !important;
+    background: linear-gradient(#ccd6e6, #d8e1f0) !important;
+}
+
+.boardListWrite th.head span a {
+    margin-left: 5px;
+}
+
+.boardListWrite tr.odd-row td {
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f6f6f6), to(#fafafa));
+    background: -webkit-linear-gradient(#f6f6f6, #fafafa);
+    background: -moz-linear-gradient(#f6f6f6, #fafafa);
+    background: -ms-linear-gradient(#f6f6f6, #fafafa);
+    background: -o-linear-gradient(#f6f6f6, #fafafa);
+    background: linear-gradient(#f6f6f6, #fafafa);
+}
+
+.boardListWrite td ul.option li {
+    display: inline-block;
+    *display: inline;
+    margin-right: 5px;
+}
+
+.boardListWrite td ul.upload {
+    overflow: hidden;
+}
+
+.boardListWrite td ul.upload li {
+    float: left;
+}
+
+.boardListWrite td ul.upload li ul {
+    overflow: hidden;
+}
+
+.boardListWrite td ul.upload li ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.boardListWrite td>span {
+    margin-left: 5px;
+}
+
+.boardListWrite td ol,
+.boardListWrite td ul {
+    margin-left: 20px;
+}
+
+.boardListWrite p {
+    margin-top: 5px;
+}
+
+/* 게시물 리스트 */
+
+.board_list {
+    position: relative;
+}
+
+.board_list table {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.board_list table th {
+    height: 35px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    background: #f3f3f3;
+}
+
+.board_list table td {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.board_list table .tleft {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.board_list table .comment_title {
+    margin-left: 5px;
+    font-family: fontB;
+    color: #246890;
+}
+
+.board_list table td a:hover {
+    color: #43aecd;
+}
+
+.board_list table td a:focus {
+    color: #43aecd;
+}
+
+.board_list table tbody tr:hover {
+    background: #e5f1f6;
+}
+
+.board_list table tr.commentBox {
+    display: none;
+}
+
+.board_list table tr.commentBox div {
+    text-align: left;
+    padding-left: 96px;
+}
+
+.board_list table tr.commentBox div:first-child {}
+
+.board_list table tr.commentBox div.faq {
+    padding: 23px 10px 10px 180px;
+    line-height: 20px;
+    background: url("../img/template_common/reply_bg2.png") no-repeat 94px 16px;
+}
+
+/********************************************************************************************************
+ * POPUP 게시판
+*********************************************************************************************************/
+
+.boardListPopup {
+    width: 100%;
+    border-top: 2px solid #c40452;
+    border-bottom: 1px solid #c40452;
+}
+
+.boardListPopup th {
+    padding: 6px 5px;
+    line-height: 20px;
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    border-top: 1px solid #d7d7d7;
+    background: #f7f7f7;
+}
+
+.boardListPopup td {
+    padding: 8px 5px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.boardListPopup tr.odd-row td {
+    background: none !important;
+}
+
+.boardListPopup tr.hidden {
+    display: none;
+}
+
+.boardListPopup tr.listCenter td {
+    text-align: center;
+}
+
+.boardListBasic td ul.option li {
+    display: inline-block;
+    *display: inline;
+    margin-right: 5px;
+}
+
+.boardListPopup tfoot {
+    border-top: 2px solid #666;
+}
+
+.boardListPopup tfoot td {
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #c0c0c0;
+    background: #e1e1e1 !important;
+}
+
+.bgray {
+    border-top: 2px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+.boardListPopup ul.option {
+    padding: 5px 0;
+    text-align: left;
+}
+
+.boardListPopup ul.option li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/********************************************************************************************************
+ * 갤러리 게시판
+*********************************************************************************************************/
+
+.post_gallery {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.post_gallery>ul {
+    float: left;
+    width: calc(25% - 1%);
+    margin: .5%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: #fff;
+    overflow: hidden;
+}
+
+.post_gallery>ul.notice {
+    background: #f7f9fa;
+}
+
+.post_gallery>ul>li {
+    padding-bottom: 5px;
+}
+
+.post_gallery>ul>li.post_label strong {
+    font-weight: 500;
+    color: #f0752c;
+}
+
+.post_gallery>ul>li.post_label em {
+    padding-left: 10px;
+    font-style: normal;
+    ;
+}
+
+.post_gallery>ul>li.post_label em:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: #c3c3c3;
+}
+
+.post_gallery>ul>li.post_label em:first-child {
+    padding-left: 0;
+}
+
+.post_gallery>ul>li.post_label em:first-child:before {
+    display: none;
+}
+
+.post_gallery>ul>li .view-img {
+    display: block;
+    position: relative;
+    padding-top: 60%;
+    border: 1px solid #ccc;
+    background: #e2e2e2;
+}
+
+.post_gallery>ul>li .view-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.post_gallery>ul>li .subject {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post_gallery>ul>li.post_disc ul li {
+    position: relative;
+    float: left;
+    padding-left: 10px;
+    color: #acacac;
+}
+
+.post_gallery>ul>li.post_disc ul li:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    margin-right: 10px;
+    background-color: #c3c3c3;
+}
+
+.post_gallery>ul>li.post_disc ul li:first-child {
+    padding-left: 0;
+}
+
+.post_gallery>ul>li.post_disc ul li:first-child:before {
+    display: none;
+}
+
+/********************************************************************************************************
+ * 학습커뮤니티 게시판
+*********************************************************************************************************/
+
+.boardListComm {
+    width: 100%;
+    border-top: 2px solid #bababa;
+}
+
+.boardListComm th {
+    padding: 6px 0;
+    line-height: 30px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #cfcfcf;
+    background: #f9f9f9;
+}
+
+.boardListComm td {
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.boardListComm td .clip {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.boardListComm th.head {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.boardListComm th.head.fix {
+    color: #826850;
+    border: 1px solid #c7c0a2;
+    background: #e0dac0 !important
+}
+
+.boardListComm th.title {
+    padding: 4px;
+    color: #fff;
+    text-shadow: none;
+    border: 1px solid #d5cfb4;
+    background: #c7ac89;
+}
+
+.boardListComm td.textLeft {
+    text-align: left !important;
+}
+
+.boardListComm tr.odd-row {
+    background: #f6f6f6;
+}
+
+.boardListComm tr.hidden {
+    display: none;
+}
+
+.boardListComm tfoot {
+    border-top: 2px solid #666;
+}
+
+.boardListComm tfoot td {
+    font-weight: 500;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #c0c0c0;
+    background: #e1e1e1 !important;
+}
+
+.boardWriteComm {
+    width: 100%;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.boardWriteComm th {
+    padding: 8px 5px;
+    text-align: center;
+    color: #333;
+    background: #ebebeb;
+    border-right: 1px solid #cdcdcd;
+}
+
+.boardWriteComm td {
+    padding: 8px 5px;
+    border-top: 1px solid #cdcdcd;
+}
+
+.boardWriteComm th.head {
+    padding-left: 10px;
+    text-align: left;
+    color: #333;
+    border-top: 1px solid #cdcdcd;
+    background: #ebebeb;
+}
+
+.boardWriteComm th.head span a {
+    margin-left: 5px;
+}
+
+.boardWriteComm td ul.option li {
+    display: inline-block;
+    *display: inline;
+    margin-right: 5px;
+}
+
+.boardWriteComm td ul.upload {
+    overflow: hidden;
+}
+
+.boardWriteComm td ul.upload li {
+    float: left;
+}
+
+.boardWriteComm td ul.upload li ul {
+    overflow: hidden;
+}
+
+.boardWriteComm td ul.upload li ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.boardWriteComm td>span {
+    margin-left: 5px;
+}
+
+.boardWriteComm p {
+    margin-top: 5px;
+}
+
+/********************************************************************************************************
+ * 웹진 게시판
+*********************************************************************************************************/
+
+.webzine {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: #ededed 1px 1px 3px;
+    overflow: hidden;
+}
+
+.webzine p {
+    float: left;
+    width: 16%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.webzine p img {
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+}
+
+.webzine table {
+    width: 84%;
+    margin-left: 16%;
+    table-layout: fixed;
+    border-collapse: inherit;
+}
+
+.webzine table td {
+    padding: 5px 0;
+}
+
+.webzine table td:last-child {
+    text-align: right;
+}
+
+.webzine table td:first-child {
+    text-align: left;
+}
+
+.webzine table td.hd_txt {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.webzine table td.summary {
+    text-align: left;
+}
+
+.webzine ul.setupBtn {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.webzine ul.setupBtn li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.webzine ul.setupBtn li a {
+    font-size: 18px;
+}
+
+/********************************************************************************************************
+ * 심플 가로 게시판
+*********************************************************************************************************/
+
+ul.simpleList {
+    border-top: 2px solid #0552a9;
+}
+
+ul.simpleList li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+ul.simpleList li span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul.simpleList li span.head {
+    width: 30%;
+    padding-left: 12px;
+    color: #0552a9;
+    font-weight: 500;
+    background: url(../img/common/icon_dot.gif) 4px 50% no-repeat;
+}
+
+a.goBtn {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background: #0383ce;
+}
+
+a:hover.goBtn {
+    color: #fff;
+    background: #039cf8;
+}

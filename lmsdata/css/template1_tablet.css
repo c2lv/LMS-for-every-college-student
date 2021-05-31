@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************************************************************************************************
+ * 레이아웃
+*********************************************************************************************************/
+
+#Cover,
+#header div.topCover,
+#header #gnb .gnbList,
+#mainContent,
+#footer {
+    width: 100% !important;
+}
+
+#Cover {
+    min-width: 748px;
+    background: #fff;
+}
+
+#showLeft {
+    top: 14px;
+}
+
+.showLeftBan {
+    top: 132px;
+}
+
+#showRightPush {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    border: none;
+    background: none;
+    z-index: 1000;
+}
+
+#header {
+    position: relative;
+    border-bottom: none;
+}
+
+#header div.topCover {
+    text-align: center;
+}
+
+#header div.topCover h1 {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#header div.topCover div.login {
+    margin: 0 auto;
+}
+
+#header div.class_sbox {
+    display: none;
+}
+
+#gnb {
+    display: none;
+}
+
+#header ul.util {
+    display: none;
+}
+
+.cbp-spmenu-push-toleft {
+    left: -240px;
+}
+
+.cbp-spmenu-right {
+    border: none;
+    border-left: 1px solid #ccc;
+    display: block;
+}
+
+nav ul.mobile-util {
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul.mobile-util li {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+nav ul.mobile-util li a {
+    font-weight: 600;
+    color: #999;
+}
+
+nav ul.mobile-util li a:hover {
+    color: #333;
+}
+
+nav ul.mobile-util li:first-child a:before {
+    display: none;
+}
+
+nav ul.mobile-util li a:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 11px;
+    margin: 0 10px 0 0;
+    background: #cdcdcd;
+}
+
+nav #mobile-menu {
+    background: #fff;
+}
+
+nav #mobile-menu .menu-list {
+    border-top: 1px solid #ccc;
+}
+
+nav #mobile-menu .menu-list>li {
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+nav #mobile-menu .menu-list>li>a {
+    display: block;
+    font-size: 16px;
+    text-indent: 10px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #333;
+}
+
+nav #mobile-menu .menu-list>li a span {
+    position: inherit;
+    padding: 0;
+}
+
+nav #mobile-menu .menu-list>li .icon {
+    display: block;
+    position: absolute;
+    top: 22px;
+    ;
+    right: 10px;
+    width: 16px;
+    z-index: auto;
+}
+
+nav #mobile-menu .menu-list>li.on .twoDep {
+    display: block;
+}
+
+nav #mobile-menu .menu-list .twoDep {
+    display: none;
+}
+
+nav #mobile-menu .menu-list .twoDep ul {
+    border-top: 1px solid #ccc;
+    border-left: none;
+    background: #f7f7f9;
+}
+
+nav #mobile-menu .menu-list .twoDep ul li {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+nav #mobile-menu .menu-list .twoDep ul li:last-child {
+    border-bottom: none;
+}
+
+nav #mobile-menu .menu-list .twoDep ul li a {
+    display: block;
+    font-size: 14px;
+    line-height: 40px;
+    text-indent: 10px;
+    color: #5d6167;
+}
+
+nav #mobile-menu .menu-list .twoDep ul li a:hover {
+    color: #5d6167;
+}
+
+nav #mobile-menu .menu-list>li.subNone>img {
+    display: none;
+}
+
+#container {
+    width: 96%;
+    padding: 0 2%;
+}
+
+#bodyContent {
+    float: none;
+    width: 100%;
+    padding: 0;
+    border-left: none;
+}
+
+#aside {
+    display: none;
+}
+
+#mainContent .conFirst {
+    margin: 20px 0;
+}
+
+#mainContent .conFirst .box {
+    width: calc(50% - 30px);
+}
+
+#mainContent .conFirst .quick-banner {
+    position: static;
+    right: auto;
+    top: auto;
+    float: left;
+    width: calc(50% - 20px);
+    height: 220px;
+}
+
+#mainContent .quick-banner ul li {
+    width: calc(50% - 20px);
+    float: left;
+}
+
+#mainContent ul.conSecond li {
+    width: calc(50% - 20px);
+}
+
+#footer .foot-link {
+    display: none;
+}
+
+#footer .inner-wrap {
+    width: 96%;
+}
+
+#footer .inner-wrap .logo-b {
+    display: none;
+}
+
+#footer .inner-wrap ul.copy {
+    margin: 16px 0 0 0;
+}
+
+#footer .inner-wrap .expand-link {
+    overflow: hidden;
+    position: absolute;
+    left: -1000em;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+}

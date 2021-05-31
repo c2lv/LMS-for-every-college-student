@@ -1,0 +1,203 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var commonResultMessage = "null";
+			if (commonResultMessage == "" || commonResultMessage == "null") {
+				commonResultMessage = "null";
+			}
+			var localeKey = "ko";
+		</script>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/content.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/icon_button.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/board.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/paginator3000.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/selectbox.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/admin_basic.css">
+		<link rel="stylesheet" type="text/css" href="/lmsdata/css/jquery.mCustomScrollbar.css">
+		<script type="text/JavaScript" language="JavaScript" src="/lmsdata/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#noMoreToday').change(function () {
+					if ($(this).is(":checked")) {
+
+						var f = document.popNoticeForm;
+						var name = f["popNoticeContentsDTO.popNoticeContentsId"].value;
+
+						setCookieAt00(name, "done", 1)
+
+						fn_cancelMyMenu();
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">
+
+			//00:00 시 기준 쿠키 설정하기  
+			// expiredays 의 새벽  00:00:00 까지 쿠키 설정  
+			function setCookieAt00(name, value, expiredays) {
+				var todayDate = new Date();
+				todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);
+				if (todayDate > new Date()) {
+					expiredays = expiredays - 1;
+				}
+				todayDate.setDate(todayDate.getDate() + expiredays);
+				document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+			}
+
+			// 창 닫기
+			function fn_cancelMyMenu() {
+				var f = document.popNoticeForm;
+
+				if (f["popNoticeContentsDTO.popType"].value == "layer") {
+					parent.popupFormDialog.dialog('close');
+				} else {
+					self.close();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="popNoticeForm" method="post" action="/PopNotice.do">
+			<input type="hidden" name="popNoticeContentsDTO.popNoticeContentsId" value="POPN_2006181925444f4d0577">
+			<input type="hidden" name="popNoticeContentsDTO.popType" value="layer">
+			<div class="popupLayer">
+				<div class="content pb30">
+					<p tabindex="0" style="line-height: 1.5;">e-Class를 통해 시험/과제 진행에 대한 유의 사항을 안내 드립니다.</p>
+					<p style="line-height: 1.5;"><b><br></b></p>
+					<p tabindex="0" style="line-height: 1.5;"><b>[유의사항]</b></p>
+					<p style="line-height: 1.5;"></p>
+					<p
+						style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: 나눔고딕; font-size: 13.3333px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+					</p>
+					<p></p>
+					<table class="txc-table" width="680px" cellspacing="0" cellpadding="0" border="0"
+						style="color: rgb(0, 0, 0); font-family: 나눔고딕; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; border: none; border-collapse: collapse; font-size: 13.3333px; width: 680px;">
+						<tbody>
+							<tr>
+								<!-- Not Allowed Attribute Filtered ( width="704px") -->
+								<td
+									style="line-height: 1.5; font-size: 10pt; font-family: 나눔고딕; color: rgb(0, 0, 0); border: 1px solid rgb(204, 204, 204); width: 704px; height: 24px;">
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">※ <span tabindex="0">
+										인터넷 (유선, 무선)으로 비대면시험을 진행하므로</span><br></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp;
+										<span tabindex="0">사용자가 접속한 "인터넷 속도 상태" 및 "PC(데스크탑, 노트북 등) 상태"에 따라 영향을 받을 수 있습니다.</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp; 
+										<span tabindex="0">1) <b>반드시 안정적인 인터넷 환경에서 접속</b>(카페등 야외 네트워크 지양)하고,</span>&nbsp;</p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp; &nbsp; &nbsp;<span tabindex="0">
+											<b>불필요한 프로그램은 모두 종료하고 응시</b>하시기 바랍니다. (<b><span style="color: rgb(255, 0, 0);">주의 : 여러 TAB 사용 금지!</span></b>)</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+										<span tabindex="0" style="font-size: 13.3333px;">
+											<b>비정상적 종료</b>(PC-OFF, 인터넷 창 닫힘, 네트워크
+											연결 끊김, 중복 로그인 등)의 경우,</span>&nbsp;</p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+										<span tabindex="0">자동적으로 <b>임시 저장이 불가</b> 합니다.</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">
+										&nbsp; &nbsp; &nbsp;<span tabindex="0">2) <b>과제/시험 제출 후 최종정보를 과제/시험기간내에 꼭 확인</b>하시기 바랍니다.
+									</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;">&nbsp; &nbsp; &nbsp; &nbsp; <b>&nbsp;
+												<span tabindex="0"
+													style="color: rgb(9, 0, 255);">※ 네트워크 연결 끊김으로 시험 정보가 유실되지 않도록&nbsp;</span></b></span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;"><b><span style="color: rgb(9, 0, 255);">&nbsp;
+													&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span tabindex="0"
+													style="color: rgb(9, 0, 255);">시험중간에 수시로 [임시저장] 버튼을 눌러주시기 바랍니다.</span></b></span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp; &nbsp;&nbsp;
+										<span tabindex="0" style="font-size: 13.3333px;">3)<b>PC를 사용하여 과제/시험을
+												진행</b>하시기 바랍니다. (Mobile 사용 X)</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><br></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 10pt;">※</span>
+											<span tabindex="0" style="font-size: 10pt;">로그인 정보(ID/PW)를 5회 잘못 입력시, 30분간 로그인에 제한이 있습니다.</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp;
+										<span tabindex="0" style="font-size: 10pt;">로그인 정보는 uDRIMS 로그인 정보와 동일합니다.</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp;
+										<span tabindex="0" style="font-size: 10pt;"> (ID는 학번이며, 비밀번호 분실시 UDRIMS 비밀번호 찾기를 통해 확인 가능합니다.)</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;">&nbsp; &nbsp;&nbsp;
+										<span tabindex="0"><b>사전에 로그인 정보(ID/PW)를 확인</b>하시기 바랍니다.</span>&nbsp; &nbsp;&nbsp;</p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><br></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span tabindex="0" 
+											style="font-size: 13.3333px;">※ 동일 ID로 중복 로그인시,</span><br></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;" tabindex="0" >&nbsp; &nbsp; 먼저 로그인 한 장치는 비정상 종료가 됩니다.</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;"tabindex="0" >&nbsp; &nbsp;&nbsp;<b>중복 로그인으로 인한 불이익을 받지 않도록
+												주의</b>&nbsp;부탁드립니다.</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;"><br></span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;"tabindex="0" >※&nbsp;<b>세션 만료 시간은 2시간</b>&nbsp;입니다.<br></span>
+									</p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;"tabindex="0" >&nbsp; &nbsp; &nbsp;시험응시시간이 2시간이 넘는 경우에는&nbsp;반드시
+											시험 중간에&nbsp;[임시저장] 버튼을 꼭 눌러주셔야 세션이 연장됩니다.</span></p>
+									<p
+										style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; font-size: 13.3333px;">
+										<span style="font-size: 13.3333px;">&nbsp; &nbsp; &nbsp;&nbsp;</span><span
+											style="font-size: 13.3333px;">&nbsp;</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;"tabindex="0" >※ e-Class 사용&nbsp;<b>최적화 브라우져는
+												Chrome</b>&nbsp;입니다. 사용에 참고 하시기 바랍니다.</span></p>
+									<p style="margin: 0px; padding: 0px; font-size: 13.3333px;"><span
+											style="font-size: 13.3333px;"><br></span></p>
+									<p style="font-size: 13.3333px;">
+										<span tabindex="0">
+											<span style="font-size: 13.3333px;">※&nbsp;
+												<b><span style="color: rgb(255, 0, 0);">(NEW)</b>
+											</span>
+											<b style="font-size: 13.3333px;">
+											<span style="color: rgb(9, 0, 255);">
+												Webex와 e-Class시험을 같은 PC에서 동시에 진행하는 경우 온라인 시험에 지장을 줄 수 있습니다.
+											</span></b>
+										</span>
+									</p>
+									<p style="font-size: 13.3333px;"><span style="font-size: 13.3333px;"><b>&nbsp; &nbsp; 
+										<span tabindex="0" style="color: rgb(9, 0, 255);">1) Webex는 모바일 기기에서 사용</span></b></span></p>
+									<p style="font-size: 13.3333px;"><span style="font-size: 13.3333px;"><b>
+										<span tabindex="0" style="color: rgb(9, 0, 255);">&nbsp; &nbsp;&nbsp;2)&nbsp;<u>e-Class시험은 PC로 진행</u></span>
+									</b></span></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p style="line-height: 1.5;"><br></p>
+					<p tabindex="0" style="line-height: 1.5;">감사합니다.</p>
+				</div>
+				<audio id="audio_play" src="./lmsdata/mp3/PopNotice.mp3"></audio>
+				<div class="footer_chk">
+					<a tabindex="0" src="#" onkeyup="(function enterkey() {
+						if (window.event.keyCode == 13)
+							var audio = document.getElementById('audio_play');
+						if (audio.paused)
+							audio.play();
+						else
+						{
+							audio.pause();
+							audio.currentTime = 0;
+						}}())" onclick="(function play(){
+						var audio = document.getElementById('audio_play');
+						if (audio.paused)
+							audio.play();
+						else
+						{
+							audio.pause();
+							audio.currentTime = 0;
+						}
+					}())"><i class="icon-speaker-white" title="팝업듣기"></i></a>
+					<span tabindex="0" onfocus="/*(function check(){
+						if (document.querySelector('#nomoretoday').checked == false){
+							document.querySelector('#nomoretoday').checked = true;
+							break;
+						}
+						if (document.querySelector('#nomoretoday').checked == true)
+							document.querySelector('#nomoretoday').checked = false;
+					}())*/">1일 동안 이 창을 열지 않음</span>
+					<input type="checkbox" value="Y" name="noMoreToday" id="noMoreToday">
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

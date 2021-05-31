@@ -1,0 +1,4355 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************************************************************************************************
+ * Template, Classroom, Admin 공통 CSS - START
+*********************************************************************************************************/
+
+#key_access {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 57px;
+    text-align: center;
+    overflow: hidden
+}
+
+#key_access ul {
+    position: relative;
+}
+
+#key_access ul li {
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    top: -9999px;
+    background: #6d9bc0
+}
+
+#key_access ul li.select {
+    top: 0;
+}
+
+#key_access a {
+    display: block;
+    width: 100%;
+    height: 57px;
+    line-height: 57px;
+    font-weight: bold;
+    color: #fff
+}
+
+#loading_page {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+}
+
+#loading_page p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 48px;
+    z-index: auto;
+}
+
+#header div.topCover a {
+    color: #d7d7d7;
+}
+
+#header div.topCover a:hover {
+    color: #fff;
+}
+
+.hb {
+    float: left;
+    width: 2px;
+    height: 57px;
+    background: url(../img/common/hb.png) repeat-y;
+}
+
+.switch {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 56px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.switch .background {
+    background: url('../img/common/switch-background.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 22px;
+}
+
+.switch .mask {
+    background: url('../img/common/switch-mask.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 22px;
+}
+
+.switch_use {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 86px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.switch_use .background {
+    background: url('../img/common/switch_use-background.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 22px;
+}
+
+.switch_use .mask {
+    background: url('../img/common/switch_use-mask.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 86px;
+    height: 22px;
+}
+
+.switch_line {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 56px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.switch_line .background {
+    background: url('../img/common/switch_line-background.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 22px;
+}
+
+.switch_line .mask {
+    background: url('../img/common/switch_line-mask.png');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 22px;
+}
+
+span.num {
+    display: inline-block;
+    width: 14px !important;
+    height: 14px !important;
+    line-height: 16px !important;
+    *line-height: 14px !important;
+    text-align: center !important;
+    margin-left: 5px;
+    font-family: 'Dotum';
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: #ccc 0 0 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    border: 2px solid #fff !important;
+}
+
+/* 예전 Layer popup CSS */
+
+div.layerPopup {
+    position: absolute;
+    width: 400px;
+    top: 10px;
+    left: 50%;
+    margin-left: -300px;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: #666 1px 1px 5px;
+    background: #fff;
+    z-index: 100;
+}
+
+div.layerPopup ul.head {
+    position: relative;
+    padding: 5px 10px;
+    border: 1px solid #6880a6;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #506890;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #8eaad9;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#8eaad9), to(#7c95be));
+    background: -webkit-linear-gradient(#8eaad9, #7c95be);
+    background: -moz-linear-gradient(#8eaad9, #7c95be);
+    background: -ms-linear-gradient(#8eaad9, #7c95be);
+    background: -o-linear-gradient(#8eaad9, #7c95be);
+    background: linear-gradient(#8eaad9, #7c95be);
+}
+
+div.layerPopup p.text {
+    padding: 10px 0;
+    line-height: 18px;
+}
+
+div.layerPopup p.text span {
+    display: block;
+}
+
+div.layerPopup ul.option {
+    text-align: center;
+}
+
+div.layerPopup ul.option li {
+    display: inline;
+    margin-right: 20px;
+}
+
+div.layerPopup ul.content {
+    margin: 10px 0;
+}
+
+div.layerPopup ul.footer {
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+div.layerPopup ul.footer li {
+    display: inline;
+    margin-left: 5px;
+}
+
+div.layerPopup th,
+div.layerPopup td {
+    padding: 2px;
+}
+
+/* dialog 레이아웃 LIST */
+
+.popupLayer {
+    padding: 2%
+}
+
+.popupLayer p.text {
+    padding: 10px 0;
+    line-height: 18px;
+}
+
+.popupLayer p.text span {
+    display: block;
+}
+
+.popupLayer p.text2 {
+    line-height: 22px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.popupLayer p.text2 span {
+    font-size: 17px;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.popupLayer ul.option {
+    text-align: left;
+}
+
+.popupLayer ul.option li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.popupLayer .header {
+    margin-bottom: 20px;
+    line-height: 18px;
+    background: none;
+}
+
+.popupLayer .header:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.popupLayer .header li {
+    font-weight: 700;
+}
+
+.popupLayer .header h1 {
+    float: left;
+    margin-right: 20px;
+    line-height: 28px;
+    font-size: 17px;
+    color: #333;
+}
+
+.popupLayer .header h2 {
+    float: left;
+    margin-right: 20px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #666;
+}
+
+.popupLayer .header ul.btnBox {
+    float: left;
+    overflow: hidden;
+}
+
+.popupLayer .header ul.btnBox li {
+    float: left;
+    margin-right: 5px;
+}
+
+.popupLayer .header ul.chkBox {
+    float: left;
+    overflow: hidden;
+}
+
+.popupLayer .header ul.chkBox li {
+    float: left;
+    width: 100px;
+    margin: 2px;
+    line-height: 16px;
+}
+
+.popupLayer .header ul.boardOption {
+    float: right;
+}
+
+.popupLayer .header ul.boardOption>li {
+    float: left;
+    margin-left: 5px;
+}
+
+.popupLayer ul.headerTab {
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.popupLayer ul.headerTab li {
+    display: inline;
+    float: left;
+    width: 110px;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #d9d9d9;
+    background: #f6f6f6;
+}
+
+.popupLayer ul.headerTab li a {
+    display: block;
+    text-align: center;
+    color: #999;
+}
+
+.popupLayer ul.headerTab li.select {
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.popupLayer ul.headerTab li.select a {
+    color: #333;
+}
+
+.popupLayer .content {
+    padding-bottom: 10px;
+}
+
+.popupLayer .content ul.exp {
+    float: right;
+    width: 80%;
+}
+
+.popupLayer .content ul.exp li {
+    padding-top: 5px;
+    color: #666;
+}
+
+.popupLayer .content ul.exp li:first-child {
+    padding-top: 0;
+}
+
+.popupLayer .content ul.menuSetup {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #c2dce7;
+    background: #e9f0f3;
+    overflow: hidden;
+}
+
+.popupLayer .content ul.menuSetup li {
+    padding: 2.5%;
+}
+
+.popupLayer .content ul.review {
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.popupLayer .content ul.review>li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.popupLayer .content ul.review>li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.popupLayer .content ul.review li p {
+    float: left;
+    margin-right: 10px;
+}
+
+.popupLayer .content ul.review li p img {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #ccc;
+}
+
+.popupLayer .content ul.review li dl dt {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px dashed #ccc;
+    background: #f7f7f7;
+}
+
+.popupLayer .content ul.review li dl dt:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.popupLayer .content ul.review li dl dt ul {
+    float: left;
+}
+
+.popupLayer .content ul.review li dl dt ul.info_date:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.popupLayer .content ul.review li dl dt ul.info_date li {
+    float: left;
+    margin-right: 10px;
+    line-height: 18px;
+}
+
+.popupLayer .content ul.review li dl dt ul.info_date li:first-child {
+    margin-right: 5px;
+}
+
+.popupLayer .content ul.review li dl dt p {
+    float: right;
+}
+
+.popupLayer .content ul.review li dl dd {
+    line-height: 16px;
+}
+
+.popupLayer .content .caution {
+    margin-top: 10px;
+    padding-top: 80px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+    background: url(../classroom/clock.png) 50% 0 no-repeat;
+}
+
+.popupLayer .content .caution span {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff0000;
+}
+
+/*.popupLayer .content th, .popupLayer .content td {padding:2px;}*/
+
+.popupLayer .content .ipin_wrap {
+    min-height: 200px;
+    padding: 20px 20px 20px 160px;
+    border: 4px solid #dbdbdb;
+    box-sizing: border-box;
+    background: url(../classroom/bg_ipin.gif) no-repeat 20px 50%;
+}
+
+.popupLayer .content .phone_wrap {
+    min-height: 200px;
+    padding: 20px 20px 20px 160px;
+    border: 4px solid #dbdbdb;
+    box-sizing: border-box;
+    background: url(../classroom/bg_phone.gif) no-repeat 50px 50%;
+}
+
+.popupLayer .content .info_text dt {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.popupLayer .content .info_text dd {
+    margin: 10px 0;
+}
+
+.popupLayer .footer {
+    text-align: center;
+    background: #fff;
+}
+
+.popupLayer .footer ul {}
+
+.popupLayer .footer ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.popupLayer .footer ul li:first-child {
+    margin-left: 0;
+}
+
+.popupLayer .footer_chk {
+    position: absolute;
+    bottom: 0;
+    width: 94%;
+    padding: 5px 2%;
+    text-align: right;
+    color: #f1f1f1;
+    border-radius: 4px;
+    background: #333;
+}
+
+/* dialog 레이아웃 확장 CSS */
+
+.popupLayer ul.test_time {
+    float: right;
+    padding: 0 70px;
+    border: 1px solid #7e99a9;
+    border-radius: 4px;
+    background: #95aab7;
+}
+
+.popupLayer ul.test_time li {
+    float: left;
+    margin-left: 10px;
+    line-height: 26px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #587485;
+}
+
+.popupLayer ul.test_time li:first-child {
+    margin-left: 0;
+}
+
+.popupLayer ul.test_time li span {
+    font-weight: bold;
+    font-size: 17px;
+    vertical-align: top;
+}
+
+.popupLayer ul.test_score {
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    background: #f1f1f1;
+}
+
+.popupLayer ul.test_score li {
+    float: left;
+    margin-left: 5px;
+    padding: 5px 0;
+    line-height: 26px;
+    color: #666;
+}
+
+.popupLayer ul.test_score li:first-child {
+    margin-left: 0;
+}
+
+.popupLayer ul.test_score li span {
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.popupLayer ul.test_result {
+    margin-top: 5px;
+}
+
+.popupLayer ul.test_result li {
+    padding: 3px 5px !important;
+    color: #a0a0a0;
+}
+
+.popupLayer ul.test_result li:first-child {
+    width: 70px;
+    font-weight: 800;
+    color: #83625f;
+    text-align: center;
+    border: 1px solid #d9cbca;
+    border-radius: 4px;
+    background: #e6dcdb;
+}
+
+.popupLayer .listTest {
+    clear: both;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+.popupLayer .listTest.last {
+    margin-bottom: 0;
+}
+
+.popupLayer .listTest h3 {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.popupLayer .listTest h3 span {
+    font-size: 12px;
+    color: #666;
+}
+
+.popupLayer .listTest h3 span a {
+    font-size: 12px;
+}
+
+.popupLayer .listTest h3 span a:hover {
+    text-decoration: underline;
+}
+
+.popupLayer .listTest h3 span.match {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background: url(../classroom/test_pen_match.png) no-repeat;
+    z-index: auto;
+}
+
+.popupLayer .listTest h3 span.half {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background: url(../classroom/test_pen_half.png) no-repeat;
+    z-index: auto;
+}
+
+.popupLayer .listTest h3 span.wrong {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background: url(../classroom/test_pen_wrong.png) no-repeat;
+    z-index: auto;
+}
+
+.popupLayer .listTest p {
+    display: inline-block;
+}
+
+.popupLayer .listTest ul {
+    overflow: hidden;
+}
+
+.popupLayer .listTest ul li {
+    padding: 5px 10px;
+    line-height: 16px;
+}
+
+.popupLayer .listTest ul li.short {
+    float: left;
+    width: 45%;
+}
+
+#listBox ul.teamAlign {
+    margin-top: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+
+#listBox ul.teamAlign li {
+    float: left;
+}
+
+#listBox ul.teamAlign li ul {}
+
+#listBox ul.teamAlign li span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* 다중 멀티 탭 CSS */
+
+/* 그룹탭 수정 151203 */
+
+ul.groupTab {
+    margin: 20px;
+    padding: 3px !important;
+    *padding-bottom: 6px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #c6d2e5;
+    box-sizing: border-box;
+    background: #d8e1f0;
+}
+
+ul.groupTab li {
+    position: relative;
+    float: left;
+    width: 15%;
+    line-height: 26px;
+    margin: 3px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #7089b3;
+    background: #7c95be;
+    z-index: 1;
+}
+
+ul.groupTab li.policy {
+    width: 32.2%;
+    text-align: left;
+    text-indent: 10px;
+}
+
+ul.groupTab li.policy span {
+    color: #fff;
+}
+
+ul.groupTab li:hover {
+    background: #7089b3;
+}
+
+ul.groupTab li.on a {
+    color: #fff;
+    background: #516991;
+}
+
+ul.groupTab li a {
+    display: block;
+    font-family: 'dotum';
+    font-weight: bold;
+    color: #d8e1f0;
+}
+
+ul.groupTab li a:hover {
+    color: #fff;
+}
+
+/* 검색 셀렉트 및 목록수 CSS */
+
+div.selectBox {
+    position: relative;
+    display: inline-block;
+    width: 78px;
+    background: #fff;
+    cursor: pointer;
+    text-align: left;
+    line-height: 20px;
+    border: 1px solid #afafaf;
+    z-index: 10;
+}
+
+div.selectBox span.selected {
+    width: 100%;
+    margin-right: -28px;
+    text-indent: 12px;
+    border-right: none;
+}
+
+div.selectBox span.selectArrow {
+    float: right !important;
+    width: 28px;
+    background: url(../img/common/dropdown_arrow.png) no-repeat;
+}
+
+div.selectBox span.selectArrow,
+div.selectBox span.selected {
+    position: relative;
+    float: left;
+    height: 20px;
+    z-index: 1;
+}
+
+div.selectBox ul {
+    position: absolute;
+    top: 20px;
+    left: -1px;
+    width: 100%;
+    border: 1px solid #afafaf;
+    overflow: hidden;
+    background: #fff;
+    display: none;
+    z-index: 10;
+}
+
+div.selectBox li {
+    display: block;
+    width: 100%;
+    line-height: 16px;
+    padding: 2px 13px;
+}
+
+div.selectBox li:hover {
+    color: #fff;
+    background: #908886;
+}
+
+div.selectBox li a {
+    color: #fff;
+}
+
+div.searchBox {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* 메세지보내기 CSS */
+
+.selectButton {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: left;
+    line-height: 20px;
+    z-index: 9;
+}
+
+.selectButton span.selected {
+    width: 100px;
+}
+
+.selectButton ul {
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #f6f6f6;
+    display: none;
+    z-index: 10;
+}
+
+.selectButton li {
+    display: block;
+    width: 100%;
+    line-height: 16px !important;
+    padding: 5px 5px;
+}
+
+.selectButton li:hover {
+    color: #fff;
+    background: #908886;
+}
+
+/* Admin TabList CSS */
+
+div.AdminboardTab {
+    height: 28px;
+    line-height: 28px;
+    margin-top: 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+div.AdminboardTab ul li {
+    display: inline;
+    float: left;
+    width: 110px;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    background: #f6f6f6;
+}
+
+div.AdminboardTab ul li a {
+    display: block;
+    text-align: center;
+    color: #666;
+}
+
+div.AdminboardTab ul li.select {
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+div.AdminboardTab ul li.select a {
+    color: #333;
+}
+
+/* Classroom, Template TabList CSS */
+
+#bodyContent h4.info {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#bodyContent h4.info span {
+    color: #246890;
+}
+
+div.boardTab {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+div.boardTab ul li {
+    display: inline;
+    float: left;
+    padding: 0 2%;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #d9d9d9;
+    background: #f6f6f6;
+}
+
+div.boardTab ul li a {
+    display: block;
+    text-align: center;
+    color: #999;
+}
+
+div.boardTab ul li.select {
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+div.boardTab ul li.select a {
+    line-height: 36px;
+    color: #333;
+}
+
+div.boardOption {
+    padding-top: 20px;
+}
+
+div.boardOption:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+div.boardOption>ul {
+    float: left;
+    padding-bottom: 10px;
+}
+
+div.boardOption>ul select {
+    width: auto;
+    max-width: 200px;
+}
+
+div.boardOption h4,
+div.boardOption h5 {
+    float: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+}
+
+div.boardOption div.dropBox {
+    display: none;
+}
+
+div.boardOption>ul>li {
+    float: left;
+    margin-right: 6px;
+}
+
+div.boardOption>ul>li>span {
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+div.boardOption>ul>li>ul>li {
+    float: left;
+    margin-right: 5px;
+    line-height: 22px;
+}
+
+div.boardOption>ul>li>ul>li input {
+    vertical-align: baseline;
+}
+
+div.boardOption p {
+    float: left;
+    line-height: 24px;
+    margin-left: 20px;
+}
+
+div.boardOption .use_txt {
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+div.boardOption .use_txt span {
+    color: #ff3b28;
+}
+
+#searchbox {
+    width: 142px;
+    *width: 148px;
+    height: 20px;
+    border: 1px solid #afafaf;
+    padding: 0;
+    text-align: center;
+    color: #e1e1e1;
+    vertical-align: middle;
+}
+
+#searchbox #search {
+    float: left;
+    width: 113px;
+    border: 0;
+    padding: 0 3px;
+}
+
+#searchbox #submit {
+    float: left;
+    margin: 0;
+}
+
+#searchbox input[type="image"] {
+    float: left;
+    margin: 0;
+}
+
+#listBox {
+    position: relative;
+    width: 100%;
+}
+
+#listBox:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+#listBox div.boardOption {
+    padding-bottom: 10px;
+}
+
+#listBox div.boardOption span.exp {
+    float: left;
+    margin-left: 20px;
+    padding: 4px 0;
+}
+
+#listBox div.listHead {
+    padding: 20px 0 10px 0;
+    overflow: hidden;
+}
+
+#listBox div.listHead h4 {
+    float: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+}
+
+#listBox div.listHead h5 {
+    float: left;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+}
+
+#listBox div.listHead span {
+    margin-left: 20px;
+    line-height: 24px;
+}
+
+#listBox div.listHead span.number {
+    margin-left: 0;
+    border: 3px solid #fff;
+    box-shadow: #ccc 0 0 3px;
+    border-radius: 20px;
+    background: #ccc;
+}
+
+#listBox div.listContent {
+    clear: both;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #cdcdcd;
+    border-top: 1px solid #565860;
+}
+
+#listBox div.listContent:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+#listBox div.contentBox h3 {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #333;
+}
+
+#listBox div.contentBox>span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    z-index: auto;
+}
+
+#listBox div.optionContent {
+    min-height: 50px;
+    line-height: 18px;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    overflow: hidden;
+}
+
+#listBox div.listContent div.handleTable {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -50px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#listBox .blind_box {
+    margin: 0;
+    padding: 10px 0;
+    display: none;
+    clear: both;
+}
+
+#listBox .blind_box.on {
+    display: block;
+}
+
+/* 공개강의추가 151203 */
+
+#listBox>ul.selectBox {
+    margin-top: 20px;
+    border: 1px solid #cdcdcd;
+    background: #f9f9f9;
+}
+
+#listBox>ul.selectBox:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+#listBox>ul.selectBox>li {
+    float: left;
+    width: 25%;
+    height: 160px;
+    border-left: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#listBox>ul.selectBox>li:first-child {
+    border-left: none;
+}
+
+#listBox>ul.selectBox>li ul {}
+
+#listBox>ul.selectBox>li ul li {
+    padding: 5px 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#listBox>ul.selectBox>li ul li a {
+    display: block;
+}
+
+#listBox>ul.selectBox>li ul li.active a {
+    color: #fff;
+}
+
+#listBox>ul.selectBox>li.depth1 ul li.active {
+    background: #e74343;
+}
+
+#listBox>ul.selectBox>li.depth2 ul li.active {
+    background: #ee7777;
+}
+
+#listBox>ul.selectBox>li.depth3 ul li.active,
+#listBox>ul.selectBox>li.depth4 ul li.active {
+    background: #f29b9b;
+}
+
+#listBox .contentBox {
+    overflow: hidden;
+}
+
+#listBox .list_unfoldBox {
+    float: left;
+    width: 48%;
+    margin: 0 1% 2% 1%;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+#listBox .list_unfoldBox .innerLeft {
+    float: left;
+    width: 30%;
+}
+
+#listBox .list_unfoldBox .innerLeft p {
+    height: 100px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#listBox .list_unfoldBox .innerLeft p img {
+    width: 100%;
+    height: 100%;
+}
+
+#listBox .list_unfoldBox .rating {
+    position: relative;
+    margin-left: -40px;
+    left: 50%;
+    overflow: hidden;
+}
+
+div.rating-cancel,
+div.star-rating {
+    float: left;
+    width: 17px;
+    height: 15px;
+    text-indent: -999em;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    overflow: hidden
+}
+
+div.rating-cancel,
+div.rating-cancel a {
+    background: url(../img/common/delete.gif) no-repeat 0 -16px
+}
+
+div.star-rating,
+div.star-rating a {
+    background: url(../img/common/star.gif) no-repeat 0 0px
+}
+
+div.rating-cancel a,
+div.star-rating a {
+    display: block;
+    width: 16px;
+    height: 100%;
+    background-position: 0 0px;
+    border: 0
+}
+
+div.star-rating-on a {
+    background-position: 0 -16px !important
+}
+
+div.star-rating-hover a {
+    background-position: 0 -32px
+}
+
+div.star-rating-readonly a {
+    cursor: default !important
+}
+
+div.star-rating {
+    background: transparent !important;
+    overflow: hidden !important
+}
+
+#listBox .list_unfoldBox dl.innerRight {
+    position: relative;
+    float: right;
+    width: 68%;
+}
+
+#listBox .list_unfoldBox dl.innerRight dt a {
+    display: block;
+    width: 70%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox .list_unfoldBox dl.innerRight dd {
+    padding: 5px 0;
+}
+
+#listBox .list_unfoldBox dl.innerRight dd span.clft {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox .list_unfoldBox dl.innerRight dd.group {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    z-index: auto;
+}
+
+#listBox .list_unfoldBox dl.innerRight dd.hfix {
+    height: 46px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+#listBox .list_unfoldBox dl.innerRight dd table {
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid #ccc;
+    background: #ebebeb;
+}
+
+#listBox .list_unfoldBox dl.innerRight dd table td {
+    height: 18px;
+    padding: 4px;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox .list_unfoldBox dl.innerRight dd table td span {
+    margin-right: 8px;
+}
+
+#listBox .list_unfoldBox.noImg dl.innerRight {
+    width: 100%;
+}
+
+#listBox .list_unfoldBox.noImg dl.innerRight dd table td {
+    text-align: center;
+}
+
+#listBox .list_unfoldBox.noImg dl.innerRight dd table td span {
+    display: inline;
+}
+
+.switch_fa {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 14px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.switch_fa .background {
+    background: url(../img/common/switch-fa-background.png);
+    background-size: contain;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 22px;
+}
+
+.switch_fa .mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 22px;
+}
+
+/* 포트폴리오추가 160201 */
+
+#tab1:focus,
+#tab2:focus,
+#tab3:focus,
+#tab4:focus {
+    outline: none;
+}
+
+#listBox>.portSearch {
+    margin-top: 20px;
+    padding: 13px 0;
+    background: #f9fafb;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#listBox>.portSearch input,
+#listBox>.portSearch select {
+    height: 34px;
+    vertical-align: top;
+    text-indent: 10px;
+    border: 1px solid #c7c9cc;
+    color: #67686a;
+    background: #fff;
+}
+
+#listBox>.portSearch .listBtn {
+    display: inline-block;
+    height: 34px;
+    padding: 0 10px;
+    line-height: 35px;
+    color: #fff;
+    background: #8292a2;
+}
+
+/* 학습커뮤니티추가 160414 */
+
+#listBox>.commSearch {
+    margin-top: 20px;
+    padding: 13px 0;
+    background: #f1aca5;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#listBox>.commSearch input,
+#listBox>.commSearch select {
+    height: 34px;
+    vertical-align: top;
+    text-indent: 10px;
+    border: 1px solid #fff;
+    color: #67686a;
+    background: #fff;
+}
+
+#listBox>.commSearch .listBtn {
+    display: inline-block;
+    height: 34px;
+    padding: 0 10px;
+    line-height: 35px;
+    color: #fff;
+    background: #e66f62;
+}
+
+#listBox>.commSearch .makeBtn {
+    display: inline-block;
+    height: 34px;
+    padding: 0 20px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #fff;
+    background: #333;
+}
+
+#listBox>.commSearch .makeBtn:hover {
+    background: #666;
+}
+
+/***************************/
+
+#listBox ul.conBox {
+    float: left;
+    padding: .6%;
+}
+
+#listBox ul.conBox.wb {
+    width: 22%;
+    margin: .8%
+}
+
+#listBox ul.conBox.tp {
+    background: #51b9a6;
+}
+
+#listBox ul.conBox.lp {
+    background: #4cb2d7;
+}
+
+#listBox ul.conBox.co {
+    background: url(../template_common/comm_bg.gif) repeat 0 0;
+}
+
+/*#listBox ul.conBox.co p.point {background:rgba(255, 59, 40, .8);}*/
+
+#listBox ul.conBox.cu {
+    width: 23.4%;
+    margin: .8%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: #ededed 1px 1px 3px;
+}
+
+#listBox ul.conBox.cu dt {
+    border-bottom: 1px solid #ff3b28;
+}
+
+#listBox ul.conBox.cu dd {
+    border-bottom: 1px dotted #ccc;
+}
+
+#listBox ul.conBox.cu dd:last-child {
+    border-bottom: none;
+}
+
+#listBox ul.conBox li {
+    position: relative;
+    overflow: hidden;
+}
+
+#listBox ul.conBox li .title_img {
+    float: left;
+    width: 70%;
+}
+
+#listBox ul.conBox li .title_img img {
+    width: 100%;
+    height: 100px;
+}
+
+#listBox ul.conBox li .make_user {
+    float: right;
+    width: 26%;
+}
+
+#listBox ul.conBox li .make_user img {
+    width: 100%;
+    height: 54px;
+}
+
+#listBox ul.conBox li p.comm_ca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 8px;
+    display: inline-block;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+    z-index: auto;
+}
+
+#listBox ul.conBox li p.comm_cf {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    ;
+    padding: 5px 8px;
+    display: inline-block;
+    color: #fff;
+    background: rgba(0, 114, 188, .6);
+    z-index: auto;
+}
+
+#listBox ul.conBox li p.point {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 96%;
+    padding: 2%;
+    background: rgba(255, 59, 40, .8);
+    z-index: auto;
+}
+
+#listBox ul.conBox li p.point a {
+    height: inherit;
+    color: #fff;
+    line-height: 18px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#listBox ul.conBox li .comm_img {
+    width: 100%;
+}
+
+#listBox ul.conBox li .comm_img img {
+    width: 100%;
+    height: 140px;
+}
+
+#listBox ul.conBox li span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    text-align: center;
+}
+
+#listBox ul.conBox li dl {
+    margin-top: 10px;
+    text-align: right;
+    color: #333;
+    background: rgba(255, 255, 255, .6);
+}
+
+#listBox ul.conBox li dl dt {
+    padding: 5px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox ul.conBox li dl dd {
+    padding: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-top: 1px solid #fff;
+}
+
+#listBox ul.conBox li dl dd a {
+    color: #000;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+#listBox .bx-wrapper {
+    position: relative;
+    margin-top: 20px !important;
+}
+
+#listBox .bx-wrapper ul.conBox {
+    padding: 6px;
+}
+
+#listBox .bx-wrapper .bx-prev {
+    left: -36px;
+    background: url(../img/common/controls.png) no-repeat 0 -32px;
+}
+
+#listBox .bx-wrapper .bx-next {
+    right: -36px;
+    background: url(../img/common/controls.png) no-repeat -43px -32px;
+}
+
+#listBox .bx-wrapper .bx-prev:hover {
+    background-position: 0 0;
+}
+
+#listBox .bx-wrapper .bx-next:hover {
+    background-position: -43px 0;
+}
+
+#listBox .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+#listBox .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+#listBox .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9;
+}
+
+#listBox .bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+#listBox .boardList {
+    display: inline-block;
+    width: 38%;
+}
+
+#listBox .boardList h4.info {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+#listBox .boardList p {
+    float: right;
+    margin-top: -28px;
+}
+
+#listBox .boardList ul {
+    margin-top: 10px;
+}
+
+#listBox .boardList ul li {
+    position: relative;
+    line-height: 24px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#listBox .boardList ul li span {
+    float: left;
+    width: 70%;
+}
+
+#listBox .boardList ul li span.date {
+    float: right;
+    width: 30%;
+    text-align: right;
+    color: #ccc;
+}
+
+#listBox .boardList ul li span a {
+    display: block;
+    padding-left: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: url(../img/common/icon_dot.gif) 0 50% no-repeat;
+}
+
+#listBox .boardList ul li .icon-new-color {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+
+#listBox .new_port {
+    float: right;
+    width: 58%;
+}
+
+#listBox .new_port h4.info {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+#listBox .new_port ul.portTab {
+    height: 28px;
+    margin-top: 10px;
+    line-height: 28px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#listBox .new_port ul.portTab li {
+    display: inline;
+    float: left;
+    width: 120px;
+    margin-top: -1px;
+    margin-right: -1px;
+    font-size: 12px;
+    border: 1px solid #d9d9d9;
+    background: #f6f6f6;
+}
+
+#listBox .new_port ul.portTab li a {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    color: #acacac;
+}
+
+#listBox .new_port ul.portTab li.select {
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+#listBox .new_port ul.portTab li.select a {
+    color: #333;
+}
+
+#listBox .new_port>p {
+    float: right;
+    margin-top: -22px;
+}
+
+#listBox .new_port .listBox {
+    width: 100%;
+    padding: 5px 0;
+}
+
+#listBox .new_port .listBox .tab_content {
+    display: none;
+}
+
+#listBox .new_port .listBox .tab_content>p {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding-top: 62px;
+}
+
+#listBox .prof_port {
+    float: left;
+    width: 48%;
+}
+
+#listBox .prof_port h5 {
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+    color: #388d7e;
+}
+
+#listBox .stu_port {
+    float: right;
+    width: 48%;
+}
+
+#listBox .stu_port h5 {
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+    color: #2582a5;
+}
+
+/* 학습커뮤니티추가 160414 */
+
+#listBox .myComm {
+    float: right;
+    width: 58%;
+}
+
+#listBox .myComm h4.info {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+#listBox .myComm p.more {
+    float: right;
+    margin-top: -28px;
+}
+
+.comm_sm {
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+}
+
+.comm_sm p {
+    float: left;
+    width: 15%;
+    padding: 5px 0;
+}
+
+.comm_sm p img {
+    width: 100%;
+    height: 58px;
+    vertical-align: middle;
+}
+
+.comm_sm table {
+    float: right;
+    width: 82%;
+    table-layout: fixed;
+    padding: 5px 0;
+    border-collapse: inherit;
+}
+
+.comm_sm table td {
+    width: 100%;
+    padding: 5px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.comm_sm table td.hd_txt a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.comm_sm table td.hd_txt a span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+
+#listBox .new_commTitle {
+    clear: both;
+    margin: 30px 0 10px 0;
+    padding: 10px;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#f1f1f1));
+    background: -webkit-linear-gradient(#fff, #f1f1f1);
+    background: -moz-linear-gradient(#fff, #f1f1f1);
+    background: -ms-linear-gradient(#fff, #f1f1f1);
+    background: -o-linear-gradient(#fff, #f1f1f1);
+    background: linear-gradient(#fff, #f1f1f1);
+    -webkit-box-shadow: #ededed 1px 1px 3px;
+    -moz-box-shadow: #ededed 1px 1px 3px;
+    box-shadow: #ededed 1px 1px 3px;
+    border: 1px solid #e2e2e2;
+    border-bottom-color: #d7d7d7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#listBox .new_commTitle:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#listBox .new_commTitle h4 {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#listBox .new_commTitle p {
+    float: right;
+    margin-top: -16px;
+}
+
+#listBox .new_comm {}
+
+#listBox .new_comm h4.info {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+#listBox .new_comm ul.portTab {
+    float: left;
+    margin-right: -105px;
+}
+
+#listBox .new_comm ul.portTab li {
+    display: table;
+    width: 100px;
+    height: 106px;
+    font-size: 14px;
+    line-height: 21px;
+    border-bottom: 1px solid #fff;
+    background: #f2e9e1;
+}
+
+#listBox .new_comm ul.portTab li a {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+#listBox .new_comm ul.portTab li.select {
+    margin-right: 5px;
+    padding-right: 5px;
+    background: #ffa200 url(../community/info_bul.gif) no-repeat 100px center;
+    ;
+}
+
+#listBox .new_comm ul.portTab li.select a {
+    color: #fff;
+}
+
+#listBox .new_comm>p {
+    float: right;
+    margin-top: -22px;
+}
+
+#listBox .new_comm .listBox {
+    margin-left: 110px;
+}
+
+#listBox .new_comm .listBox:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#listBox .new_comm .listBox .tab_content {
+    display: none;
+}
+
+#listBox .new_comm .listBox .tab_content>p {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding-top: 160px;
+}
+
+/* 홈페이지 설문 관리 LIST CSS */
+
+#listBox.pollBox {
+    width: 100%;
+    margin-top: 10px;
+    padding: 1%;
+    border: 1px solid #d7d7d7;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#listBox.pollBox>.listHead {
+    padding: 0;
+}
+
+#listBox.pollBox th {
+    text-align: center;
+    text-indent: -10px;
+}
+
+#listBox.pollBox>.listSelect {
+    padding: 10px 0;
+    line-height: 28px;
+    overflow: hidden;
+}
+
+#listBox.pollBox>.listSelect ul {
+    float: left;
+}
+
+#listBox.pollBox>.listSelect ul li {
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#listBox p.pollContent {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background: url(../img/common/icon_bullet.gif) left 50% no-repeat;
+}
+
+/* 교안 관리 LIST CSS */
+
+#listBox ul.toggleList {
+    clear: both;
+    position: relative;
+    overflow: hidden;
+}
+
+#listBox ul.toggleList li.list {
+    padding: 10px;
+    height: 14px;
+    line-height: 14px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+}
+
+#listBox ul.toggleList li.list h4,
+dl.element dt h5 {
+    display: inline-block;
+    color: #333;
+}
+
+#listBox ul.toggleList li.list .btnBox {
+    position: absolute;
+    top: 6px;
+    *top: 4px;
+    right: 50px;
+}
+
+#listBox ul.toggleList li.list .btnBox li {
+    float: left;
+    margin-right: 5px;
+}
+
+#listBox ul.toggleList li.list .date {
+    position: absolute;
+    top: 10px;
+    right: 320px;
+    z-index: auto;
+}
+
+#listBox ul.toggleList li.list .arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    cursor: pointer;
+    background: url('../img/classroom/toggle_arrow.png') no-repeat;
+}
+
+#listBox ul.toggleList li.list.on .arrow {
+    background-position: 0 -34px;
+}
+
+#listBox ul.toggleList li.content {
+    display: none;
+}
+
+#listBox ul.toggleList li.content p.none {
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+}
+
+/* 게시판 하단 버튼 Align 요소 */
+
+div.listFooter {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div.listFooter p {
+    display: inline;
+    margin-right: 10px;
+}
+
+div.listFooter p.po {
+    display: block;
+    padding-bottom: 10px;
+    color: #de3537;
+}
+
+div.listFooter .pl {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: 0;
+}
+
+div.listFooter .pr {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    z-index: 0;
+}
+
+/* 게시판 글보기 상단 요소 */
+
+#listBox div.listContent dl.element {
+    position: relative;
+    overflow: hidden;
+}
+
+#listBox div.listContent dl.element dt {
+    padding: 5px 10px;
+    border-bottom: 1px solid #cdcdcd;
+    line-height: 22px;
+    min-height: 25px;
+    background: #e6e6e6;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e6e6e6), to(#f6f6f6));
+    background: -webkit-linear-gradient(#e6e6e6, #f6f6f6);
+    background: -moz-linear-gradient(#e6e6e6, #f6f6f6);
+    background: -ms-linear-gradient(#e6e6e6, #f6f6f6);
+    background: -o-linear-gradient(#e6e6e6, #f6f6f6);
+    background: linear-gradient(#e6e6e6, #f6f6f6);
+}
+
+#listBox div.listContent dl.element dt:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+/*#listBox div.listContent dl.element dt.new {padding:10px; height:14px; line-height:14px; border-bottom:1px solid #cdcdcd;
+	background:#c1ccde;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#c1ccde), to(#d8e1f0));
+	background: -webkit-linear-gradient(#c1ccde, #d8e1f0);
+	background: -moz-linear-gradient(#c1ccde, #d8e1f0);
+	background: -ms-linear-gradient(#c1ccde, #d8e1f0);
+	background: -o-linear-gradient(#c1ccde, #d8e1f0);
+	background: linear-gradient(#c1ccde, #d8e1f0);
+}*/
+
+#listBox div.listContent dl.element dt h4,
+dl.element dt h5 {
+    float: left;
+    display: inline-block;
+    line-height: 20px;
+    color: #333;
+}
+
+#listBox div.listContent dl.element dt .btnBox {
+    float: right;
+}
+
+#listBox div.listContent dl.element dt .btnBox li {
+    float: left;
+    margin-right: 5px;
+}
+
+#listBox div.listContent dl.element dt .btnBox li.twit {
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    cursor: pointer;
+    background: url(../img/common/sns_twit.gif) no-repeat;
+    background-size: cover;
+}
+
+#listBox div.listContent dl.element dt .btnBox li.fbook {
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    cursor: pointer;
+    background: url(../img/common/sns_fbook.gif) no-repeat;
+    background-size: cover;
+}
+
+#listBox div.listContent dl.element dt .btnBox li.kstory {
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    cursor: pointer;
+    background: url(../img/common/sns_kstory.gif) no-repeat;
+    background-size: cover;
+}
+
+#listBox div.listContent dl.element dt .btnBox li.band {
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    cursor: pointer;
+    background: url(../img/common/sns_band.gif) no-repeat;
+    background-size: cover;
+}
+
+#listBox div.listContent dl.element dd {
+    float: left;
+    width: 100%;
+}
+
+#listBox div.listContent dl.element dd:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+#listBox div.listContent dl.element dd.info {
+    padding: 0 10px;
+    border-bottom: 1px dotted #cdcdcd;
+}
+
+#listBox div.listContent dl.element>dd>ul {
+    line-height: 28px;
+    font-family: 'dotum';
+    color: #a1a1a1;
+    clear: both;
+}
+
+#listBox div.listContent dl.element>dd>ul:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+#listBox div.listContent dl.element>dd>ul>li {
+    float: left;
+    margin-right: 20px;
+}
+
+#listBox div.listContent dl.element dd ul.progress {
+    float: right;
+    width: 200px;
+    margin: 6px 10px;
+}
+
+#listBox div.listContent dl.element dd ul.progress li {
+    margin-right: 0;
+}
+
+#listBox div.listContent dl.element dd div.cont {
+    padding: 20px;
+}
+
+#listBox div.listContent dl.element dd div.cont img {
+    max-width: 100%;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox {
+    margin-top: 20px;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .average {
+    text-align: center;
+    border: 1px solid #a78785;
+    border-radius: 4px;
+    background: #c4afad;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .average ul {
+    display: inline-block;
+    padding: 7px;
+    font-weight: 800;
+    color: #fff;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .average ul li {
+    float: left;
+    width: 100px;
+    margin: 0 10px;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox h5 {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .innerOption {
+    position: relative;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .innerOption>ul {
+    height: 30px;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .innerOption>ul>li {
+    float: left;
+    margin-right: 6px;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .innerOption>ul.posBtn {
+    clear: both;
+    letter-spacing: -1px;
+}
+
+#listBox div.listContent dl.element dd div.cont .innerBox .innerOption>ul.posBtn li {
+    padding-bottom: 5px;
+}
+
+#listBox div.listContent dl.element dd div.multiAnswer {
+    padding: 0 20px;
+}
+
+#listBox div.listContent dl.element dd div.multiAnswer ul {
+    font-weight: 800;
+    padding-bottom: 10px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+#listBox div.listContent dl.element dd div.multiAnswer ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+#listBox div.listContent dl.element dd div.multiAnswer ul.format {
+    font-weight: 800;
+    font-size: 12px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#listBox div.listContent dl.element dd div.multiAnswer ul.format li {
+    float: left;
+    margin-right: 20px;
+    padding: 5px;
+    color: #9b736f;
+    border: 1px solid #d7c7c6;
+    border-radius: 4px;
+    background: #e6dcdb;
+}
+
+/* 메세지 View 받는이 부분 */
+
+#listBox div.listContent dl.element dd p.sendUser {
+    clear: both;
+    padding: 10px;
+    font-family: 'dotum';
+    color: #a1a1a1;
+}
+
+/* 테이블 리스트 상세보기 부분 */
+
+#listBox ul.openList {
+    padding: 0 7px;
+}
+
+#listBox ul.openList li {}
+
+#listBox ul.openList li ul {
+    float: right;
+    margin-top: 7px;
+}
+
+#listBox ul.openList li ul li {
+    float: left;
+    margin-left: 5px;
+}
+
+/* 게시판 글보기 댓글 영역 */
+
+#listBox div.listContent .answerArea {
+    padding: 10px;
+}
+
+#listBox div.listContent .answerArea .partition ul.sectionWrite {}
+
+#listBox div.listContent .answerArea .partition ul.sectionWrite li {
+    float: left;
+    margin-right: 0 !important;
+}
+
+#listBox div.listContent .answerArea .partition ul.sectionWrite li ul {
+    height: auto !important;
+    overflow: hidden;
+}
+
+#listBox div.listContent .answerArea .partition ul.sectionWrite li ul li {
+    width: 100%;
+    text-align: center;
+}
+
+#listBox div.listContent .answerArea .partition {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#listBox div.listContent .answerArea .partition:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+#listBox div.listContent .answerArea .partition p.stateBar {
+    float: left;
+    width: 10px;
+    margin-right: 3px;
+    background: #f3b9b9;
+}
+
+#listBox div.listContent .answerArea .partition p.userImg {
+    float: left;
+    width: 68px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+#listBox div.listContent .answerArea .partition dl.section {
+    position: relative;
+    margin: 0;
+    border: 1px solid #f3b9b9;
+    overflow: hidden;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt {
+    position: relative;
+    background: #f6f6f6;
+    padding: 7px;
+    line-height: 18px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt h5 {
+    display: inline;
+    color: #333;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt .btnBox,
+#listBox div.listContent .answerArea .partition dl.section dd .btnBox {
+    float: right;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dd {
+    padding: 7px;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dd:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+#listBox div.listContent .answerArea .partition dl.section dd.opt {
+    padding: 5px 0;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dd ul {
+    font-family: 'dotum';
+    color: #a1a1a1;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt ul li,
+#listBox div.listContent .answerArea .partition dl.section dd ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dd ul.opt {
+    float: right;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dd ul.opt li {
+    float: left;
+    margin-right: 20px;
+    line-height: 16px;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dd .cont {
+    float: left;
+    line-height: 18px;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt .cont {
+    min-height: 15px;
+    overflow: hidden;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt .cont p.img {
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt .cont p.img img {
+    border: 1px solid #cdcdcd;
+}
+
+#listBox div.listContent .answerArea .partition dl.section dt .cont p.txt {
+    float: right;
+    width: 90%;
+}
+
+/* Template 내 강의실 홈 & Admin 메인페이지 CSS */
+
+#listBox p.addBox {
+    padding: 0.6%;
+    text-align: right;
+}
+
+/*#listBox .column {float:left; width:32%; margin:0.6%;}*/
+
+#listBox .column {
+    position: relative;
+}
+
+/*#listBox .column .portlet {position:relative; margin-bottom:10px; padding:0 5px; border-radius:5px; border:1px solid #d9d9d9; background:#fff url(../img/common/contentbox_h3_bg.gif) repeat-x; overflow:hidden; box-shadow:#ededed 1px 1px 5px;}*/
+
+#listBox .column .portlet {
+    float: left;
+    width: 32%;
+    height: 300px;
+    margin: .66%;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: #fff url(../img/common/contentbox_h3_bg.gif) repeat-x;
+    overflow: hidden;
+    box-shadow: #ededed 1px 1px 5px;
+}
+
+#listBox .column .portlet.columnhalf {
+    width: 48.6%;
+}
+
+#listBox .column .portlet.columnFull {
+    float: left;
+    width: 98.8%;
+    height: 240px;
+    min-height: 220px;
+}
+
+#listBox .column .portlet.time {
+    height: 612px;
+}
+
+#listBox .column .portlet .portlet-header {
+    position: relative;
+}
+
+#listBox .column .portlet .portlet-header h3 {
+    height: 34px;
+    line-height: 34px;
+    text-indent: 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: move;
+}
+
+#listBox .column .portlet .portlet-header .portlet-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -8px;
+}
+
+/* 공개강의추가 151203 */
+
+#listBox .column .portlet .portlet-header .portlet-more,
+#listBox .column .portlet .portlet-header .portlet-edit {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+#listBox .column .portlet .portlet-header .portlet-toggle {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    margin-top: -8px;
+    cursor: pointer;
+    display: none;
+}
+
+#listBox .column .portlet .portlet-header .portlet-disabled {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+#listBox .column .portlet .portlet-header .portlet-switch {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    margin-top: -10px;
+}
+
+#listBox .column .portlet .portlet-content {
+    margin: 5px 0;
+}
+
+#listBox .column .portlet .bxslider,
+#listBox .column .portlet .bxslider2,
+#listBox .column .portlet .bxslider3 {
+    margin: 0;
+    overflow: hidden;
+}
+
+#listBox .column .portlet .bx-wrapper {
+    position: relative;
+    margin: 5px auto !important;
+    padding: 0;
+    *zoom: 1;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-pager,
+#listBox .column .portlet .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -26px;
+    width: 100%;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-weight: bold;
+    color: #666;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-pager .bx-pager-item,
+#listBox .column .portlet .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#listBox .column .portlet .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+
+/*.bx-wrapper .bx-pager.bx-default-pager a.active{display:none;}*/
+
+#listBox .column .portlet .bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(../img/common/controls.png) no-repeat 0 -32px;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-next {
+    right: 10px;
+    background: url(../img/common/controls.png) no-repeat -43px -32px;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-prev:hover {
+    background-position: 0 0;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-next:hover {
+    background-position: -43px 0;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9;
+}
+
+#listBox .column .portlet .bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+#listBox .column .portlet .portlet-content ul.boardContent {
+    width: 100%;
+    overflow: hidden;
+}
+
+#listBox .column .portlet .portlet-content ul.boardContent li {
+    float: left;
+}
+
+#listBox .column .portlet .portlet-content p.about {
+    height: 60px;
+    padding: 10px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#listBox .column .portlet ul.boardFooter {
+    height: 24px;
+    padding-top: 12px;
+    overflow: hidden;
+}
+
+#listBox .column .portlet ul.boardFooter li {
+    float: left;
+}
+
+#listBox .column ul.list_line {
+    border-bottom: 1px dotted #ccc;
+}
+
+#listBox .column ul.list_line li {
+    display: inline-block;
+    padding: 8px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox .column ul.list_line li:first-child {
+    width: 80%;
+    font-weight: 700;
+}
+
+#listBox .column ul.list_line li:first-child::before {
+    content: '– ';
+}
+
+#listBox .column ul.list_line li:last-child {
+    width: 18%;
+    text-align: right;
+}
+
+ul.list_line_S2 {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+ul.list_line_S2:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul.list_line_S2 li {
+    display: inline-block;
+    padding: 12px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+ul.list_line_S2 li {
+    width: 50px;
+    padding-left: 8px;
+}
+
+ul.list_line_S2 li:first-child {
+    width: 57%;
+    font-weight: 700;
+}
+
+ul.list_line_S2 li:last-child {
+    width: 60px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+ul.list_line_S2 li span.ca {
+    padding-right: 5px;
+    color: #f34f3e;
+}
+
+p.date {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: #ffa200;
+}
+
+.schedule ul {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background: #eaecf2;
+}
+
+.schedule ul li {
+    position: relative;
+    padding: 3px 0;
+    font-size: 13px;
+}
+
+.schedule ul li:first-child {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.schedule ul li span {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 11px;
+    color: #898989;
+    z-index: auto;
+}
+
+.schedule ul li span a {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.photo_box {
+    float: left;
+    width: 18%;
+    margin: 10px 1%;
+}
+
+.photo_box figure {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+
+.photo_box figure img {
+    width: 100%;
+    height: 140px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.photo_box figure:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.photo_box dl.text {
+    margin: 5px 0;
+}
+
+.photo_box dl.text dt a {
+    display: block;
+    padding: 3px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+.photo_box dl.text dd.con {
+    height: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
+    line-height: 16px;
+    color: #999;
+    border-top: 1px solid #a9b3c9;
+    text-align: left;
+    letter-spacing: -1px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+#listBox .column dl.listTable {
+    padding: 5px 0;
+    line-height: 20px;
+    border-bottom: 1px dotted #ccc;
+    box-sizing: border-box;
+}
+
+#listBox .column dl.dateBar1 {
+    border-left: 7px solid #ee1c24;
+}
+
+#listBox .column dl.dateBar2 {
+    border-left: 7px solid #f8941d;
+}
+
+#listBox .column dl.dateBar3 {
+    border-left: 7px solid #ccc;
+}
+
+#listBox .column dl dt {
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox .column dl dt a {
+    color: #246890;
+}
+
+#listBox .column dl dd {
+    text-align: right;
+}
+
+#listBox .column dl span.category {
+    margin-right: 5px;
+    color: #6666CC;
+}
+
+#listBox .column table.listBoard {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#listBox .column table.listBoard:first-child {
+    margin-top: 0;
+}
+
+/* 공개강의수정 151203 */
+
+#listBox .column table.listBoard td {
+    padding: 6px 8px;
+    line-height: 18px;
+    border-top: 1px solid #bfcdd5;
+    border-left: 1px solid #bfcdd5;
+    border-bottom: 1px solid #bfcdd5;
+    background: #e7ecef;
+}
+
+#listBox .column table.listBoard th {
+    font-weight: 800;
+    color: #fff;
+    border-left: none;
+    border-bottom: 1px solid #bfcdd5;
+    background: #95aab7;
+}
+
+#listBox .column table.listBoard td span {
+    width: 70%;
+    margin-right: -120px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox .column table.listBoard2 {
+    width: 100%;
+    border-top: 2px solid #727494;
+}
+
+#listBox .column table.listBoard2 td {
+    padding: 6px 8px;
+    line-height: 18px;
+    border-top: 1px solid #c8c9d5;
+    border-left: 1px solid #c8c9d5;
+    border-bottom: 1px solid #c8c9d5;
+    background: #e9e9ef;
+}
+
+#listBox .column table.listBoard2 th {
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    border-left: none;
+    border-bottom: 1px solid #c8c9d5;
+    background: #9a9bb2;
+}
+
+/* 공개강의추가 151203 */
+
+#listBox .column table.listBoard3 {
+    width: 100%;
+    table-layout: fixed;
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+    border-collapse: inherit;
+}
+
+#listBox .column table.listBoard3 td {
+    padding: 2px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#listBox .column .portlet.post-it {
+    border: 1px solid #f4bb5b;
+    background: #fae355;
+}
+
+#listBox .column .portlet .portlet-header.post-it {
+    border-bottom: 1px solid #ff9900;
+}
+
+#listBox .column .portlet .portlet-content p.post-it {
+    padding: 5px;
+    line-height: 18px;
+    color: #e3680d;
+    border-bottom: 1px dotted #ff9966;
+}
+
+/* 내포트폴리오 160201 */
+
+.myPort {
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+}
+
+.myPort p {
+    float: left;
+    width: 20%;
+    padding: 10px 0;
+}
+
+.myPort p img {
+    width: 100%;
+    height: 76px;
+    vertical-align: middle;
+}
+
+.myPort table {
+    float: right;
+    width: 78%;
+    table-layout: fixed;
+    padding: 10px 0 0 0;
+    border-collapse: inherit;
+}
+
+.myPort table td {
+    padding: 2px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.myPort table td:last-child {
+    text-align: right;
+}
+
+.myPort table td:first-child {
+    text-align: left;
+}
+
+.myPort table td.hd_txt a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.myPort table td.hd_txt a span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+
+.myPort table td.summary {
+    padding: 5px;
+    text-align: left;
+    color: #fff;
+    border-radius: 4px;
+    background: #595f6a;
+}
+
+.myPort table td.summary.tp {
+    background: #51b9a6;
+}
+
+.myPort table td.summary.lp {
+    background: #4cb2d7;
+}
+
+.myPort table td ul.setupBtn {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.myPort table td ul.setupBtn li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.myPort table td ul.setupBtn li a {
+    font-size: 18px;
+}
+
+.portlet-content .myPort p {
+    padding: 5px 0;
+}
+
+.portlet-content .myPort p img {
+    height: 52px;
+}
+
+/* 학습커뮤니티 160420 */
+
+#listBox .commBox {
+    width: 49%;
+}
+
+#listBox .commBox h5 {
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.fineComm {
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: #ededed 1px 1px 3px;
+    overflow: hidden;
+}
+
+.fineComm p {
+    float: left;
+    width: 24%;
+    padding: 10px 0;
+}
+
+.fineComm p img {
+    width: 100%;
+    height: 90px;
+    vertical-align: middle;
+}
+
+.fineComm table {
+    float: right;
+    width: 74%;
+    table-layout: fixed;
+    padding: 10px 0;
+    border-collapse: inherit;
+}
+
+.fineComm table td {
+    padding: 2px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fineComm table td:last-child {
+    text-align: right;
+}
+
+.fineComm table td:first-child {
+    text-align: left;
+}
+
+.fineComm table td.hd_txt a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.fineComm table td.hd_txt a span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+
+.fineComm table td.summary {
+    padding: 5px 0;
+    text-align: left;
+    color: #e66f62;
+}
+
+/* portfolio_basic.css 이동 160502 */
+
+.listForm {
+    margin: 10px 0;
+}
+
+.listForm:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+.listForm .addBtn {
+    float: right;
+    margin-top: -45px;
+}
+
+.listForm .list-item {
+    margin: 5px 0;
+}
+
+.listForm .list-item span.number {
+    display: inline-block;
+    width: 7%;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    vertical-align: middle;
+}
+
+.listForm .list-item input {
+    width: 96%;
+    height: 28px;
+    padding: 2px 0 2px 5px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
+}
+
+.listForm .list-item input.ca {
+    width: 80%;
+}
+
+.listForm .list-item input.ca2 {
+    width: 70%;
+}
+
+.listForm .list-item .choice {
+    width: 14.5%;
+    height: 28px;
+    margin-right: .5%;
+}
+
+.listForm .list-item .choice2 {
+    width: 9.2%;
+    height: 28px;
+    margin-right: .5%;
+}
+
+.listForm .list-add {
+    display: inline-block;
+    width: 132px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background: #6c748d;
+}
+
+.listForm .list-add-excel {
+    display: inline-block;
+    width: 160px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background: #7195c1;
+}
+
+.listForm .list-remove {
+    vertical-align: text-top;
+    font-size: 16px;
+    color: #fff;
+    background: #ff3b28;
+}
+
+.listForm .list-remove span {
+    display: inline-block;
+    padding: 3px 5px;
+}
+
+/* Content Box 사이즈 160503 */
+
+.inBox {
+    float: left;
+    height: 300px;
+    margin: .66%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: #e1e1e1 1px 1px 5px;
+}
+
+.size_1 {
+    width: 23.6%;
+}
+
+.size_2 {
+    width: 32%;
+}
+
+.size_3 {
+    width: 48.6%;
+}
+
+.size_4 {
+    width: 65.2%;
+}
+
+.size_5 {
+    width: 73.6%;
+}
+
+.size_6 {
+    width: 98.6%;
+}
+
+.inBox .colum_head {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.inBox .colum_head h3 {
+    font-size: 16px;
+    color: #000;
+}
+
+.inBox .colum_head .moreBtn {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 18px;
+    z-index: auto;
+}
+
+.inBox .colum_head .moreBtn span {
+    display: none;
+}
+
+.inBox dl.group_add {
+    display: inline-block;
+    width: 80%;
+}
+
+.inBox dl.group_add dt {
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+.inBox dl.group_add dd {}
+
+.inBox dl.group_add dd ul {
+    margin-top: 10px;
+}
+
+.inBox dl.group_add dd ul li {
+    padding: 3px 7px;
+    font-weight: 700;
+    background: url(../template_common/icon_dot.gif) left 10px no-repeat;
+}
+
+.inBox .btn_add {
+    display: inline-block;
+    width: 18%;
+    margin-top: 30px;
+    padding: 14px 0;
+    font-size: 32px;
+    text-align: center;
+    border: 1px dashed #ccc;
+    vertical-align: top;
+    background: #f1f1f1;
+}
+
+.inBox .btn_add:hover {
+    border: 1px dashed #666;
+}
+
+.inBox .btn_add span {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.portlet-placeholder {
+    height: 50px;
+    width: 31%;
+    margin: .4%;
+    border: 2px dashed #d7d7d7;
+    background: #f9f9f9;
+}
+
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+
+#timeline {
+    height: 100%;
+    list-style: none;
+    margin-left: 80px;
+    border-left: 8px solid #eee9dc;
+}
+
+#timeline li {
+    padding: 20px 0;
+    position: relative;
+}
+
+#timeline .date {
+    margin-top: -10px;
+    top: 50%;
+    left: -85px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    position: absolute;
+    z-index: auto;
+}
+
+#timeline .circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -14px;
+    width: 10px;
+    height: 10px;
+    background: #48b379;
+    border: 5px solid #eee9dc;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+#timeline .content {
+    max-height: 180px;
+    margin: 2px 0 2px 20px;
+    padding: 2%;
+    border: 3px solid #eee9dc;
+    border-radius: 7px;
+    position: relative;
+    background: #39b6ae;
+}
+
+#timeline .content span {
+    display: block;
+    max-height: 200px;
+    padding-top: 30px;
+    color: #ddf2e7;
+    text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
+    overflow: hidden;
+}
+
+#timeline label {
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    z-index: auto;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#timeline .radio {
+    display: none;
+}
+
+#timeline .radio:checked+.relative .circle {
+    background: #f98262;
+}
+
+#timeline .radio:checked~.content {
+    background: #f8941d;
+}
+
+#timeline .radio:checked~.content span {
+    color: #fff;
+}
+
+/*#timeline .content {max-height: 20px; margin:2px 0 2px 20px; padding:2%; border-color: transparent; border-width:3px; border-style: solid; border-radius:4px; position: relative; background:#39b6ae;}
+#timeline .content:before, .content:after {content: ""; width: 0; height: 0; border: solid transparent; position: absolute; pointer-events: none; right: 100%;}
+#timeline .content span {display:block; max-height:0; padding-top:30px; color:transparent; text-align: justify; word-break: break-word; hyphens: auto; overflow: hidden;}
+#timeline label {width:100%; font-size:13px; line-height:20px; color:#fff; font-weight:700; position: absolute; z-index:auto; cursor: pointer; transition: transform 0.2s linear; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+#timeline .radio {display: none;}
+#timeline .radio:checked + .relative label {cursor: auto; transform: translateX(42px);}
+#timeline .radio:checked + .relative .circle {background: #f98262;}
+#timeline .radio:checked ~ .content {max-height: 180px; border-color: #eee9dc; border-radius:7px; transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear; background:#39b6ae;}
+#timeline .radio:checked ~ .content span {max-height: 200px; color:#ddf2e7; transition: color 0.3s linear 0.3s;}*/
+
+/* 검색 및 준비중인 페이지 CSS */
+
+#listBox .search_unfine {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 5px solid #e3e4e9;
+    background: #f3f3f3 url(../img/common/search_none.png) 10% 50% no-repeat;
+    background-size: 20%;
+    overflow: hidden;
+}
+
+#listBox .search_unfine ul {
+    float: right;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+#listBox .search_unfine ul li {
+    padding: 5px 8px;
+    font-size: 14px;
+    background: url(../img/common/icon_dot.gif) left 12px no-repeat;
+}
+
+#listBox .search_unfine ul li:first-child {
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    background: none;
+}
+
+#listBox .search_unfine ul li span {
+    color: #ff540e;
+}
+
+#listBox .page_none {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 180px;
+    border: 5px solid #e3e4e9;
+    background: #f3f3f3 url(../img/common/page_none.png) 10% 50% no-repeat;
+    background-size: 20%;
+    overflow: hidden;
+}
+
+#listBox .page_none ul {
+    float: right;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+#listBox .page_none ul li {
+    padding: 5px 8px;
+    font-size: 12px;
+    background: url(../img/common/icon_dot.gif) left 12px no-repeat;
+}
+
+#listBox .page_none ul li:first-child {
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    background: none;
+}
+
+#listBox .page_none ul li span {
+    color: #ff540e;
+}
+
+#listBox .time_none {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 180px;
+    border: 5px solid #e3e4e9;
+    background: #f3f3f3 url(../img/common/time_none.png) 10% 50% no-repeat;
+    background-size: 20%;
+    overflow: hidden;
+}
+
+#listBox .time_none ul {
+    float: right;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+#listBox .time_none ul li {
+    padding: 5px 8px;
+    font-size: 12px;
+    background: url(../img/common/icon_dot.gif) left 12px no-repeat;
+}
+
+#listBox .time_none ul li:first-child {
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    background: none;
+}
+
+#listBox .time_none ul li span {
+    color: #ff540e;
+}
+
+#listBox .error_none {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 180px;
+    border: 5px solid #e3e4e9;
+    background: #f3f3f3 url(../img/common/error_none.png) 10% 50% no-repeat;
+    background-size: 15%;
+    overflow: hidden;
+}
+
+#listBox .error_none ul {
+    float: right;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+#listBox .error_none ul li {
+    padding: 5px 8px;
+    font-size: 12px;
+    background: url(../img/common/icon_dot.gif) left 12px no-repeat;
+}
+
+#listBox .error_none ul li:first-child {
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    background: none;
+}
+
+#listBox .error_none ul li span {
+    color: #ff540e;
+}
+
+#listBox .write_none {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 180px;
+    padding: 10px 0;
+    border: 5px solid #e3e4e9;
+    background: #f3f3f3 url(../img/common/write_none.png) 10% 50% no-repeat;
+    background-size: 20%;
+    overflow: hidden;
+}
+
+#listBox .write_none ul {
+    float: right;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+#listBox .write_none ul li {
+    font-size: 12px;
+    text-align: center;
+}
+
+#listBox .write_none ul li:first-child {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+}
+
+#listBox .write_none ul li span {
+    color: #ff540e;
+}
+
+#listBox .none_txt {
+    margin: 80px 0 -80px 0;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* TREEVIEW 요소 */
+
+#treeview,
+#treeview ul,
+#treeview li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#treeview {}
+
+#treeview ul {
+    display: none;
+}
+
+#treeview li {
+    line-height: 200%;
+    margin-top: 1px;
+    background: #eee;
+    position: relative;
+    width: 100%;
+}
+
+#treeview li {
+    text-indent: 28px;
+}
+
+#treeview>li.select>a {
+    color: #000;
+    font-weight: 700;
+}
+
+#treeview li span {
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 13px;
+    height: 13px;
+    cursor: auto;
+    font-size: 0;
+}
+
+#treeview li span,
+#treeview li span.collapsed {
+    background: url(../img/common/collapsed.gif) no-repeat 0 0;
+    cursor: pointer;
+}
+
+#treeview li span.expanded {
+    background: url(../img/common/expanded.gif) no-repeat 0 0;
+}
+
+#treeview li ul li {
+    text-indent: 52px;
+    background: #fff;
+}
+
+#treeview>li>ul>li.select>a {
+    color: #000;
+    font-weight: 700;
+}
+
+#treeview li ul li span {
+    left: 28px;
+}
+
+#treeview li ul li ul li {
+    text-indent: 76px;
+}
+
+#treeview li ul li ul li a {
+    color: #666 !important;
+}
+
+#treeview li ul li ul li.select a {
+    color: #cc0000 !important;
+    font-weight: 700;
+}
+
+/* flot Diagram 요소 */
+
+.flot-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    border: 1px solid #ddd;
+    background: #fff;
+    background: linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+    background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flot-placeholder {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+/* TOP SCROLL 요소 */
+
+#toTop {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    text-indent: -1000px;
+    text-align: center;
+    color: #fff;
+    background: url('../img/template_common/toTop.png') center center no-repeat #777;
+    opacity: 0.8;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+#toTop:hover,
+#toTop:focus,
+#toTop.hover {
+    background-color: #CD8F47;
+}
+
+div.mypaage_sche {
+    margin: 0 10px;
+    border-top: 1px solid #e0e1e4;
+    padding-top: 5px;
+    height: 95px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.mypaage_sche dl {
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+div.mypaage_sche dl dt,
+div.mypaage_sche dl dd {
+    float: left;
+    padding: 2px 0 2px 10px;
+    color: #0065e1;
+    line-height: 18px;
+}
+
+div.mypaage_sche dl dd {
+    text-align: left !important;
+    color: #505050;
+    background: none;
+}
+
+h3.h3_term {
+    margin: 0 10px;
+    padding: 5px;
+    border-top: 1px solid #e0e1e4;
+}
+
+/* Tooltip 요소 */
+
+#tooltip {
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+#tooltip:after
+/* triangle decoration */
+
+    {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, .6);
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+
+#tooltip.top:after {
+    border-top-color: transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, .6);
+    top: -20px;
+    bottom: auto;
+}
+
+#tooltip.left:after {
+    left: 10px;
+    margin: 0;
+}
+
+#tooltip.right:after {
+    right: 10px;
+    left: auto;
+    margin: 0;
+}
+
+a.fcw {
+    color: #d54447;
+    font-weight: 800;
+}
+
+/* upload-form 요소 */
+
+#upload {
+    background-color: #fff;
+    width: 100%;
+}
+
+#drop {
+    background-color: #ebebeb;
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    border-image: url('../img/common/border-image.png') 25 repeat;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7f858a;
+    text-align: center;
+}
+
+#drop a {
+    background-color: #007a96;
+    margin-right: 10px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+}
+
+#drop a:hover {
+    background-color: #0986a3;
+}
+
+#drop input {
+    display: none;
+}
+
+#drop .progress {
+    width: 100%;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0px;
+    background-color: #cfcfcf;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #aaa #bbb #fff #bbb;
+    box-shadow: inset 0px 2px 3px #bbb;
+}
+
+#drop .progress-inner {
+    height: 100%;
+    background: #999;
+    background-size: 18px 18px;
+    background-color: #7ce;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    box-shadow: inset 0px 2px 8px rgba(255, 255, 255, .5), inset -1px -1px 0px rgba(0, 0, 0, .2);
+}
+
+#upload ul {
+    list-style: none;
+}
+
+#upload ul:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+#upload ul li {
+    background-color: #3c556e;
+    border-top: 1px solid #4e6f8f;
+    border-bottom: 1px solid #2b3d4f;
+    padding: 4px;
+    height: 48px;
+    position: relative;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#upload ul li input {
+    display: none;
+}
+
+#upload ul li p {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #ec7373;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+}
+
+#upload ul li i {
+    font-weight: normal;
+    font-style: normal;
+    color: #f1f1f1;
+    display: block;
+}
+
+#upload ul li span {
+    width: 15px;
+    height: 12px;
+    background: url(../img/common/icons.png) no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*
+#listBox .step {margin:40px 0;}
+#listBox .step ol {overflow:hidden; text-align:center;}
+#listBox .step ol li {display:inline-block; min-width:20%; margin-left:1%; padding:10px 10px 15px; text-align:center; border-radius:7px; border:1px solid #d7d7d7; background:#f4f4f4;}
+#listBox .step ol li:first-child {margin-left:0;}
+#listBox .step ol li p.head {font-weight:800; font-size:16px; color:#548098; line-height:34px;}
+#listBox .step ol li p.text {color:#666;}
+#listBox .step ol li p span {margin-right:5px; color:#548098;}
+#listBox .step ol li.select {border:1px solid #416274; background:#548098;}
+#listBox .step ol li.select p.head {color:#fff;}
+#listBox .step ol li.select p.text {color:#b1c8d3;}
+#listBox .step ol li.select p span {margin-right:5px; color:#fff;}
+#listBox .joinBox {}
+#listBox .joinBox h3 {font-size:16px; margin-bottom:15px;}
+*/
+
+/********************************************************************************************************
+ * Template, Classroom, Admin 공통 CSS - END
+********************************************************************************************************/
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .loading-modal {
+    display: block;
+}
+
+/* loading */
+
+.loading-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3) url('images/loader.gif') 50% 50% no-repeat;
+}
+
+/* 포트폴리오 이미지 반응형 160324+ */
+
+@media all and (max-width:1023px) {
+    #listBox>ul.conBox li>.title_img img,
+    .comm_img img {
+        height: 180px !important;
+    }
+    #listBox>ul.conBox li>.make_user img {
+        height: 90px;
+    }
+    .myPort p {
+        padding: 16px 0;
+    }
+    .myPort p img {
+        height: 62px;
+    }
+    #listBox .commBox {
+        width: 100%;
+    }
+    .fineComm p {
+        width: 16%;
+    }
+    .fineComm table {
+        width: 80%;
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1217px) {
+    #listBox>ul.conBox li>.title_img img {
+        height: 240px;
+    }
+    #listBox>ul.conBox li>.make_user img {
+        height: 120px;
+    }
+    #listBox ul.conBox.cu {
+        width: 23.4% !important;
+    }
+}
+
+/* 시험창 디자인 */
+
+.exam-page {
+    padding: 20px;
+}
+
+.exam-page .header {
+    padding: 20px;
+    background: #42939a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    z-index: 10;
+}
+
+.exam-page .header h2 {
+    float: left;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 28px;
+}
+
+.exam-page .header ul.test_time {
+    float: right;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.exam-page .header ul.test_time li {
+    display: inline-block;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.exam-page .header ul.test_time li:first-child {
+    font-weight: 500;
+    color: #fbc503;
+}
+
+.exam-page .header .total-Item {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.exam-page .header .total-Item span {
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    margin: 2px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 2px;
+    background: #84c5ca;
+}
+
+.exam-page .header .total-Item span.active {
+    margin-left: 20px;
+    border: 1px solid #84c5ca;
+    background: none;
+}
+
+.exam-page .header ul.num-chk {
+    margin-top: 10px;
+}
+
+.exam-page .header ul.num-chk li {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: #84c5ca;
+}
+
+.exam-page .header ul.num-chk li.active {
+    border: 1px solid #84c5ca;
+    background: none;
+}
+
+.exam-page .content {
+    padding: 140px 0 20px 0;
+}
+
+.exam-page .listTest {
+    clear: both;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px dashed #cdcdcd;
+    background: #f3f1ee;
+}
+
+.exam-page .listTest h3 {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.exam-page .listTest h3 span {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.exam-page .listTest h3 span a {
+    font-size: 12px;
+}
+
+.exam-page .listTest h3 span a:hover {
+    text-decoration: underline;
+}
+
+.exam-page .listTest h3 span.match {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background: url(../img/classroom/test_pen_match.png) no-repeat;
+    z-index: auto;
+}
+
+.exam-page .listTest h3 span.half {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background: url(../img/classroom/test_pen_half.png) no-repeat;
+    z-index: auto;
+}
+
+.exam-page .listTest h3 span.wrong {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background: url(../img/classroom/test_pen_wrong.png) no-repeat;
+    z-index: auto;
+}
+
+.exam-page .listTest p {
+    display: inline-block;
+}
+
+.exam-page .listTest ul {
+    overflow: hidden;
+}
+
+.exam-page .listTest ul li {
+    padding: 5px 10px;
+    line-height: 16px;
+}
+
+.exam-page .listTest ul li input[type="text"] {
+    width: calc(100% - 20px);
+}
+
+.exam-page .listTest ul li.short {
+    float: left;
+    width: calc(20% - 20px);
+}
+
+.exam-page .footer {
+    text-align: center;
+    background: #fff;
+}
+
+.exam-page .footer ul {}
+
+.exam-page .footer ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.exam-page .footer ul li:first-child {
+    margin-left: 0;
+}

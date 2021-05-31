@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************************************************************************************************
+ * 레이아웃
+*********************************************************************************************************/
+
+#Cover,
+#header,
+.topCover,
+#container,
+#footer,
+#footer ul.footerField {
+    width: 100% !important;
+}
+
+#Cover,
+div.topCover,
+#aside ul.lnb,
+#footer ul.footerField {
+    min-width: 748px;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#headerContent {
+    height: 100px !important;
+}
+
+#container {
+    background: none;
+}
+
+#aside {
+    position: relative;
+    width: 100%;
+}
+
+#aside #todayList {}
+
+#aside ul.lnb span {
+    display: none;
+}
+
+#bodyContent {
+    width: 96%;
+    padding: 2% !important;
+    background: #fff;
+    overflow: hidden;
+}
+
+/*h1, h2, h3, h4, h5, h6, th {font-family:'dotum'; font-weight:bold !important;}
+
+
+/********************************************************************************************************
+ * 컨텐츠
+*********************************************************************************************************/
+
+#headerContent h1 {
+    magin-top: 0 !important;
+}
+
+#headerContent div.classSection,
+#conArea div.handleTop {
+    display: none;
+}
+
+#conArea ul.proFunction {
+    right: 10px;
+}
+
+#bodyContent div.contentTitle {
+    padding-bottom: 2%;
+}
+
+#aside ul.lnb {}
+
+#aside ul.lnb li {
+    text-align: center;
+}
+
+#aside ul.lnb h3 {
+    cursor: pointer;
+    text-indent: 0;
+    border-top: 1px solid #7a7a7b;
+    border-bottom: 1px solid #3e3e3f;
+    border-left: 1px solid #7a7a7b;
+    border-right: 1px solid #3e3e3f;
+    box-sizing: border-box;
+    background: #67686c url(../img/common/bg_pattern.png) top repeat;
+}
+
+#aside ul.lnb li ul.menuSub {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#aside ul.lnb li ul.menuSub li {
+    width: 100%;
+    background: url(../img/template_common/util_bg.png) left no-repeat;
+}
+
+#aside ul.lnb li ul.menuSub li a,
+#aside ul.lnb li ul.menuSub li a:hover {
+    padding-left: 0;
+    background: #9fa4b1 url(../img/common/bg_pattern.png) repeat;
+}
+
+#aside ul.lnb li ul.menuSub li:first-child {
+    background: none;
+}
+
+#aside ul.lnb li:hover div.menuSubHover {
+    display: none;
+}
+
+#aside #todayList {
+    width: 100%;
+    padding-top: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#aside #todayList h2 {
+    display: none;
+}
+
+#aside #todayList a.bx-prev {
+    top: 28px;
+    left: 5px;
+    background: url(../img/common/btn_prev.png) no-repeat;
+}
+
+#aside #todayList a.bx-next {
+    top: 28px;
+    right: 5px;
+    background: url(../img/common/btn_next.png) no-repeat;
+}
+
+}
+
+#aside #todayList .bx-wrapper {
+    /*max-width:100% !important; */
+    width: 96% !important;
+    margin: 0 20px !important;
+}
+
+#aside #todayList ul.bxslider {
+    margin-bottom: 0;
+    background: none;
+}
+
+#aside #todayList ul.bxslider ul.listNum {
+    border-bottom: none;
+}
+
+.dropBox {
+    position: relative;
+    height: 40px;
+    margin-top: -5px;
+    /* display:inline-block !important; */
+    z-index: 10;
+}
+
+.dropBox ul.option {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    padding: 0px;
+    border: 1px solid #afafaf;
+    border-radius: 4px;
+    display: none;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.dropBox ul.option li a {
+    display: block;
+    width: 140px;
+    height: 25px;
+    line-height: 25px;
+    letter-spacing: -1px;
+    text-indent: 10px;
+}
+
+.dropBox ul.option li a:hover {
+    color: #fff;
+    margin-right: -6px;
+    padding-right: 6px;
+    background-color: #908886;
+}
+
+#footer ul.footerField li.logo {
+    display: none;
+}
+
+#footer ul.footerField li.copyright {
+    margin-left: 0;
+}
+
+#footer ul.footerField li.copyright address {
+    text-align: center;
+}
