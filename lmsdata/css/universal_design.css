@@ -1,0 +1,23 @@
+a.minus { 
+    display:inline-block;
+    width:19px; height:19px; 
+    text-indent:-9999px;
+    background:url('../img/universal_design/textSize.gif')
+    no-repeat -38px 0;
+    vertical-align:middle;
+}
+a.stop {
+    display:inline-block;
+    width:19px; height:19px;
+    text-indent:-9999px;
+    background:url('../img/universal_design/textSize.gif')
+    no-repeat -19px 0;
+    vertical-align:middle;
+} 
+a.plus {
+    display:inline-block;
+    width:19px; height:19px;
+    margin-left:4px; text-indent:-9999px;
+    background:url('../img/universal_design/textSize.gif')
+    no-repeat 0 0; vertical-align:middle;
+} 

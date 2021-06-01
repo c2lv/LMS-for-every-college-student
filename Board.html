@@ -5,7 +5,7 @@
 
     <!-- Stylesheets -->
     <!-- 기본 -->
-
+	<link rel="stylesheet" type="text/css" href="./lmsdata/css/universal_design.css"/>
     <link rel="stylesheet" type="text/css" href="./lmsdata/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./lmsdata/css/content.css">
     <link rel="stylesheet" type="text/css" href="./lmsdata/css/icon_button.css">
@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="./lmsdata/css/template1_tablet.css" media="all and (max-width: 980px)">
 
     <!-- Scripts -->
+    <script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/universal_design.js"></script>
     <script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/common_util.js"></script>
     <script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/jquery-1.11.1.min.js"></script>
     <script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/jquery-ui.min.js"></script>
@@ -58,7 +59,7 @@
 
 </head>
 
-<body class="cbp-spmenu-push">
+<body class="cbp-spmenu-push" id="wrap" style="zoom: 1; transform: scale(1); transform-origin: 0px 0px;">
     <script language="javascript">
     </script>
 
@@ -253,24 +254,7 @@
                 document.location.href = "/Main.do?cmd=movePageForToday&url=" + url;
             }
         </script>
-
-
         <div id="header">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <script type="text/javascript">
                 var commonResultMessage = "null";
                 if (commonResultMessage == "" || commonResultMessage == "null") {
@@ -451,29 +435,26 @@
                 function createPortInfo(portType) {
                     location.href = "/PortInfo.do?cmd=addPortfolioUserForm&portInfoDTO.portType=" + portType;
                 }
-
             </script>
 
             <!-- topCover Start 서버2 -->
             <div class="topCover">
                 <h1><a href="./index.html"><img src="./lmsdata/img/template1/logo.png" alt="동국대학교 학습지원센터"></a></h1>
-
                 <div class="login">
                     <form class="login-info" method="post">
                         <fieldset>
                             <legend>접속자 정보</legend>
-
                             <p><span>2017112674(박현준)님</span></p>
+                            <span>글자크기</span>
+                            <a href="javascript:scaleIn();" class="plus" title="화면크게">화면크게</a>
+                            <a href="javascript:scaleInit();" class="stop" title="화면 원래대로">원래대로</a>
+                            <a href="javascript:scaleOut();" class="minus" title="화면작게">화면작게</a>
                             <ul class="message">
-
                                 <li>
-                                    <a href="/Message.do?cmd=viewMessageList&amp;messageType=RECEIVE" title="새 쪽지가  1
+                                    <a href="/Message.do?cmd=viewMessageList&amp;messageType=RECEIVE" title="새 쪽지가  0
                         건 있습니다."><i></i>
-
-
                                         쪽 지
-
-                                        <span class="num bcSkyblue">1</span>
+                                        <span class="num bcSkyblue">0</span>
                                     </a>
                                 </li>
                             </ul>
@@ -482,13 +463,6 @@
                                 <li><a
                                         href="/Main.do?cmd=moveMenu&amp;mainDTO.parentMenuId=menu_00026&amp;mainDTO.menuId=menu_00243">대표권한설정</a>
                                 </li>
-
-
-
-
-
-
-
                                 <li class="mypf"><a href="#_" id="loginVcBtn" onclick="changeVcPw();return false;"
                                         title="Webex Pw 변경">Webex 비밀번호 변경</a></li>
 
@@ -1530,17 +1504,6 @@
                                         2020-04-16
                                     </td>
                                 </tr>
-
-
-
-
-
-
-
-
-
-
-
                                 <tr class="odd-row">
                                     <td class="textLeft first">
                                         <div style="margin-left: 0px;" align="absmiddle" alt="">

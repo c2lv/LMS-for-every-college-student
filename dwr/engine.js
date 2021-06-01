@@ -165,13 +165,15 @@ dwr.engine.setActiveReverseAjax = function(activeReverseAjax) {
  * The default message handler.
  * @see getahead.org/dwr/browser/engine/errors
  */
-dwr.engine.defaultErrorHandler = function(message, ex) {
-    dwr.engine._debug("Error: " + ex.name + ", " + ex.message, true);
-    if (message == null || message == "") alert("A server error has occured.");
-    // Ignore NS_ERROR_NOT_AVAILABLE if Mozilla is being narky
-    else if (message.indexOf("0x80040111") != -1) dwr.engine._debug(message);
-    else alert(message);
-};
+
+// github 업로드시 에러 출력이 되어 주석처리함
+// dwr.engine.defaultErrorHandler = function(message, ex) {
+//     dwr.engine._debug("Error: " + ex.name + ", " + ex.message, true);
+//     if (message == null || message == "") alert("A server error has occured.");
+//     // Ignore NS_ERROR_NOT_AVAILABLE if Mozilla is being narky
+//     else if (message.indexOf("0x80040111") != -1) dwr.engine._debug(message);
+//     else alert(message);
+// };
 
 /**
  * The default warning handler.

@@ -7,6 +7,7 @@
 	<!-- Stylesheets -->
 	<!-- 기본 -->
 	<link rel="shortcut icon" href="./lmsdata/img/common/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="./lmsdata/css/universal_design.css"/>
 	<link rel="stylesheet" type="text/css" href="./lmsdata/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="./lmsdata/css/template_common.css" />
 	<link rel="stylesheet" type="text/css" href="./lmsdata/css/template1_basic.css?ver=1" />
@@ -180,7 +181,7 @@
 <![endif]-->
 </head>
 
-<body class="cbp-spmenu-push">
+<body class="cbp-spmenu-push" id="wrap" style="zoom: 1; transform: scale(1); transform-origin: 0px 0px;">
 	<div id="Cover">
 		<button class="active" id="showRightPush"><i class="fa fa-bars" title="메뉴"></i></button>
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
@@ -583,62 +584,53 @@
 			<div class="topCover">
 				<h1><a href="#"><img src="./lmsdata/img/template1/logo.png"
 							alt="동국대학교 학습지원센터" /></a></h1>
-
-				<div class="login">
-					<form class="login-info" method="post">
-						<fieldset>
-							<legend>접속자 정보</legend>
-
-							<p><span>2017112674(박현준)님</span></p>
-							<ul class="message">
-
-								<li>
-									<a href="#" title="새 쪽지가 0건 있습니다."><i></i>
-
-
-										쪽 지
-
-										<span class="num bcSkyblue">0</span>
-									</a>
-								</li>
-							</ul>
-							<ul class="member">
-								<li><a href="#">로그아웃</a></li>
-								<li><a href="#">대표권한설정</a></li>
-								<li class="mypf"><a href="#_" id="loginVcBtn" title="Webex Pw 변경">Webex 비밀번호 변경</a></li>
-							</ul>
-						</fieldset>
-
-
-
-					</form>
-
+							<div class="login">
+								<form class="login-info" method="post">
+									<fieldset>
+										<legend>접속자 정보</legend>
+										<p><span>2017112674(박현준)님</span></p>
+										<span>글자크기</span>
+										<a href="javascript:scaleIn();" class="plus" title="화면크게">화면크게</a>
+										<a href="javascript:scaleInit();" class="stop" title="화면 원래대로">원래대로</a>
+										<a href="javascript:scaleOut();" class="minus" title="화면작게">화면작게</a>
+										<ul class="message">
+											
+											<li>
+												<a href="#" title="새 쪽지가 0건 있습니다."><i></i>
+													쪽 지
+													<span class="num bcSkyblue">0</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="member">
+											<li><a href="#">로그아웃</a></li>
+											<li><a href="#">대표권한설정</a></li>
+											<li class="mypf"><a href="#_" id="loginVcBtn">Webex 비밀번호 변경</a></li>
+										</ul>
+									</fieldset>
+								</form>
 					<div class="class_sbox">
 						<form id="#" action="#" method="post">
 							<fieldset>
 								<legend>내강의실로 이동</legend>
-
 								<select name="courseDTO.courseId" class="default"
-									onchange="javascript:viewCourse(this.value)" title="내강의실 목록">
-									<option value=''> 강의실 선택</option>
-									<option value='S2021U0002001UEDU402801,이효정,'> 통합교육론(2021년 1학기)</option>
+								onchange="javascript:viewCourse(this.value)" title="내강의실 목록">
+								<option value=''> 강의실 선택</option>
+								<option value='S2021U0002001UEDU402801,이효정,'> 통합교육론(2021년 1학기)</option>
 								</select>
-
-
 							</fieldset>
 						</form>
 					</div>
-
 				</div>
-
+				
 				<ul class="util">
 					<!--<li><a href="/Main.do?cmd=viewHome&userDTO.localeKey=ko">HOME</a></li>
-		<li><a href="#">ENG</a></li>
-        <li><a href="#">CHN</a></li>
-        <li><a href="#">JPN</a></li> -->
-
-					<li><a href="#">HOME</a></li>
-
+						<li><a href="#">ENG</a></li>
+						<li><a href="#">CHN</a></li>
+						<li><a href="#">JPN</a></li> -->
+						
+						<li><a href="#">HOME</a></li>
+						
 					<li class="lang_eng"><a href="#"> ENG</a></li>
 					<li class="lang_chn"><a href="#"> CHN</a></li>
 					<li class="lang_jpn"><a onfocus="dropup('.sub1'); deletehover('.subtitle1')" href="#"> JPN</a></li>
@@ -804,24 +796,10 @@
 	<!-- mainContent 영역 부분 -->
 
 	<div id="container" class="main">
-
-
-
 		<!-- 본문 menu 부분 -->
 
 		<!-- 본문 content 부분 -->
 		<div id="mainContent">
-
-
-
-
-
-
-
-
-
-
-
 			<script type="text/javascript">
 				var commonResultMessage = "null";
 				if (commonResultMessage == "" || commonResultMessage == "null") {
@@ -829,11 +807,6 @@
 				}
 				var localeKey = "ko";
 			</script>
-
-
-
-
-
 			<script type="text/JavaScript" language="JavaScript"
 				src="./lmsdata/js/jquery.babypaunch.spinner.min.js"></script>
 			<script type="text/javascript" src="./lmsdata/js/netfunnel.js" charset="UTF-8"></script>
@@ -1329,8 +1302,6 @@
 	</div>
 	<!-- //footer 영역 부분 -->
 	<a title="컨텐츠 상단으로 이동" class="" id="toTop" style="display:none;" href="#"></a>
-
-
 	</div>
 </body>
 

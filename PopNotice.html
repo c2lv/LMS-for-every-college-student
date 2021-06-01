@@ -19,21 +19,6 @@
 		<link rel="stylesheet" type="text/css" href="./lmsdata/css/jquery.mCustomScrollbar.css">
 		<script type="text/JavaScript" language="JavaScript" src="./lmsdata/js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function () {
-				$('#noMoreToday').change(function () {
-					if ($(this).is(":checked")) {
-
-						var f = document.popNoticeForm;
-						var name = f["popNoticeContentsDTO.popNoticeContentsId"].value;
-
-						setCookieAt00(name, "done", 1)
-
-						fn_cancelMyMenu();
-					}
-				});
-			});
-		</script>
-		<script type="text/javascript">
 
 			//00:00 시 기준 쿠키 설정하기  
 			// expiredays 의 새벽  00:00:00 까지 쿠키 설정  
@@ -65,7 +50,7 @@
 			<input type="hidden" name="popNoticeContentsDTO.popType" value="layer">
 			<div class="popupLayer">
 				<div class="content pb30">
-					<p tabindex="0" style="line-height: 1.5;">e-Class를 통해 시험/과제 진행에 대한 유의 사항을 안내 드립니다.</p>
+					<p id="start" tabindex="0" style="line-height: 1.5;">e-Class를 통해 시험/과제 진행에 대한 유의 사항을 안내 드립니다.</p>
 					<p style="line-height: 1.5;"><b><br></b></p>
 					<p tabindex="0" style="line-height: 1.5;"><b>[유의사항]</b></p>
 					<p style="line-height: 1.5;"></p>
@@ -187,17 +172,68 @@
 							audio.currentTime = 0;
 						}
 					}())"><i class="icon-speaker-white" title="팝업듣기"></i></a>
-					<span tabindex="0" onfocus="/*(function check(){
-						if (document.querySelector('#nomoretoday').checked == false){
-							document.querySelector('#nomoretoday').checked = true;
-							break;
-						}
-						if (document.querySelector('#nomoretoday').checked == true)
-							document.querySelector('#nomoretoday').checked = false;
-					}())*/">1일 동안 이 창을 열지 않음</span>
-					<input type="checkbox" value="Y" name="noMoreToday" id="noMoreToday">
+					<span tabindex="0">1일 동안 이 창을 열지 않음</span>
+					<input tabindex="0" type="checkbox" value="Y" name="noMoreToday" id="noMoreToday" onkeyup="
+						(function check(){
+							if (window.event.keyCode == 13) {
+								PopNotionClose();
+							}
+						}())">
+					<span tabindex="0">창 닫기</span>
+					<input tabindex="0" type="checkbox" value="Y" id="end" onkeyup="
+						(function check(){
+							if (window.event.keyCode == 13) {
+								fn_cancelMyMenu()
+							}
+						}())">
 				</div>
 			</div>
 		</form>
+		<script type="text/javascript">
+			function PopNotionClose() {
+				var f = document.popNoticeForm;
+				var name = f["popNoticeContentsDTO.popNoticeContentsId"].value;
+				var audio = document.getElementById('audio_play');
+
+				setCookieAt00(name, "done", 1)
+
+				fn_cancelMyMenu();
+
+				if (!audio.paused) // 하루동안 창 닫으면 재생되던 소리가 꺼지도록 함
+				{
+					audio.pause();
+					audio.currentTime = 0;
+				}
+			}
+
+			// 키보드가 함정에 빠진 경우 키보드 접근 시 다음 컨트롤로 이동이 가능하도록 제공해야 함
+			// 버튼에 들어가면 tab 초점(focus) 탈출이 안 되어 버튼에서 초점을 탈출시킨 상태
+			// 버튼과의 직접적인 연결은 되지 않는 상황
+			// 아마도 버튼과 문서가 분리되어 있어서 그런 듯(쿼리 셀렉터 하나가 인식되면 다른 하나가 인식되지 않는 상황)
+			/* document.querySelector('.ui-dialog-titlebar-close').addEventListener("keydown", function(e){
+				var key = e.keyCode;
+				if (key == 9)
+					document.querySelector('#start').focus();
+			}); */
+			document.querySelector('#start').focus();
+			document.querySelector('#end').addEventListener("keydown", function(e){
+				var key = e.keyCode;
+				if (key == 9 && !(key == 9 && event.shiftKey))
+					document.querySelector('#start').focus();
+			});
+			document.querySelector('#start').addEventListener("keydown", function(e){
+				var key = e.keyCode;
+				if (key == 9 && event.shiftKey)
+					document.querySelector('#end').focus();
+			});
+
+			$(document).ready(function () {
+				$('#noMoreToday').change(function () {
+					if ($(this).is(":checked")) {
+						PopNotionClose();
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
